@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <BlueprintClassEntries>
+        <!-- Blast Furnace -->
+        <!-- LargeRefinery -->
+        <!-- SurvivalKitLarge -->
+        <!-- SurvivalKit -->
+
+        <!-- Composites -->
+        <Entry Class="BasicRefining" BlueprintSubtypeId="UraniumOreToUraninite" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="UraniumFuelRodConversion" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="ScrapIngotToIronIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="ScrapToIronIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Arsenolite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Bauxite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Beryl_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Bismutotantalite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Boracite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Borcarite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Cadmoindite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Cadmoselite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Calaverite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Cassiterite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Cerite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Chalcopyrite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Chamosite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Chaoite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Chromferide_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Chromite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Cinnabar_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Coal_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Cobaltite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Coffinite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Columbite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Dolomite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Ferchromide_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Fluorapatite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Fontarnauite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Germanite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Graphite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Hafnon_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Halite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Hematite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Huttonite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Ilmenite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Indite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Iodargyrite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Kentbrooksite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Lepidolite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Monazite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Olivine_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Orpiment_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Palladseite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Pyrite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Pyrochlore_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Quartz_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Realgar_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Rhodochrosite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Ruthenarsenite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Rutheniridosmine_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Sphalerite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Spodumene_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Stibiotantalite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Strontiofluorite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Sulfur_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Sylvite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Telluropalladinite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Thorite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Titanite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Uraninite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Pitchblend_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Wulfenite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Zircon_OreToIngot" />
+
+        <!-- Extractive -->
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Stone_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_DesertRock_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_MarsRocks_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Anorthite_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_AlienRock_01_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Sand_02_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_AlienSand_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Soil_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_MarsSoil_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Regolith_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_AlienSoil_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Organic_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_AlienOrganic_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_AminoAcids_OreToIngot" />
+
+        <!-- Ice -->
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Ice_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_AmberIce_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_BlueIce_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_GreenIce_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_PinkIce_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_PurpleIce_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_EuropaIce_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_AlienIce_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Brine_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_MineralIce_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_AmmoniumHydroxide_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_CHON_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_MethaneHydrate_OreToIngot" />
+
+        <!-- PureMetal -->
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Aluminum_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Iron_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Titanium_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Copper_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Cobalt_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Nickel_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Tin_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Silver_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Gold_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Lead_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Magnesium_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Silicon_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Zinc_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Platinum_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Molybdenum_OreToIngot" />
+        <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Zirconium_OreToIngot" />
+
+
+        <Entry Class="BasicRefining" BlueprintSubtypeId="DemolishedConcreteToIngot" />
+    </BlueprintClassEntries>
+</Definitions>

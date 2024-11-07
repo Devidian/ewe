@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <BlueprintClassEntries>
+        <!-- SurvivalKitLarge -->
+        <!-- SurvivalKit -->
+        <Entry Class="Fluids" BlueprintSubtypeId="MineralSpirits" />
+        <Entry Class="Fluids" BlueprintSubtypeId="Stearate" />
+        <Entry Class="Fluids" BlueprintSubtypeId="Grease" />
+        <Entry Class="Fluids" BlueprintSubtypeId="Oil" />
+        <Entry Class="Fluids" BlueprintSubtypeId="Coolant" />
+        <Entry Class="Fluids" BlueprintSubtypeId="ThermalPaste" />
+        <Entry Class="Fluids" BlueprintSubtypeId="LiquidGasoline" />
+        <Entry Class="Fluids" BlueprintSubtypeId="LiquidJetFuel" />
+        <Entry Class="Fluids" BlueprintSubtypeId="IngotToWater" />
+        <Entry Class="Fluids" BlueprintSubtypeId="IngotToIce" />
+        <Entry Class="Fluids" BlueprintSubtypeId="WaterToIce" />
+    </BlueprintClassEntries>
+</Definitions>

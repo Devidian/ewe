@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <BlueprintClassEntries>
+
+        <!-- Composites -->
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="UraniumOreToUraninite" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="UraniumFuelRodConversion" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="ScrapIngotToIronIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="ScrapToIronIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Arsenolite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Bauxite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Beryl_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Bismutotantalite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Boracite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Borcarite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Cadmoindite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Cadmoselite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Calaverite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Cassiterite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Cerite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Chalcopyrite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Chamosite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Chaoite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Chromferide_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Chromite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Cinnabar_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Coal_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Cobaltite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Coffinite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Columbite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Dolomite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Ferchromide_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Fluorapatite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Fontarnauite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Germanite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Graphite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Hafnon_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Halite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Hematite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Huttonite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Ilmenite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Indite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Iodargyrite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Kentbrooksite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Lepidolite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Monazite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Olivine_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Orpiment_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Palladseite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Pyrite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Pyrochlore_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Quartz_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Realgar_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Rhodochrosite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Ruthenarsenite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Rutheniridosmine_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Sphalerite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Spodumene_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Stibiotantalite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Strontiofluorite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Sulfur_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Sylvite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Telluropalladinite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Thorite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Titanite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Uraninite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Pitchblend_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Wulfenite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Zircon_OreToIngot" />
+
+        <!-- Extractive -->
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Stone_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_DesertRock_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_MarsRocks_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Anorthite_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_AlienRock_01_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Sand_02_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_AlienSand_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Soil_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_MarsSoil_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Regolith_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_AlienSoil_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Organic_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_AlienOrganic_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_AminoAcids_OreToIngot" />
+
+        <!-- Ice -->
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Ice_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_AmberIce_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_BlueIce_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_GreenIce_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_PinkIce_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_PurpleIce_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_EuropaIce_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_AlienIce_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Brine_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_MineralIce_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_AmmoniumHydroxide_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_CHON_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_MethaneHydrate_OreToIngot" />
+
+        <!-- PureMetal -->
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Aluminum_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Iron_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Titanium_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Copper_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Cobalt_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Nickel_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Tin_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Silver_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Gold_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Lead_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Magnesium_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Silicon_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Zinc_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Platinum_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Molybdenum_OreToIngot" />
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Zirconium_OreToIngot" />
+
+
+        <Entry Class="AdvancedRefining" BlueprintSubtypeId="DemolishedConcreteToIngot" />
+    </BlueprintClassEntries>
+</Definitions>

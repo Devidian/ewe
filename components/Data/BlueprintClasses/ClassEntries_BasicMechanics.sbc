@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <BlueprintClassEntries>
+        <!-- BasicAssembler -->
+        <!-- LargeAssembler -->
+        <!-- SurvivalKitLarge -->
+        <!-- SurvivalKit -->
+        <Entry Class="BasicMechanics" BlueprintSubtypeId="SteelSpring" />
+        <Entry Class="BasicMechanics" BlueprintSubtypeId="NitinolSpring" />
+        <Entry Class="BasicMechanics" BlueprintSubtypeId="BallBearing" />
+        <Entry Class="BasicMechanics" BlueprintSubtypeId="AluminumFanBlade" />
+        <Entry Class="BasicMechanics" BlueprintSubtypeId="MechanicalCable" />
+        <Entry Class="BasicMechanics" BlueprintSubtypeId="SteelPulley" />
+        <Entry Class="BasicMechanics" BlueprintSubtypeId="SteelGear" />
+        <Entry Class="BasicMechanics" BlueprintSubtypeId="RubberBushing" />
+        <Entry Class="BasicMechanics" BlueprintSubtypeId="CarbideTooling" />
+        <Entry Class="BasicMechanics" BlueprintSubtypeId="DiamondTooling" />
+        <Entry Class="BasicMechanics" BlueprintSubtypeId="CarbideRing" />
+        <Entry Class="BasicMechanics" BlueprintSubtypeId="RubberGasket" />
+        <Entry Class="BasicMechanics" BlueprintSubtypeId="Filter" />
+        <Entry Class="BasicMechanics" BlueprintSubtypeId="Tape" />
+        <Entry Class="BasicMechanics" BlueprintSubtypeId="ZipTies" />
+        <Entry Class="BasicMechanics" BlueprintSubtypeId="BallValve" />
+        <Entry Class="BasicMechanics" BlueprintSubtypeId="Chain" />
+        <Entry Class="BasicMechanics" BlueprintSubtypeId="Belt" />
+        <Entry Class="BasicMechanics" BlueprintSubtypeId="Bladder" />
+        <Entry Class="BasicMechanics" BlueprintSubtypeId="AluminumPiston" />
+        <Entry Class="BasicMechanics" BlueprintSubtypeId="TitaniumPiston" />
+        <Entry Class="BasicMechanics" BlueprintSubtypeId="SteelStemValve" />
+        <Entry Class="BasicMechanics" BlueprintSubtypeId="NitinolStemValve" />
+        <Entry Class="BasicMechanics" BlueprintSubtypeId="Canvas" />
+    </BlueprintClassEntries>
+</Definitions>

@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <VoxelMaterials>
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">      <!-- Regolith -->
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>MoonSoil</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>MoonSoil</MaterialTypeName>
+      <MinedOre>Regolith</MinedOre>
+      <MinedOreRatio>0.3</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+
+      <VoxelHandPreview>Textures\Voxels\MoonSoil_01_Thumbnail.dds</VoxelHandPreview>
+      <ColorMetalXZnY>Textures\Voxels\MoonSoil_01_ForAxisXZ_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\MoonSoil_01_ForAxisXZ_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\MoonSoil_01_ForAxisXZ_add.dds</ExtXZnY>
+      <ExtDetailScale>0.001</ExtDetailScale>
+
+      <ScaleMultiplier>6</ScaleMultiplier>
+
+      <FoliageColorTextureArray>
+        <Color>Textures\Voxels\MoonSoil_01_ForAxisXZ_cm.dds</Color>
+      </FoliageColorTextureArray>
+      <FoliageNormalTextureArray>
+        <Normal>Textures\Voxels\MoonSoil_01_ForAxisXZ_ng.dds</Normal>
+      </FoliageNormalTextureArray>
+      <FoliageDensity>2</FoliageDensity>
+      <FoliageScale>
+        <X>0.4</X>
+        <Y>0.4</Y>
+      </FoliageScale>
+      <FoliageRandomRescaleMult>0.6</FoliageRandomRescaleMult>
+      <FoliageType>1</FoliageType>
+
+      <ColorKey Hex="#A4B94D"/>
+
+    </VoxelMaterial>
+  </VoxelMaterials>
+</Definitions>

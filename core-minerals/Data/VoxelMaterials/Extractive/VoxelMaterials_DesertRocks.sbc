@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <VoxelMaterials>
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">      <!-- DesertRocks -->
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>DesertRocks</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Rock</MaterialTypeName>
+      <AllowRespawn>false</AllowRespawn>
+      <MinedOre>DesertRock</MinedOre>
+      <MinedOreRatio>1</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+
+      <VoxelHandPreview>Textures\Voxels\RocksDesert_Thumbnail.dds</VoxelHandPreview>
+      <ColorMetalXZnY>Textures\Voxels\RocksDesert_ForAxisXZ_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\RocksDesert_ForAxisXZ_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\RocksDesert_ForAxisXZ_add.dds</ExtXZnY>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\RocksDesert_ForAxisXZ_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\RocksDesert_ForAxisXZ_Far1_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\RocksDesert_ForAxisXZ_Far1_add.dds</ExtXZnYFar1>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\RocksDesert_ForAxisXZ_Far1_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\RocksDesert_ForAxisXZ_Far1_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\RocksDesert_ForAxisXZ_Far1_add.dds</ExtXZnYFar2>
+
+
+      <ExtDetailScale>0.005</ExtDetailScale>
+      <InitialDistance>3</InitialDistance>
+      <InitialScale>2.5</InitialScale>
+      <ScaleMultiplier>12</ScaleMultiplier>
+      <Far1Distance>50</Far1Distance>
+      <Far1Scale>300</Far1Scale>
+      <Far2Distance>200</Far2Distance>
+      <Far2Scale>800</Far2Scale>
+      <TilingScale>64</TilingScale>
+
+
+
+
+      <Far3Distance>10000</Far3Distance>
+      <Far3Color>
+        <X>0.57</X>
+        <Y>0.32</Y>
+        <Z>0.17</Z>
+        <W>1.0</W>
+      </Far3Color>
+
+
+      <ColorKey Hex="#A4B94D"/>
+    </VoxelMaterial>
+  </VoxelMaterials>
+</Definitions>

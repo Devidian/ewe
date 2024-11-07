@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <BlueprintClassEntries>
+        <!-- SurvivalKitLarge -->
+        <!-- SurvivalKit -->
+        <Entry Class="Alloys" BlueprintSubtypeId="201Steel" />
+        <Entry Class="Alloys" BlueprintSubtypeId="ChromiumSteel" />
+        <Entry Class="Alloys" BlueprintSubtypeId="945Steel" />
+        <Entry Class="Alloys" BlueprintSubtypeId="Nitinol" />
+        <Entry Class="Alloys" BlueprintSubtypeId="Brass" />
+        <Entry Class="Alloys" BlueprintSubtypeId="Cupronickel" />
+        <Entry Class="Alloys" BlueprintSubtypeId="Electrum" />
+        <Entry Class="Alloys" BlueprintSubtypeId="GumMetal" />
+        <Entry Class="Alloys" BlueprintSubtypeId="PolyCarbonate" />
+        <Entry Class="Alloys" BlueprintSubtypeId="Glass" />
+        <Entry Class="Alloys" BlueprintSubtypeId="Rubber" />
+        <Entry Class="Alloys" BlueprintSubtypeId="Magnet" />
+        <Entry Class="Alloys" BlueprintSubtypeId="TungstenCarbide" />
+        <Entry Class="Alloys" BlueprintSubtypeId="Cement" />
+    </BlueprintClassEntries>
+</Definitions>

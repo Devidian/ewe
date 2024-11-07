@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <VoxelMaterials>
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">      <!-- Stone_04 -->
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>Stone_04</SubtypeId>
+      </Id>
+      <MaterialTypeName>Rock</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>1</MinedOreRatio>
+      <SpawnsInAsteroids>true</SpawnsInAsteroids>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+
+
+      <VoxelHandPreview>Textures\Voxels\Stone_04_Thumbnail.dds</VoxelHandPreview>
+      <ColorMetalXZnY>Textures\Voxels\Stone_04_ForAxisXZ_cm.dds</ColorMetalXZnY>
+      <!--<ColorMetalY>Textures\Voxels\Stone_04_ForAxisY_cm.dds</ColorMetal>-->
+      <NormalGlossXZnY>Textures\Voxels\Stone_04_ForAxisXZ_ng.dds</NormalGlossXZnY>
+      <!--<NormalGlossY>Textures\Voxels\Stone_04_ForAxisY_ng.dds</NormalGloss>-->
+
+
+      <ColorMetalXZnYFar1>Textures\Voxels\Stone_04_ForAxisXZ_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\Stone_04_ForAxisXZ_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Dummy_add.dds</ExtXZnYFar1>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\Stone_04_ForAxisXZ_distance_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\Stone_04_ForAxisXZ_distance_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\Dummy_add.dds</ExtXZnYFar2>
+
+      <SimpleTilingSetup>
+        <Far1Distance>25</Far1Distance>
+        <Far2Distance>500</Far2Distance>
+        <Far1Scale>30</Far1Scale>
+        <Far2Scale>100</Far2Scale>
+      </SimpleTilingSetup>
+
+      <InitialScale>2</InitialScale>
+      <ScaleMultiplier>4</ScaleMultiplier>
+      <InitialDistance>4</InitialDistance>
+      <DistanceMultiplier>1.4</DistanceMultiplier>
+      <TilingScale>20</TilingScale>
+
+      <Far1Distance>1000</Far1Distance>
+      <Far2Distance>1200</Far2Distance>
+      <Far1Scale>30</Far1Scale>
+      <Far2Scale>100</Far2Scale>
+
+      <ColorKey Hex="#DD9B28"/>
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
+
+    </VoxelMaterial>
+  </VoxelMaterials>
+</Definitions>

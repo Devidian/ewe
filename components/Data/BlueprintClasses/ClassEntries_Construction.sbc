@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <BlueprintClassEntries>
+        <!-- Blast Furnace -->
+        <!-- LargeRefinery -->
+        <!-- SurvivalKitLarge -->
+        <!-- SurvivalKit -->
+        <Entry Class="Construction" BlueprintSubtypeId="SteelBall" />
+        <Entry Class="Construction" BlueprintSubtypeId="ConstructionComponent" />
+        <Entry Class="Construction" BlueprintSubtypeId="SteelBolt" />
+        <Entry Class="Construction" BlueprintSubtypeId="SteelNut" />
+        <Entry Class="Construction" BlueprintSubtypeId="SteelWasher" />
+        <Entry Class="Construction" BlueprintSubtypeId="BrazingRod" />
+        <Entry Class="Construction" BlueprintSubtypeId="SteelRivet" />
+        <Entry Class="Construction" BlueprintSubtypeId="AluminumCotterPin" />
+        <Entry Class="Construction" BlueprintSubtypeId="Clamp" />
+        <Entry Class="Construction" BlueprintSubtypeId="GirderComponent" />
+        <Entry Class="Construction" BlueprintSubtypeId="BareSteelWire" />
+        <Entry Class="Construction" BlueprintSubtypeId="BareAluminumWire" />
+        <Entry Class="Construction" BlueprintSubtypeId="BareCopperWire" />
+        <Entry Class="Construction" BlueprintSubtypeId="BareBrassWire" />
+        <Entry Class="Construction" BlueprintSubtypeId="BareNitinolWire" />
+        <Entry Class="Construction" BlueprintSubtypeId="BulletproofGlass" />
+        <Entry Class="Construction" BlueprintSubtypeId="AluminumPlate" />
+        <Entry Class="Construction" BlueprintSubtypeId="SteelPlate" />
+        <Entry Class="Construction" BlueprintSubtypeId="TitaniumPlate" />
+        <Entry Class="Construction" BlueprintSubtypeId="NitinolPlate" />
+        <Entry Class="Construction" BlueprintSubtypeId="GraphenePlate" />
+        <Entry Class="Construction" BlueprintSubtypeId="InteriorPlate" />
+        <Entry Class="Construction" BlueprintSubtypeId="MetalGrid" />
+        <Entry Class="Construction" BlueprintSubtypeId="SmallTube" />
+        <Entry Class="Construction" BlueprintSubtypeId="LargeTube" />
+        <Entry Class="Construction" BlueprintSubtypeId="SmallCopperTube" />
+        <Entry Class="Construction" BlueprintSubtypeId="LargeCopperTube" />
+        <Entry Class="Construction" BlueprintSubtypeId="CarbonTube" />
+        <Entry Class="Construction" BlueprintSubtypeId="SteelRod" />
+        <Entry Class="Construction" BlueprintSubtypeId="AluminumRod" />
+        <Entry Class="Construction" BlueprintSubtypeId="TitaniumRod" />
+        <Entry Class="Construction" BlueprintSubtypeId="CopperRod" />
+        <Entry Class="Construction" BlueprintSubtypeId="BrassRod" />
+        <Entry Class="Construction" BlueprintSubtypeId="NitinolRod" />
+        <Entry Class="Construction" BlueprintSubtypeId="RubberHose" />
+        <Entry Class="Construction" BlueprintSubtypeId="PolyCarbonatePlate" />
+        <Entry Class="Construction" BlueprintSubtypeId="Insulation" />
+        <Entry Class="Construction" BlueprintSubtypeId="Rebar" />
+        <Entry Class="Construction" BlueprintSubtypeId="Concrete" />
+        <Entry Class="Construction" BlueprintSubtypeId="PipeFitting" />
+    </BlueprintClassEntries>
+</Definitions>

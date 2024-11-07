@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <VoxelMaterials>
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">      <!-- Rocks_grass -->
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>Rocks_grass</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Soil</MaterialTypeName>
+      <MinedOre>Organic</MinedOre>
+      <MinedOreRatio>0.5</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+
+      <VoxelHandPreview>Textures\Voxels\Rocks_Grass_Thumbnail.dds</VoxelHandPreview>
+      <ColorMetalXZnY>Textures\Voxels\Rocks_Grass_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\Rocks_Grass_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Rocks_Grass_add.dds</ExtXZnY>
+      <ExtDetailScale>0.001</ExtDetailScale>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\Rocks_Grass_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\Rocks_Grass_Far1_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Rocks_Grass_Far1_add.dds</ExtXZnYFar1>
+
+      <SimpleTilingSetup>
+        <InitialScale>2</InitialScale>
+        <ScaleMultiplier>4</ScaleMultiplier>
+        <DistanceMultiplier>4</DistanceMultiplier>
+        <InitialDistance>4</InitialDistance>
+        <Far1Distance>12</Far1Distance>
+        <Far1Scale>50</Far1Scale>
+        <Far2Distance>250</Far2Distance>
+        <Far2Scale>550</Far2Scale>
+        <Far3Distance>5000</Far3Distance>
+      </SimpleTilingSetup>
+
+
+      <ExtDetailScale>0.005</ExtDetailScale>
+      <Scale>2</Scale>
+
+      <InitialScale>1.5</InitialScale>
+      <ScaleMultiplier>4</ScaleMultiplier>
+      <DistanceMultiplier>1.7</DistanceMultiplier>
+      <InitialDistance>4</InitialDistance>
+      <Far1Distance>12</Far1Distance>
+      <Far1Scale>120</Far1Scale>
+      <Far2Distance>180</Far2Distance>
+      <Far2Scale>1200</Far2Scale>
+      <TilingScale>16</TilingScale>
+
+      <Far3Distance>5000</Far3Distance>
+      <Far3Color>
+        <X>0.05</X>
+        <Y>0.05</Y>
+        <Z>0.01</Z>
+        <W>1.0</W>
+      </Far3Color>
+
+      <DamagedMaterial>Soil</DamagedMaterial>
+      <ColorKey Hex="#BCBB56"/>
+    </VoxelMaterial>
+  </VoxelMaterials>
+</Definitions>

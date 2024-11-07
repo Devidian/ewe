@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <BlueprintClassEntries>
+        <!-- BasicAssembler -->
+        <!-- LargeAssembler -->
+        <!-- SurvivalKitLarge -->
+        <!-- SurvivalKit -->
+        <Entry Class="BasicElectroncis" BlueprintSubtypeId="Solenoid" />
+        <Entry Class="BasicElectroncis" BlueprintSubtypeId="Fuse" />
+        <Entry Class="BasicElectroncis" BlueprintSubtypeId="Resistor" />
+        <Entry Class="BasicElectroncis" BlueprintSubtypeId="Diode" />
+        <Entry Class="BasicElectroncis" BlueprintSubtypeId="POT" />
+        <Entry Class="BasicElectroncis" BlueprintSubtypeId="PowerCell" />
+        <Entry Class="BasicElectroncis" BlueprintSubtypeId="Transistor" />
+        <Entry Class="BasicElectroncis" BlueprintSubtypeId="Coil" />
+        <Entry Class="BasicElectroncis" BlueprintSubtypeId="LED" />
+        <Entry Class="BasicElectroncis" BlueprintSubtypeId="Bulb" />
+        <Entry Class="BasicElectroncis" BlueprintSubtypeId="Sensor" />
+        <Entry Class="BasicElectroncis" BlueprintSubtypeId="HeatSink" />
+        <Entry Class="BasicElectroncis" BlueprintSubtypeId="RadioCommunication" />
+        <Entry Class="BasicElectroncis" BlueprintSubtypeId="SolarCell" />
+        <Entry Class="BasicElectroncis" BlueprintSubtypeId="Processor" />
+        <Entry Class="BasicElectroncis" BlueprintSubtypeId="PCB" />
+        <Entry Class="BasicElectroncis" BlueprintSubtypeId="InsulatedCopperWire" />
+        <Entry Class="BasicElectroncis" BlueprintSubtypeId="DataCable" />
+        <Entry Class="BasicElectroncis" BlueprintSubtypeId="FiberOpticWire" />
+        <Entry Class="BasicElectroncis" BlueprintSubtypeId="Switch" />
+        <Entry Class="BasicElectroncis" BlueprintSubtypeId="Computer" />
+    </BlueprintClassEntries>
+</Definitions>

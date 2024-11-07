@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <VoxelMaterials>
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">      <!-- MarsSoil -->
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>MarsSoil</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Stone</MaterialTypeName>
+      <MinedOre>MarsSoil</MinedOre>
+      <MinedOreRatio>0.3</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>1</DamageRatio>
+      <ParticleEffect>Collision_Meteor</ParticleEffect>
+
+      <VoxelHandPreview>Textures\Voxels\MarsSoil_01_Thumbnail.dds</VoxelHandPreview>
+      <ColorMetalXZnY>Textures\Voxels\MarsSoil_01_ForAxisXZ_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\MarsSoil_01_ForAxisXZ_ng.dds</NormalGlossXZnY>
+
+      <ExtXZnY>Textures\Voxels\MarsSoil_01_ForAxisXZ_add.dds</ExtXZnY>
+      <ExtDetailScale>0.001</ExtDetailScale>
+
+      <ColorKey Hex="#A4B94D"/>
+
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess>
+
+      <!--Generated Rocks-->
+
+      <FoliageTextureArray1>Textures\Voxels\MarsRocks_01_ForAxisXZ_cm.dds</FoliageTextureArray1>
+      <FoliageTextureArray2>Textures\Voxels\MarsRocks_01_ForAxisXZ_ng.dds</FoliageTextureArray2>
+      <FoliageDensity>7</FoliageDensity>
+      <FoliageScale>
+        <X>0.3</X>
+        <Y>0.3</Y>
+      </FoliageScale>
+      <FoliageRandomRescaleMult>0.002</FoliageRandomRescaleMult>
+      <FoliageType>1</FoliageType>
+
+    </VoxelMaterial>
+  </VoxelMaterials>
+</Definitions>

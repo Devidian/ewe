@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <VoxelMaterials>
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">      <!-- Stone_02 -->
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>Stone_02</SubtypeId>
+      </Id>
+      <MaterialTypeName>Rock</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>1</MinedOreRatio>
+      <SpawnsInAsteroids>true</SpawnsInAsteroids>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+
+      <SimpleTilingSetup>
+        <ScaleMultiplier>4</ScaleMultiplier>
+        <DistanceMultiplier>6</DistanceMultiplier>
+        <InitialDistance>2</InitialDistance>
+        <InitialScale>2</InitialScale>
+      </SimpleTilingSetup>
+
+      <ScaleMultiplier>6</ScaleMultiplier>
+      <DistanceMultiplier>4</DistanceMultiplier>
+      <InitialDistance>4</InitialDistance>
+      <InitialScale>2</InitialScale>
+      <TilingScale>32</TilingScale>
+
+
+      <VoxelHandPreview>Textures\Voxels\Stone_02_Thumbnail.dds</VoxelHandPreview>
+      <ColorMetalXZnY>Textures\Voxels\Stone_02_ForAxisXZ_cm.dds</ColorMetalXZnY>
+      <ColorMetalY>Textures\Voxels\Stone_02_ForAxisY_cm.dds</ColorMetalY>
+
+      <NormalGlossXZnY>Textures\Voxels\Stone_02_ForAxisXZ_ng.dds</NormalGlossXZnY>
+      <NormalGlossY>Textures\Voxels\Stone_02_ForAxisY_ng.dds</NormalGlossY>
+
+      <ColorKey Hex="#DD9B28"/>
+      <LandingEffect>Landing_Jet_Ground_Dust</LandingEffect>
+
+    </VoxelMaterial>
+  </VoxelMaterials>
+</Definitions>

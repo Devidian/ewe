@@ -1,0 +1,1167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Blueprints>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>SteelSpringX100</SubtypeId>
+			</Id>
+			<DisplayName>Steel Springs x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\SteelSpring_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="945Steel" Amount="35" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>25</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="SteelSpring" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>SteelSpringX10</SubtypeId>
+			</Id>
+			<DisplayName>Steel Springs x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\SteelSpring_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="945Steel" Amount="3.5" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="SteelSpring" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>SteelSpring</SubtypeId>
+			</Id>
+			<DisplayName>Steel Spring</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\SteelSpring_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="945Steel" Amount="0.35" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>1</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="SteelSpring" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>NitinolSpringX100</SubtypeId>
+			</Id>
+			<DisplayName>Nitinol Springs x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\NitinolSpring_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Nitinol" Amount="29" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>50</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="NitinolSpring" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>NitinolSpringX10</SubtypeId>
+			</Id>
+			<DisplayName>Nitinol Springs x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\NitinolSpring_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Nitinol" Amount="2.9" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="NitinolSpring" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>NitinolSpring</SubtypeId>
+			</Id>
+			<DisplayName>Nitinol Spring</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\NitinolSpring_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Nitinol" Amount="0.29" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="NitinolSpring" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>BallBearingX100</SubtypeId>
+			</Id>
+			<DisplayName>Ball Bearings x1000</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\BallBearing_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="ChromiumSteel" Amount="100" />
+				<Item TypeId="Component" SubtypeId="SteelBall" Amount="10000" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>50</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="BallBearing" Amount="1000" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>BallBearingX10</SubtypeId>
+			</Id>
+			<DisplayName>Ball Bearings x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\BallBearing_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="ChromiumSteel" Amount="10" />
+				<Item TypeId="Component" SubtypeId="SteelBall" Amount="1000" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="BallBearing" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>BallBearing</SubtypeId>
+			</Id>
+			<DisplayName>Ball Bearing x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\BallBearing_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="ChromiumSteel" Amount="1" />
+				<Item TypeId="Component" SubtypeId="SteelBall" Amount="100" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="BallBearing" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>AluminumFanBladeX100</SubtypeId>
+			</Id>
+			<DisplayName>Aluminum Fan Blades x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\AluminumFanBlade_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Aluminum" Amount="3.5" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>25</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="AluminumFanBlade" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>AluminumFanBladeX10</SubtypeId>
+			</Id>
+			<DisplayName>Aluminum Fan Blades x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\AluminumFanBlade_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Aluminum" Amount="0.35" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="AluminumFanBlade" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>AluminumFanBlade</SubtypeId>
+			</Id>
+			<DisplayName>Aluminum Fan Blade</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\AluminumFanBlade_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Aluminum" Amount="0.035" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>1</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="AluminumFanBlade" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>MechanicalCableX100</SubtypeId>
+			</Id>
+			<DisplayName>Mechanical Control Cables x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\MechanicalCable_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="BareSteelWire" Amount="100" />
+				<Item TypeId="Ingot" SubtypeId="PolyCarbonate" Amount="8" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>75</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="MechanicalCable" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>MechanicalCableX10</SubtypeId>
+			</Id>
+			<DisplayName>Mechanical Control Cables x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\MechanicalCable_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="BareSteelWire" Amount="10" />
+				<Item TypeId="Ingot" SubtypeId="PolyCarbonate" Amount="0.8" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="MechanicalCable" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>MechanicalCable</SubtypeId>
+			</Id>
+			<DisplayName>Mechanical Control Cable</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\MechanicalCable_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="BareSteelWire" Amount="1" />
+				<Item TypeId="Ingot" SubtypeId="PolyCarbonate" Amount="0.08" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="MechanicalCable" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>SteelPulleyX100</SubtypeId>
+			</Id>
+			<DisplayName>Steel Pulleys x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\Pulley_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="945Steel" Amount="30" />
+				<Item TypeId="Component" SubtypeId="BallBearing" Amount="100" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>50</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="SteelPulley" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>SteelPulleyX10</SubtypeId>
+			</Id>
+			<DisplayName>Steel Pulleys x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\Pulley_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="945Steel" Amount="3" />
+				<Item TypeId="Component" SubtypeId="BallBearing" Amount="10" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="SteelPulley" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>SteelPulley</SubtypeId>
+			</Id>
+			<DisplayName>Steel Pulley</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\Pulley_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="945Steel" Amount="0.3" />
+				<Item TypeId="Component" SubtypeId="BallBearing" Amount="1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="SteelPulley" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>SteelGearX100</SubtypeId>
+			</Id>
+			<DisplayName>Steel Gears x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\SteelGear_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="945Steel" Amount="40" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>75</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="SteelGear" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>SteelGearX10</SubtypeId>
+			</Id>
+			<DisplayName>Steel Gears x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\SteelGear_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="945Steel" Amount="4" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="SteelGear" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>SteelGear</SubtypeId>
+			</Id>
+			<DisplayName>Steel Gear</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\SteelGear_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="945Steel" Amount="0.4" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="SteelGear" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>RubberBushingX100</SubtypeId>
+			</Id>
+			<DisplayName>Rubber Bushings x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\RubberBushing_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Rubber" Amount="1.2" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>25</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="RubberBushing" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>RubberBushingX10</SubtypeId>
+			</Id>
+			<DisplayName>Rubber Bushings x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\RubberBushing_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Rubber" Amount="0.12" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="RubberBushing" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>RubberBushing</SubtypeId>
+			</Id>
+			<DisplayName>Rubber Bushing</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\RubberBushing_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Rubber" Amount="0.012" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>1</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="RubberBushing" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>CarbideToolingX100</SubtypeId>
+			</Id>
+			<DisplayName>Carbide Toolings x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\CarbideTool_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="945Steel" Amount="50" />
+				<Item TypeId="Ingot" SubtypeId="TungstenCarbide" Amount="50" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>50</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="CarbideTooling" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>CarbideToolingX10</SubtypeId>
+			</Id>
+			<DisplayName>Carbide Toolings x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\CarbideTool_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="945Steel" Amount="5" />
+				<Item TypeId="Ingot" SubtypeId="TungstenCarbide" Amount="5" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="CarbideTooling" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>CarbideTooling</SubtypeId>
+			</Id>
+			<DisplayName>Carbide Tooling</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\CarbideTool_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="945Steel" Amount="0.5" />
+				<Item TypeId="Ingot" SubtypeId="TungstenCarbide" Amount="0.5" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="CarbideTooling" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>DiamondToolingX100</SubtypeId>
+			</Id>
+			<DisplayName>Diamond Toolings x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\DiamondTooling_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Iron" Amount="50" />
+				<Item TypeId="Ingot" SubtypeId="Carbon" Amount="50" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>250</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="DiamondTooling" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>DiamondToolingX10</SubtypeId>
+			</Id>
+			<DisplayName>Diamond Toolings x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\DiamondTooling_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Iron" Amount="5" />
+				<Item TypeId="Ingot" SubtypeId="Carbon" Amount="5" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>50</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="DiamondTooling" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>DiamondTooling</SubtypeId>
+			</Id>
+			<DisplayName>Diamond Tooling</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\DiamondTooling_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Iron" Amount="0.5" />
+				<Item TypeId="Ingot" SubtypeId="Carbon" Amount="0.5" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="DiamondTooling" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>CarbideRingX100</SubtypeId>
+			</Id>
+			<DisplayName>Carbide Rings x1000</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\CarbideRing_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="TungstenCarbide" Amount="40" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>50</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="CarbideRing" Amount="1000" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>CarbideRingX10</SubtypeId>
+			</Id>
+			<DisplayName>Carbide Rings x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\CarbideRing_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="TungstenCarbide" Amount="4" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="CarbideRing" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>CarbideRing</SubtypeId>
+			</Id>
+			<DisplayName>Carbide Ring x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\CarbideRing_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="TungstenCarbide" Amount="0.4" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="CarbideRing" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>RubberGasketX100</SubtypeId>
+			</Id>
+			<DisplayName>Rubber Gaskets x1000</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\RubberGasket_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Rubber" Amount="9.6" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>50</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="RubberGasket" Amount="1000" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>RubberGasketX10</SubtypeId>
+			</Id>
+			<DisplayName>Rubber Gaskets x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\RubberGasket_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Rubber" Amount="0.96" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="RubberGasket" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>RubberGasket</SubtypeId>
+			</Id>
+			<DisplayName>Rubber Gasket x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\RubberGasket_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Rubber" Amount="0.096" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="RubberGasket" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>FilterX100</SubtypeId>
+			</Id>
+			<DisplayName>Filters x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\Filter_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Carbon" Amount="1" />
+				<Item TypeId="Component" SubtypeId="Canvas" Amount="1" />
+				<Item TypeId="Component" SubtypeId="BareSteelWire" Amount="1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>50</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Filter" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>FilterX10</SubtypeId>
+			</Id>
+			<DisplayName>Filters x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\Filter_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Carbon" Amount="0.1" />
+				<Item TypeId="Component" SubtypeId="Canvas" Amount="0.1" />
+				<Item TypeId="Component" SubtypeId="BareSteelWire" Amount="0.1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Filter" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Filter</SubtypeId>
+			</Id>
+			<DisplayName>Filter</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\Filter_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Carbon" Amount="0.01" />
+				<Item TypeId="Component" SubtypeId="Canvas" Amount="0.01" />
+				<Item TypeId="Component" SubtypeId="BareSteelWire" Amount="0.01" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Filter" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>TapeX100</SubtypeId>
+			</Id>
+			<DisplayName>Tapes x500</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\Tape_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Rubber" Amount="150" />
+				<Item TypeId="Ingot" SubtypeId="Silicon" Amount="150" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>25</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Tape" Amount="500" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>TapeX10</SubtypeId>
+			</Id>
+			<DisplayName>Tapes x500</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\Tape_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Rubber" Amount="15" />
+				<Item TypeId="Ingot" SubtypeId="Silicon" Amount="15" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Tape" Amount="50" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Tape</SubtypeId>
+			</Id>
+			<DisplayName>Tapes x5</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\Tape_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Rubber" Amount="1.5" />
+				<Item TypeId="Ingot" SubtypeId="Silicon" Amount="1.5" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>1</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Tape" Amount="5" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>TapeDisassembly</SubtypeId>
+			</Id>
+			<DisplayName>Tape</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\Tape_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Rubber" Amount="0.3" />
+				<Item TypeId="Ingot" SubtypeId="Silicon" Amount="0.3" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>1</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Tape" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>ZipTiesX100</SubtypeId>
+			</Id>
+			<DisplayName>Zip Ties x500</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\ZipTies_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="PolyCarbonate" Amount="1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>25</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="ZipTies" Amount="500" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>ZipTiesX10</SubtypeId>
+			</Id>
+			<DisplayName>Zip Ties x50</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\ZipTies_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="PolyCarbonate" Amount="0.1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="ZipTies" Amount="50" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>ZipTies</SubtypeId>
+			</Id>
+			<DisplayName>Zip Ties x5</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\ZipTies_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="PolyCarbonate" Amount="0.01" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>1</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="ZipTies" Amount="5" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>ZipTiesDisassembly</SubtypeId>
+			</Id>
+			<DisplayName>Zip Ties</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\ZipTies_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="PolyCarbonate" Amount="0.002" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>1</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="ZipTies" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>BallValveX100</SubtypeId>
+			</Id>
+			<DisplayName>Ball Valves x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\BallValve_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Rubber" Amount="3" />
+				<Item TypeId="Ingot" SubtypeId="945Steel" Amount="15" />
+				<Item TypeId="Ingot" SubtypeId="Brass" Amount="11.5" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>25</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="BallValve" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>BallValveX10</SubtypeId>
+			</Id>
+			<DisplayName>Ball Valves x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\BallValve_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Rubber" Amount="0.3" />
+				<Item TypeId="Ingot" SubtypeId="945Steel" Amount="1.5" />
+				<Item TypeId="Ingot" SubtypeId="Brass" Amount="1.15" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="BallValve" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>BallValve</SubtypeId>
+			</Id>
+			<DisplayName>Ball Valve</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\BallValve_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Rubber" Amount="0.03" />
+				<Item TypeId="Ingot" SubtypeId="945Steel" Amount="0.15" />
+				<Item TypeId="Ingot" SubtypeId="Brass" Amount="0.115" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>1</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="BallValve" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>ChainX100</SubtypeId>
+			</Id>
+			<DisplayName>Chains x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\Chain_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="945Steel" Amount="50" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>75</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Chain" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>ChainX10</SubtypeId>
+			</Id>
+			<DisplayName>Chains x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\Chain_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="945Steel" Amount="5" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Chain" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Chain</SubtypeId>
+			</Id>
+			<DisplayName>Chain</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\Chain_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="945Steel" Amount="0.5" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Chain" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>BeltX100</SubtypeId>
+			</Id>
+			<DisplayName>Belts x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\Belt_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Rubber" Amount="10" />
+				<Item TypeId="Component" SubtypeId="BareSteelWire" Amount="20" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>50</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Belt" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>BeltX10</SubtypeId>
+			</Id>
+			<DisplayName>Belts x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\Belt_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Rubber" Amount="1" />
+				<Item TypeId="Component" SubtypeId="BareSteelWire" Amount="2" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Belt" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Belt</SubtypeId>
+			</Id>
+			<DisplayName>Belt</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\Belt_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Rubber" Amount="0.1" />
+				<Item TypeId="Component" SubtypeId="BareSteelWire" Amount="0.2" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Belt" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>AluminumPistonX100</SubtypeId>
+			</Id>
+			<DisplayName>Aluminum Pistons x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\AluminumPiston_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Aluminum" Amount="127.5" />
+				<Item TypeId="Ingot" SubtypeId="Silicon" Amount="42.5" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>50</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="AluminumPiston" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>AluminumPistonX10</SubtypeId>
+			</Id>
+			<DisplayName>Aluminum Pistons x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\AluminumPiston_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Aluminum" Amount="12.75" />
+				<Item TypeId="Ingot" SubtypeId="Silicon" Amount="4.25" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="AluminumPiston" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>AluminumPiston</SubtypeId>
+			</Id>
+			<DisplayName>Aluminum Piston</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\AluminumPiston_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Aluminum" Amount="1.275" />
+				<Item TypeId="Ingot" SubtypeId="Silicon" Amount="0.425" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="AluminumPiston" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>TitaniumPistonX100</SubtypeId>
+			</Id>
+			<DisplayName>Titanium Pistons x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\TitaniumPiston_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Titanium" Amount="250" />
+				<Item TypeId="Ingot" SubtypeId="Silicon" Amount="34" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>100</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="TitaniumPiston" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>TitaniumPistonX10</SubtypeId>
+			</Id>
+			<DisplayName>Titanium Pistons x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\TitaniumPiston_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Titanium" Amount="25" />
+				<Item TypeId="Ingot" SubtypeId="Silicon" Amount="3.4" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>20</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="TitaniumPiston" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>TitaniumPiston</SubtypeId>
+			</Id>
+			<DisplayName>Titanium Piston</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\TitaniumPiston_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Titanium" Amount="2.5" />
+				<Item TypeId="Ingot" SubtypeId="Silicon" Amount="0.34" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>4</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="TitaniumPiston" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>SteelStemValveX100</SubtypeId>
+			</Id>
+			<DisplayName>Steel Valves x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\SteelStemValve_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="945Steel" Amount="45" />
+				<Item TypeId="Ingot" SubtypeId="Silicon" Amount="1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>50</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="SteelStemValve" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>SteelStemValveX10</SubtypeId>
+			</Id>
+			<DisplayName>Steel Valves x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\SteelStemValve_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="945Steel" Amount="4.5" />
+				<Item TypeId="Ingot" SubtypeId="Silicon" Amount="0.1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="SteelStemValve" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>SteelStemValve</SubtypeId>
+			</Id>
+			<DisplayName>Steel Valve</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\SteelStemValve_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="945Steel" Amount="0.45" />
+				<Item TypeId="Ingot" SubtypeId="Silicon" Amount="0.01" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="SteelStemValve" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>NitinolStemValveX100</SubtypeId>
+			</Id>
+			<DisplayName>Nitinol Valves x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\NitinolStemValve_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Nitinol" Amount="37" />
+				<Item TypeId="Ingot" SubtypeId="Silicon" Amount="1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>100</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="NitinolStemValve" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>NitinolStemValveX10</SubtypeId>
+			</Id>
+			<DisplayName>Nitinol Valves x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\NitinolStemValve_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Nitinol" Amount="3.7" />
+				<Item TypeId="Ingot" SubtypeId="Silicon" Amount="0.1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>20</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="NitinolStemValve" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>NitinolStemValve</SubtypeId>
+			</Id>
+			<DisplayName>Nitinol Valve</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\NitinolStemValve_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Nitinol" Amount="0.37" />
+				<Item TypeId="Ingot" SubtypeId="Silicon" Amount="0.01" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>4</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="NitinolStemValve" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>BladderX100</SubtypeId>
+			</Id>
+			<DisplayName>Bladders x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\Bladder_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Rubber" Amount="55" />
+				<Item TypeId="Component" SubtypeId="RubberHose" Amount="1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>100</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Bladder" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>BladderX10</SubtypeId>
+			</Id>
+			<DisplayName>Bladders x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\Bladder_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Rubber" Amount="5.5" />
+				<Item TypeId="Component" SubtypeId="RubberHose" Amount="0.1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>20</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Bladder" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Bladder</SubtypeId>
+			</Id>
+			<DisplayName>Bladder</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\Bladder_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Rubber" Amount="0.55" />
+				<Item TypeId="Component" SubtypeId="RubberHose" Amount="0.01" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>4</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Bladder" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>CanvasX100</SubtypeId>
+			</Id>
+			<DisplayName>Canvas x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Cartridge_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="PolyCarbonate" Amount="1200" />
+				<Item TypeId="Ingot" SubtypeId="Silicon" Amount="200" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>75</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Canvas" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>CanvasX10</SubtypeId>
+			</Id>
+			<DisplayName>Canvas x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Cartridge_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="PolyCarbonate" Amount="120" />
+				<Item TypeId="Ingot" SubtypeId="Silicon" Amount="20" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Canvas" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Canvas</SubtypeId>
+			</Id>
+			<DisplayName>Canvas</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Cartridge_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="PolyCarbonate" Amount="12" />
+				<Item TypeId="Ingot" SubtypeId="Silicon" Amount="2" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Canvas" Amount="1" />
+			</Results>
+		</Blueprint>
+	</Blueprints>
+</Definitions>

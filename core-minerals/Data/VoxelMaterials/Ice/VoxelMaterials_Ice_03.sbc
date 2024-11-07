@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <VoxelMaterials>
+        <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">            <!-- Ice_03 -->
+            <Id>
+                <TypeId>VoxelMaterialDefinition</TypeId>
+                <SubtypeId>Ice_03</SubtypeId>
+            </Id>
+            <MaterialTypeName>Ice</MaterialTypeName>
+            <MinedOre>Ice</MinedOre>
+            <MinedOreRatio>1</MinedOreRatio>
+            <MinedOreRatio>5</MinedOreRatio>
+            <CanBeHarvested>true</CanBeHarvested>
+            <IsRare>true</IsRare>
+            <SpawnsInAsteroids>false</SpawnsInAsteroids>
+            <AsteroidGeneratorSpawnProbabilityMultiplier>5</AsteroidGeneratorSpawnProbabilityMultiplier>
+
+            <MinVersion>1</MinVersion>
+            <VoxelHandPreview>Textures\Voxels\Ice_03_Thumbnail.dds</VoxelHandPreview>
+            <ColorMetalXZnY>Textures\Voxels\Ice_03_cm.dds</ColorMetalXZnY>
+            <NormalGlossXZnY>Textures\Voxels\Ice_03_ng.dds</NormalGlossXZnY>
+            <ExtXZnY>Textures\Voxels\Ice_03_add.dds</ExtXZnY>
+
+            <SimpleTilingSetup>
+                <ExtDetailScale>0.005</ExtDetailScale>
+                <Scale>2</Scale>
+                <InitialDistance>4</InitialDistance>
+                <InitialScale>4</InitialScale>
+                <ScaleMultiplier>4</ScaleMultiplier>
+                <DistanceMultiplier>4</DistanceMultiplier>
+
+                <Far3Distance>50000</Far3Distance>
+            </SimpleTilingSetup>
+
+            <ExtDetailScale>0.005</ExtDetailScale>
+            <Scale>2</Scale>
+            <InitialDistance>4</InitialDistance>
+            <InitialScale>2</InitialScale>
+            <ScaleMultiplier>8</ScaleMultiplier>
+            <DistanceMultiplier>3</DistanceMultiplier>
+            <TilingScale>64</TilingScale>
+
+            <Far1Distance>30</Far1Distance>
+            <Far1Scale>150</Far1Scale>
+
+            <Far2Distance>120</Far2Distance>
+            <Far2Scale>1000</Far2Scale>
+
+
+            <Far3Distance>50000</Far3Distance>
+            <Far3Color>
+                <X>0.045</X>
+                <Y>0.08</Y>
+                <Z>0.09</Z>
+                <W>1.0</W>
+            </Far3Color>
+
+            <Friction>0.15</Friction>
+            <Restitution>0.9</Restitution>
+
+            <ColorKey Hex="#DD9B28" />
+            <LandingEffect>Landing_Jet_Ground_Snow</LandingEffect>
+        </VoxelMaterial>
+    </VoxelMaterials>
+</Definitions>

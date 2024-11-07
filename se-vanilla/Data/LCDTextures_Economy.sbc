@@ -1,0 +1,230 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <LCDTextures>
+
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="StoreBlock2" />
+            <LocalizationId>LCD_Economy_StoreBlock</LocalizationId>
+            <TexturePath>Textures\Models\LCD_Economy_1.dds</TexturePath>
+            <SpritePath>Textures\Sprites\LCD_Economy_1.dds</SpritePath>
+            <Selectable>true</Selectable>
+        </LCDTextureDefinition>
+
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="LCD_Economy_Charts" />
+            <LocalizationId>LCD_Economy_Charts</LocalizationId>
+            <TexturePath>Textures\Models\LCD_Economy_Charts.dds</TexturePath>
+            <SpritePath>Textures\Sprites\LCD_Economy_Charts.dds</SpritePath>
+            <Selectable>true</Selectable>
+        </LCDTextureDefinition>
+
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="LCD_Economy_SC_Here" />
+            <LocalizationId>LCD_Economy_SC_Here</LocalizationId>
+            <TexturePath>Textures\Models\LCD_Economy_SC_Here.dds</TexturePath>
+            <SpritePath>Textures\Sprites\LCD_Economy_SC_Here.dds</SpritePath>
+            <Selectable>true</Selectable>
+        </LCDTextureDefinition>
+
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="LCD_Economy_Coins" />
+            <LocalizationId>LCD_Economy_Coins</LocalizationId>
+            <TexturePath>Textures\Models\LCD_Economy_Coins.dds</TexturePath>
+            <SpritePath>Textures\Sprites\LCD_Economy_Coins.dds</SpritePath>
+            <Selectable>true</Selectable>
+        </LCDTextureDefinition>
+
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="LCD_Economy_SingleCoin" />
+            <LocalizationId>LCD_Economy_SingleCoin</LocalizationId>
+            <TexturePath>Textures\Models\LCD_Economy_SingleCoin.dds</TexturePath>
+            <SpritePath>Textures\Sprites\LCD_Economy_SingleCoin.dds</SpritePath>
+            <Selectable>true</Selectable>
+        </LCDTextureDefinition>
+
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="LCD_Economy_SC_Logo" />
+            <LocalizationId>LCD_Economy_SC_Logo</LocalizationId>
+            <TexturePath>Textures\Models\LCD_Economy_SC_Logo.dds</TexturePath>
+            <SpritePath>Textures\Sprites\LCD_Economy_SC_Logo.dds</SpritePath>
+            <Selectable>true</Selectable>
+        </LCDTextureDefinition>
+
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="LCD_Economy_SC_Blueprint" />
+            <LocalizationId>LCD_SC_Blueprint</LocalizationId>
+            <TexturePath>Textures\Models\LCD_Economy_Blueprint.dds</TexturePath>
+            <SpritePath>Textures\Sprites\LCD_Economy_Blueprint.dds</SpritePath>
+            <Selectable>true</Selectable>
+        </LCDTextureDefinition>
+
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="LCD_Economy_SC_Logo_2" />
+            <LocalizationId>LCD_SC_Logo_2</LocalizationId>
+            <TexturePath>Textures\Models\LCD_Economy_SC_Logo_2.dds</TexturePath>
+            <SpritePath>Textures\Sprites\LCD_Economy_SC_Logo_2.dds</SpritePath>
+            <Selectable>true</Selectable>
+        </LCDTextureDefinition>
+
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="LCD_Economy_Faction_1" />
+            <LocalizationId>LCD_Economy_Faction_1</LocalizationId>
+            <TexturePath>Textures\Models\LCD_Economy_Faction_1.dds</TexturePath>
+            <SpritePath>Textures\Sprites\LCD_Economy_Faction_1.dds</SpritePath>
+            <Selectable>true</Selectable>
+        </LCDTextureDefinition>
+
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="LCD_Economy_Poster_1" />
+            <LocalizationId>LCD_Economy_Poster_1</LocalizationId>
+            <TexturePath>Textures\Models\LCD_Economy_Poster_1.dds</TexturePath>
+            <SpritePath>Textures\Sprites\LCD_Economy_Poster_1.dds</SpritePath>
+            <Selectable>true</Selectable>
+        </LCDTextureDefinition>
+
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="LCD_Economy_Trade" />
+            <LocalizationId>LCD_Economy_Trade</LocalizationId>
+            <TexturePath>Textures\Models\LCD_Economy_Trade.dds</TexturePath>
+            <SpritePath>Textures\Sprites\LCD_Economy_Trade.dds</SpritePath>
+            <Selectable>true</Selectable>
+        </LCDTextureDefinition>
+
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="LCD_Economy_Clear" />
+            <LocalizationId>LCD_Economy_Clear</LocalizationId>
+            <TexturePath>Textures\Models\LCD_Economy_Clear.dds</TexturePath>
+            <SpritePath>Textures\Sprites\LCD_Economy_Clear.dds</SpritePath>
+            <Selectable>true</Selectable>
+        </LCDTextureDefinition>
+
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="LCD_Economy_Graph" />
+            <LocalizationId>LCD_Economy_Graph_1</LocalizationId>
+            <TexturePath>Textures\Models\LCD_Economy_Graph_1.dds</TexturePath>
+            <SpritePath>Textures\Sprites\LCD_Economy_Graph_1.dds</SpritePath>
+            <Selectable>true</Selectable>
+        </LCDTextureDefinition>
+
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="LCD_Economy_Graph_2" />
+            <LocalizationId>LCD_Economy_Graph_2</LocalizationId>
+            <TexturePath>Textures\Models\LCD_Economy_Graph_2.dds</TexturePath>
+            <SpritePath>Textures\Sprites\LCD_Economy_Graph_2.dds</SpritePath>
+            <Selectable>true</Selectable>
+        </LCDTextureDefinition>
+
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="LCD_Economy_Graph_3" />
+            <LocalizationId>LCD_Economy_Graph_3</LocalizationId>
+            <TexturePath>Textures\Models\LCD_Economy_Graph_3.dds</TexturePath>
+            <SpritePath>Textures\Sprites\LCD_Economy_Graph_3.dds</SpritePath>
+            <Selectable>true</Selectable>
+        </LCDTextureDefinition>
+
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="LCD_Economy_Graph_4" />
+            <LocalizationId>LCD_Economy_Graph_4</LocalizationId>
+            <TexturePath>Textures\Models\LCD_Economy_Graph_4.dds</TexturePath>
+            <SpritePath>Textures\Sprites\LCD_Economy_Graph_4.dds</SpritePath>
+            <Selectable>true</Selectable>
+        </LCDTextureDefinition>
+
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="LCD_Economy_Graph_5" />
+            <LocalizationId>LCD_Economy_Graph_5</LocalizationId>
+            <TexturePath>Textures\Models\LCD_Economy_Graph_5.dds</TexturePath>
+            <SpritePath>Textures\Sprites\LCD_Economy_Graph_5.dds</SpritePath>
+            <Selectable>true</Selectable>
+        </LCDTextureDefinition>
+
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="LCD_Economy_SE_Logo_1" />
+            <LocalizationId>LCD_Economy_SE_Logo_1</LocalizationId>
+            <TexturePath>Textures\Models\LCD_Economy_SE_Logo_1.dds</TexturePath>
+            <SpritePath>Textures\Sprites\LCD_Economy_SE_Logo_1.dds</SpritePath>
+            <Selectable>true</Selectable>
+        </LCDTextureDefinition>
+
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="LCD_Economy_SE_Logo_2" />
+            <LocalizationId>LCD_Economy_SE_Logo_2</LocalizationId>
+            <TexturePath>Textures\Models\LCD_Economy_SE_Logo_2.dds</TexturePath>
+            <SpritePath>Textures\Sprites\LCD_Economy_SE_Logo_2.dds</SpritePath>
+            <Selectable>true</Selectable>
+        </LCDTextureDefinition>
+
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="LCD_Economy_Blueprint_2" />
+            <LocalizationId>LCD_Economy_Blueprint_2</LocalizationId>
+            <TexturePath>Textures\Models\LCD_Economy_Blueprint_2.dds</TexturePath>
+            <SpritePath>Textures\Sprites\LCD_Economy_Blueprint_2.dds</SpritePath>
+            <Selectable>true</Selectable>
+        </LCDTextureDefinition>
+
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="LCD_Economy_Blueprint_3" />
+            <LocalizationId>LCD_Economy_Blueprint_3</LocalizationId>
+            <TexturePath>Textures\Models\LCD_Economy_Blueprint_3.dds</TexturePath>
+            <SpritePath>Textures\Sprites\LCD_Economy_Blueprint_3.dds</SpritePath>
+            <Selectable>true</Selectable>
+        </LCDTextureDefinition>
+
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="LCD_Economy_Trinity" />
+            <LocalizationId>LCD_Economy_Trinity</LocalizationId>
+            <TexturePath>Textures\Models\LCD_Economy_Trinity.dds</TexturePath>
+            <SpritePath>Textures\Sprites\LCD_Economy_Trinity.dds</SpritePath>
+            <Selectable>true</Selectable>
+        </LCDTextureDefinition>
+
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="LCD_Economy_KeenSWH" />
+            <LocalizationId>LCD_Economy_KeenSWH</LocalizationId>
+            <TexturePath>Textures\Models\LCD_Economy_KeenSWH.dds</TexturePath>
+            <SpritePath>Textures\Sprites\LCD_Economy_KeenSWH.dds</SpritePath>
+            <Selectable>true</Selectable>
+        </LCDTextureDefinition>
+
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="LCD_Economy_Badge" />
+            <LocalizationId>LCD_Economy_Badge</LocalizationId>
+            <TexturePath>Textures\Models\LCD_Economy_Badge.dds</TexturePath>
+            <SpritePath>Textures\Sprites\LCD_Economy_Economy_Badge.dds</SpritePath>
+            <Selectable>true</Selectable>
+        </LCDTextureDefinition>
+
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="LCD_Economy_Vending_Bg" />
+            <LocalizationId>LCD_Economy_Badge</LocalizationId>
+            <TexturePath>Textures\Models\LCD_Economy_VendingMachine.dds</TexturePath>
+            <SpritePath>Textures\Sprites\LCD_Economy_VendingMachine.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="Screen_LoadingBar" />
+            <LocalizationId>LCD_Economy_Badge</LocalizationId>
+            <TexturePath>Textures\Models\screen_loading_wheel.dds</TexturePath>
+            <SpritePath>Textures\GUI\Screens\screen_loading_wheel.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="Screen_LoadingBar2" />
+            <LocalizationId>LCD_Economy_Badge</LocalizationId>
+            <TexturePath>Textures\Models\screen_loading_wheel_loading_screen.dds</TexturePath>
+            <SpritePath>Textures\GUI\Screens\screen_loading_wheel_loading_screen.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="LCD_Economy_Detail" />
+            <LocalizationId>LCD_Economy_Badge</LocalizationId>
+            <TexturePath>Textures\Models\LCD_Economy_Detail.dds</TexturePath>
+            <SpritePath>Textures\Sprites\LCD_Economy_Detail.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+
+    </LCDTextures>
+</Definitions>

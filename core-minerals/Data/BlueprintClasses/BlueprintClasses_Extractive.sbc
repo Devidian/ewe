@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BlueprintClassEntries>
+
+    <!-- Vanilla SurvivalKit -->
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_Stone_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_DesertRock_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_MarsRocks_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_Anorthite_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_AlienRock_01_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_Sand_02_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_AlienSand_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_Soil_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_MarsSoil_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_Regolith_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_AlienSoil_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_Organic_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_AlienOrganic_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_AminoAcids_OreToIngot" />
+
+    <!-- Vanilla Basic Refinery -->
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_Stone_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_DesertRock_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_MarsRocks_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_Anorthite_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_AlienRock_01_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_Sand_02_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_AlienSand_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_Soil_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_MarsSoil_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_Regolith_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_AlienSoil_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_Organic_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_AlienOrganic_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_AminoAcids_OreToIngot" />
+
+    <!-- Vanilla Refinery -->
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_Stone_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_DesertRock_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_MarsRocks_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_Anorthite_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_AlienRock_01_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_Sand_02_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_AlienSand_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_Soil_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_MarsSoil_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_Regolith_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_AlienSoil_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_Organic_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_AlienOrganic_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_AminoAcids_OreToIngot" />
+
+  </BlueprintClassEntries>
+</Definitions>

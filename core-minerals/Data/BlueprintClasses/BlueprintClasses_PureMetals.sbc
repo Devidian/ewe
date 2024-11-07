@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BlueprintClassEntries>
+    <!-- Vanilla SurvivalKit -->
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_Aluminum_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_Iron_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_Titanium_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_Copper_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_Cobalt_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_Nickel_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_Tin_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_Silver_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_Gold_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_Lead_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_Magnesium_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_Silicon_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_Zinc_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_Platinum_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_Molybdenum_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_Zirconium_OreToIngot" />
+
+    <!-- Vanilla Basic Refinery -->
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_Aluminum_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_Iron_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_Titanium_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_Copper_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_Cobalt_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_Nickel_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_Tin_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_Silver_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_Gold_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_Lead_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_Magnesium_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_Silicon_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_Zinc_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_Platinum_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_Molybdenum_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_Zirconium_OreToIngot" />
+
+    <!-- Vanilla Refinery -->
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_Aluminum_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_Iron_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_Titanium_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_Copper_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_Cobalt_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_Nickel_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_Tin_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_Silver_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_Gold_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_Lead_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_Magnesium_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_Silicon_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_Zinc_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_Platinum_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_Molybdenum_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_Zirconium_OreToIngot" />
+  </BlueprintClassEntries>
+</Definitions>

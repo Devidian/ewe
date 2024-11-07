@@ -1,0 +1,296 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <EmissiveColorStatePresets>
+        <!--
+    Blocks use these states:
+      Working - block is functional
+      Disabled - block has no power or is not enabled
+      Damaged - block is not functional (damaged)
+      Warning - used by some blocks to when the block is not working correctly (for example used by vent when the room is not presurized)
+      Alternative - used by some blocks that it is working in different way than default one (for example used by vent when depressurizing)
+      Locked - Used by connector type blocks when they are locked with each other
+      Autolock - Used by landing gear
+      Constraint - Used by connector type block when they are close enough and are not locked
+    -->
+
+        <EmissiveColorStatePreset>
+            <Id>
+                <TypeId>MyObjectBuilder_EmissiveColorStatePresetDefinition</TypeId>
+                <SubtypeId>Default</SubtypeId>
+            </Id>
+            <EmissiveStates>
+                <EmissiveState StateName="Damaged" EmissiveColorName="Black" DisplayColorName="Black" Emissivity="0" />
+                <EmissiveState StateName="Disabled" EmissiveColorName="Red" DisplayColorName="White" Emissivity="0.5" />
+                <EmissiveState StateName="Working" EmissiveColorName="Green" DisplayColorName="White" Emissivity="1" />
+                <EmissiveState StateName="Warning" EmissiveColorName="Yellow" DisplayColorName="White" Emissivity="1" />
+            </EmissiveStates>
+        </EmissiveColorStatePreset>
+
+        <EmissiveColorStatePreset>
+            <Id>
+                <TypeId>MyObjectBuilder_EmissiveColorStatePresetDefinition</TypeId>
+                <SubtypeId>Extended</SubtypeId>
+            </Id>
+            <EmissiveStates>
+                <EmissiveState StateName="Damaged" EmissiveColorName="Black" DisplayColorName="Black" Emissivity="0" />
+                <EmissiveState StateName="Disabled" EmissiveColorName="Red" DisplayColorName="White" Emissivity="0.5" />
+                <EmissiveState StateName="Working" EmissiveColorName="Green" DisplayColorName="White" Emissivity="1" />
+                <EmissiveState StateName="Warning" EmissiveColorName="Yellow" DisplayColorName="White" Emissivity="1" />
+                <EmissiveState StateName="Alternative" EmissiveColorName="LightBlue" DisplayColorName="White" Emissivity="1" />
+            </EmissiveStates>
+        </EmissiveColorStatePreset>
+
+        <EmissiveColorStatePreset>
+            <Id>
+                <TypeId>MyObjectBuilder_EmissiveColorStatePresetDefinition</TypeId>
+                <SubtypeId>Timer</SubtypeId>
+            </Id>
+            <EmissiveStates>
+                <EmissiveState StateName="Damaged" EmissiveColorName="Black" DisplayColorName="Black" Emissivity="0" />
+                <EmissiveState StateName="Disabled" EmissiveColorName="Red" DisplayColorName="White" Emissivity="0.5" />
+                <EmissiveState StateName="Working" EmissiveColorName="Green" DisplayColorName="White" Emissivity="1" />
+                <EmissiveState StateName="Warning" EmissiveColorName="LightBlue" DisplayColorName="White" Emissivity="1" />
+                <EmissiveState StateName="Alternative" EmissiveColorName="Blue" DisplayColorName="White" Emissivity="1" />
+                <EmissiveState StateName="Locked" EmissiveColorName="Yellow" DisplayColorName="White" Emissivity="1" />
+            </EmissiveStates>
+        </EmissiveColorStatePreset>
+
+        <EmissiveColorStatePreset>
+            <Id>
+                <TypeId>MyObjectBuilder_EmissiveColorStatePresetDefinition</TypeId>
+                <SubtypeId>Welder</SubtypeId>
+            </Id>
+            <EmissiveStates>
+                <EmissiveState StateName="Working" EmissiveColorName="Red" DisplayColorName="White" Emissivity="1" />
+                <EmissiveState StateName="Disabled" EmissiveColorName="Black" DisplayColorName="Black" Emissivity="0" />
+            </EmissiveStates>
+        </EmissiveColorStatePreset>
+
+        <EmissiveColorStatePreset>
+            <Id>
+                <TypeId>MyObjectBuilder_EmissiveColorStatePresetDefinition</TypeId>
+                <SubtypeId>Beacon</SubtypeId>
+            </Id>
+            <EmissiveStates>
+                <EmissiveState StateName="Working" EmissiveColorName="LightYellow" DisplayColorName="White" Emissivity="1" />
+                <EmissiveState StateName="Disabled" EmissiveColorName="DarkGray" DisplayColorName="White" Emissivity="0" />
+            </EmissiveStates>
+        </EmissiveColorStatePreset>
+
+        <EmissiveColorStatePreset>
+            <Id>
+                <TypeId>MyObjectBuilder_EmissiveColorStatePresetDefinition</TypeId>
+                <SubtypeId>GravityBlock</SubtypeId>
+            </Id>
+            <EmissiveStates>
+                <EmissiveState StateName="Damaged" EmissiveColorName="Black" DisplayColorName="Black" Emissivity="0" />
+                <EmissiveState StateName="Disabled" EmissiveColorName="Red" DisplayColorName="White" Emissivity="0.5" />
+                <EmissiveState StateName="Working" EmissiveColorName="Green" DisplayColorName="White" Emissivity="1" />
+            </EmissiveStates>
+        </EmissiveColorStatePreset>
+
+        <EmissiveColorStatePreset>
+            <Id>
+                <TypeId>MyObjectBuilder_EmissiveColorStatePresetDefinition</TypeId>
+                <SubtypeId>ConnectBlock</SubtypeId>
+            </Id>
+            <EmissiveStates>
+                <EmissiveState StateName="Damaged" EmissiveColorName="Black" DisplayColorName="Black" Emissivity="0" />
+                <EmissiveState StateName="Disabled" EmissiveColorName="Red" DisplayColorName="White" Emissivity="0.5" />
+                <EmissiveState StateName="Working" EmissiveColorName="Gray" DisplayColorName="White" Emissivity="1" />
+                <EmissiveState StateName="Constraint" EmissiveColorName="Yellow" DisplayColorName="White" Emissivity="1" />
+                <EmissiveState StateName="Locked" EmissiveColorName="Green" DisplayColorName="White" Emissivity="1" />
+                <EmissiveState StateName="Autolock" EmissiveColorName="LightBlue" DisplayColorName="White" Emissivity="1" />
+            </EmissiveStates>
+        </EmissiveColorStatePreset>
+
+        <EmissiveColorStatePreset>
+            <Id>
+                <TypeId>MyObjectBuilder_EmissiveColorStatePresetDefinition</TypeId>
+                <SubtypeId>UnpoweredOccupancy</SubtypeId>
+            </Id>
+            <EmissiveStates>
+                <EmissiveState StateName="Damaged" EmissiveColorName="Black" DisplayColorName="Black" Emissivity="0" />
+                <EmissiveState StateName="Disabled" EmissiveColorName="White" DisplayColorName="White" Emissivity="0.5" />
+                <EmissiveState StateName="Working" EmissiveColorName="White" DisplayColorName="White" Emissivity="1" />
+                <EmissiveState StateName="Warning" EmissiveColorName="White" DisplayColorName="White" Emissivity="1" />
+                <EmissiveState StateName="Alternative" EmissiveColorName="LightBlue" DisplayColorName="White" Emissivity="1" />
+            </EmissiveStates>
+        </EmissiveColorStatePreset>
+
+        <EmissiveColorStatePreset>
+            <Id>
+                <TypeId>MyObjectBuilder_EmissiveColorStatePresetDefinition</TypeId>
+                <SubtypeId>Basic</SubtypeId>
+            </Id>
+            <EmissiveStates>
+                <EmissiveState StateName="Damaged" EmissiveColorName="Black" DisplayColorName="Black" Emissivity="0" />
+                <EmissiveState StateName="Disabled" EmissiveColorName="White" DisplayColorName="White" Emissivity="0.5" />
+                <EmissiveState StateName="Working" EmissiveColorName="White" DisplayColorName="White" Emissivity="1" />
+                <EmissiveState StateName="Warning" EmissiveColorName="White" DisplayColorName="White" Emissivity="1" />
+            </EmissiveStates>
+        </EmissiveColorStatePreset>
+
+        <EmissiveColorStatePreset>
+            <Id>
+                <TypeId>MyObjectBuilder_EmissiveColorStatePresetDefinition</TypeId>
+                <SubtypeId>EventController</SubtypeId>
+            </Id>
+            <EmissiveStates>
+                <EmissiveState StateName="Damaged" EmissiveColorName="Black" DisplayColorName="Black" Emissivity="0" />
+                <EmissiveState StateName="Disabled" EmissiveColorName="Red" DisplayColorName="White" Emissivity="0.5" />
+                <EmissiveState StateName="Working" EmissiveColorName="Green" DisplayColorName="White" Emissivity="1" />
+                <EmissiveState StateName="State0" EmissiveColorName="LightBlue" DisplayColorName="White" Emissivity="1" />
+                <EmissiveState StateName="State1" EmissiveColorName="Blue" DisplayColorName="White" Emissivity="1" />
+            </EmissiveStates>
+        </EmissiveColorStatePreset>
+
+    </EmissiveColorStatePresets>
+
+    <EmissiveColors>
+
+        <EmissiveColor>
+            <Id>
+                <TypeId>MyObjectBuilder_EmissiveColorDefinition</TypeId>
+                <SubtypeId>Red</SubtypeId>
+            </Id>
+            <ColorDefinition>
+                <R>255</R>
+                <G>0</G>
+                <B>0</B>
+                <A>255</A>
+            </ColorDefinition>
+        </EmissiveColor>
+
+        <EmissiveColor>
+            <Id>
+                <TypeId>MyObjectBuilder_EmissiveColorDefinition</TypeId>
+                <SubtypeId>Orange</SubtypeId>
+            </Id>
+            <ColorDefinition>
+                <R>255</R>
+                <G>128</G>
+                <B>0</B>
+                <A>255</A>
+            </ColorDefinition>
+        </EmissiveColor>
+
+        <EmissiveColor>
+            <Id>
+                <TypeId>MyObjectBuilder_EmissiveColorDefinition</TypeId>
+                <SubtypeId>Green</SubtypeId>
+            </Id>
+            <ColorDefinition>
+                <R>10</R>
+                <G>255</G>
+                <B>0</B>
+                <A>255</A>
+            </ColorDefinition>
+        </EmissiveColor>
+
+        <EmissiveColor>
+            <Id>
+                <TypeId>MyObjectBuilder_EmissiveColorDefinition</TypeId>
+                <SubtypeId>Black</SubtypeId>
+            </Id>
+            <ColorDefinition>
+                <R>0</R>
+                <G>0</G>
+                <B>0</B>
+                <A>255</A>
+            </ColorDefinition>
+        </EmissiveColor>
+
+        <EmissiveColor>
+            <Id>
+                <TypeId>MyObjectBuilder_EmissiveColorDefinition</TypeId>
+                <SubtypeId>White</SubtypeId>
+            </Id>
+            <ColorDefinition>
+                <R>255</R>
+                <G>255</G>
+                <B>255</B>
+                <A>255</A>
+            </ColorDefinition>
+        </EmissiveColor>
+
+        <EmissiveColor>
+            <Id>
+                <TypeId>MyObjectBuilder_EmissiveColorDefinition</TypeId>
+                <SubtypeId>Yellow</SubtypeId>
+            </Id>
+            <ColorDefinition>
+                <R>255</R>
+                <G>255</G>
+                <B>0</B>
+                <A>255</A>
+            </ColorDefinition>
+        </EmissiveColor>
+
+        <EmissiveColor>
+            <Id>
+                <TypeId>MyObjectBuilder_EmissiveColorDefinition</TypeId>
+                <SubtypeId>LightBlue</SubtypeId>
+            </Id>
+            <ColorDefinition>
+                <R>0</R>
+                <G>255</G>
+                <B>255</B>
+                <A>255</A>
+            </ColorDefinition>
+        </EmissiveColor>
+
+        <EmissiveColor>
+            <Id>
+                <TypeId>MyObjectBuilder_EmissiveColorDefinition</TypeId>
+                <SubtypeId>Blue</SubtypeId>
+            </Id>
+            <ColorDefinition>
+                <R>0</R>
+                <G>0</G>
+                <B>255</B>
+                <A>255</A>
+            </ColorDefinition>
+        </EmissiveColor>
+
+        <EmissiveColor>
+            <Id>
+                <TypeId>MyObjectBuilder_EmissiveColorDefinition</TypeId>
+                <SubtypeId>Gray</SubtypeId>
+            </Id>
+            <ColorDefinition>
+                <R>128</R>
+                <G>128</G>
+                <B>128</B>
+                <A>255</A>
+            </ColorDefinition>
+        </EmissiveColor>
+
+        <EmissiveColor>
+            <Id>
+                <TypeId>MyObjectBuilder_EmissiveColorDefinition</TypeId>
+                <SubtypeId>LightYellow</SubtypeId>
+            </Id>
+            <ColorDefinition>
+                <R>255</R>
+                <G>255</G>
+                <B>128</B>
+                <A>255</A>
+            </ColorDefinition>
+        </EmissiveColor>
+
+        <EmissiveColor>
+            <Id>
+                <TypeId>MyObjectBuilder_EmissiveColorDefinition</TypeId>
+                <SubtypeId>DarkGray</SubtypeId>
+            </Id>
+            <ColorDefinition>
+                <R>30</R>
+                <G>30</G>
+                <B>30</B>
+                <A>255</A>
+            </ColorDefinition>
+        </EmissiveColor>
+
+    </EmissiveColors>
+</Definitions>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BlueprintClasses>
+    <Class>
+      <Id>                   
+        <TypeId>BlueprintClassDefinition</TypeId>
+        <SubtypeId>Ammo</SubtypeId>
+      </Id>
+      <DisplayName>Ammo</DisplayName>
+      <Description>Ammo</Description>
+      <Icon>Textures\GUI\Icons\buttons\ammo.dds</Icon>
+      <HighlightIcon>Textures\GUI\Icons\buttons\ammo.dds</HighlightIcon>
+      <FocusIcon>Textures\GUI\Icons\buttons\ammo_focus.dds</FocusIcon>
+      <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
+    </Class>
+  </BlueprintClasses>
+  <BlueprintClassEntries>
+	
+    <Entry Class="Ammo" BlueprintSubtypeId="Cartridge" />
+    <Entry Class="Ammo" BlueprintSubtypeId="Gunpowder" />
+    <Entry Class="Ammo" BlueprintSubtypeId="HighExplosive" />
+    <Entry Class="Ammo" BlueprintSubtypeId="ExplosivesComponent" />
+    <Entry Class="Ammo" BlueprintSubtypeId="Bullet" />
+    <Entry Class="Ammo" BlueprintSubtypeId="FMJ_Bullet" />
+    <Entry Class="Ammo" BlueprintSubtypeId="AP_Bullet" />
+    <Entry Class="Ammo" BlueprintSubtypeId="HEIAP_Bullet" />
+    <Entry Class="Ammo" BlueprintSubtypeId="Primer" />
+    <Entry Class="Ammo" BlueprintSubtypeId="Charge" />
+	
+    <Entry Class="Ammo" BlueprintSubtypeId="NATO_5p56x45mmMagazine" />
+    <Entry Class="Ammo" BlueprintSubtypeId="NATO_25x184mmMagazine" />
+    <Entry Class="Ammo" BlueprintSubtypeId="FMJ_NATO_25x184mm" />
+    <Entry Class="Ammo" BlueprintSubtypeId="AP_NATO_25x184mm" />
+    <Entry Class="Ammo" BlueprintSubtypeId="HEIAP_NATO_25x184mm" />
+    <Entry Class="Ammo" BlueprintSubtypeId="Rocket" />	
+    <Entry Class="Ammo" BlueprintSubtypeId="Burst_Rocket" />
+    <Entry Class="Ammo" BlueprintSubtypeId="Cruise_Missile" />
+    <Entry Class="Ammo" BlueprintSubtypeId="Javelian_CruiseMissile" />
+    <Entry Class="Ammo" BlueprintSubtypeId="Torpedo" />
+    <Entry Class="Ammo" BlueprintSubtypeId="HEAT_Torpedo" />
+	
+  </BlueprintClassEntries>
+</Definitions>

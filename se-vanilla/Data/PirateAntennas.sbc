@@ -1,0 +1,771 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <PirateAntennas>
+		<!-- Builder Factions -->
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>PlanetaryBuilderFaction</SubtypeId>
+            </Id>
+            <Name>Security Systems Active</Name>
+            <SpawnDistance>800</SpawnDistance>
+            <SpawnTimeMs>90000</SpawnTimeMs>
+            <FirstSpawnTimeMs>5000</FirstSpawnTimeMs>
+            <MaxDrones>2</MaxDrones>
+            <SpawnGroups>
+                <Group>DA_TripropAssaultDrone</Group>
+				<Group>DA_TwinTailedShiv</Group>
+            </SpawnGroups>
+        </Antenna>
+		
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>MoonBuilderFaction</SubtypeId>
+            </Id>
+            <Name>Security Systems Armed</Name>
+            <SpawnDistance>800</SpawnDistance>
+            <SpawnTimeMs>90000</SpawnTimeMs>
+            <FirstSpawnTimeMs>5000</FirstSpawnTimeMs>
+            <MaxDrones>2</MaxDrones>
+            <SpawnGroups>
+                <Group>DS_Sentinel</Group>
+				<Group>DS_Enforcer</Group>
+				<Group>DS_Avenger</Group>
+				<Group>DS_Gunboat_B</Group>
+            </SpawnGroups>
+        </Antenna>
+
+		<!-- Miner Factions -->
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>PlanetaryMinerFaction</SubtypeId>
+            </Id>
+            <Name>Defensive Protocols Active</Name>
+            <SpawnDistance>800</SpawnDistance>
+            <SpawnTimeMs>90000</SpawnTimeMs>
+            <FirstSpawnTimeMs>5000</FirstSpawnTimeMs>
+            <MaxDrones>2</MaxDrones>
+            <SpawnGroups>
+                <Group>DA_TripropAssaultDrone</Group>
+				<Group>DA_TwinTailedShiv</Group>
+            </SpawnGroups>
+        </Antenna>
+		
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>MoonMinerFaction</SubtypeId>
+            </Id>
+            <Name>Defensive Protocols Online</Name>
+            <SpawnDistance>800</SpawnDistance>
+            <SpawnTimeMs>90000</SpawnTimeMs>
+            <FirstSpawnTimeMs>5000</FirstSpawnTimeMs>
+            <MaxDrones>2</MaxDrones>
+            <SpawnGroups>
+                <Group>DS_Sentinel</Group>
+				<Group>DS_Enforcer</Group>
+				<Group>DS_Avenger</Group>
+				<Group>DS_Gunboat_B</Group>
+            </SpawnGroups>
+        </Antenna>
+
+		<!-- Trader Factions -->
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>PlanetaryTraderFaction</SubtypeId>
+            </Id>
+            <Name>Security Grid Active</Name>
+            <SpawnDistance>800</SpawnDistance>
+            <SpawnTimeMs>90000</SpawnTimeMs>
+            <FirstSpawnTimeMs>5000</FirstSpawnTimeMs>
+            <MaxDrones>2</MaxDrones>
+            <SpawnGroups>
+                <Group>DA_TripropAssaultDrone</Group>
+				<Group>DA_TwinTailedShiv</Group>
+            </SpawnGroups>
+        </Antenna>
+		
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>MoonTraderFaction</SubtypeId>
+            </Id>
+            <Name>Security Grid Online</Name>
+            <SpawnDistance>800</SpawnDistance>
+            <SpawnTimeMs>90000</SpawnTimeMs>
+            <FirstSpawnTimeMs>5000</FirstSpawnTimeMs>
+            <MaxDrones>2</MaxDrones>
+            <SpawnGroups>
+                <Group>DS_Sentinel</Group>
+				<Group>DS_Enforcer</Group>
+				<Group>DS_Avenger</Group>
+            </SpawnGroups>
+        </Antenna>
+
+		<!-- Military Factions -->
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>PlanetaryMilitaryFaction</SubtypeId>
+            </Id>
+            <Name>Tactical Alert</Name>
+            <SpawnDistance>800</SpawnDistance>
+            <SpawnTimeMs>90000</SpawnTimeMs>
+            <FirstSpawnTimeMs>5000</FirstSpawnTimeMs>
+            <MaxDrones>2</MaxDrones>
+            <SpawnGroups>
+                <Group>DA_TripropAssaultDrone</Group>
+				<Group>DA_TwinTailedShiv</Group>
+            </SpawnGroups>
+        </Antenna>
+		
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>MoonMilitaryFaction</SubtypeId>
+            </Id>
+            <Name>Tactical Systems Online</Name>
+            <SpawnDistance>800</SpawnDistance>
+            <SpawnTimeMs>90000</SpawnTimeMs>
+            <FirstSpawnTimeMs>5000</FirstSpawnTimeMs>
+            <MaxDrones>2</MaxDrones>
+            <SpawnGroups>
+                <Group>DS_Sentinel</Group>
+				<Group>DS_Enforcer</Group>
+				<Group>DS_Avenger</Group>
+				<Group>DS_TwinrailDrone</Group>
+				<Group>DS_Adjudicator</Group>
+            </SpawnGroups>
+        </Antenna>
+
+		<!-- Pirate Factions -->
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>HighProfileEscortMissiles</SubtypeId>
+            </Id>
+            <Name>High Profile Transport Ship</Name>
+            <SpawnDistance>500</SpawnDistance>
+            <SpawnTimeMs>60000</SpawnTimeMs>
+            <FirstSpawnTimeMs>5000</FirstSpawnTimeMs>
+            <MaxDrones>2</MaxDrones>
+            <SpawnGroups>
+                <Group>DS_BummbleMissile</Group>
+            </SpawnGroups>
+        </Antenna>
+
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>PiratePlanetary2</SubtypeId>
+            </Id>
+            <Name>Salvage Yard</Name>
+            <SpawnDistance>500</SpawnDistance>
+            <SpawnTimeMs>300000</SpawnTimeMs>
+            <FirstSpawnTimeMs>1000</FirstSpawnTimeMs>
+            <MaxDrones>1</MaxDrones>
+            <SpawnGroups>
+                <Group>DA_Pirate_TwinTailedShiv</Group>
+                <Group>DA_BullyBot</Group>
+            </SpawnGroups>
+        </Antenna>
+
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>PiratePlanetary3</SubtypeId>
+            </Id>
+            <Name>Stronghold Antenna</Name>
+            <SpawnDistance>200</SpawnDistance>
+            <SpawnTimeMs>300000</SpawnTimeMs>
+            <FirstSpawnTimeMs>1000</FirstSpawnTimeMs>
+            <MaxDrones>2</MaxDrones>
+            <SpawnGroups>
+                <Group>DA_Pirate_TwinTailedShiv</Group>
+                <Group>DA_Pirate_Bastion</Group>
+                <Group>DA_TripropAssaultDrone</Group>
+            </SpawnGroups>
+        </Antenna>
+
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>PiratePlanetary1</SubtypeId>
+            </Id>
+            <Name>Drone Communication Antenna</Name>
+            <SpawnDistance>500</SpawnDistance>
+            <SpawnTimeMs>60000</SpawnTimeMs>
+            <FirstSpawnTimeMs>1000</FirstSpawnTimeMs>
+            <MaxDrones>2</MaxDrones>
+            <SpawnGroups>
+                <Group>DA_TripropAssaultDrone</Group>
+                <Group>DA_Pirate_TwinTailedShiv</Group>
+            </SpawnGroups>
+        </Antenna>
+
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>GunshipPirateTrap</SubtypeId>
+            </Id>
+            <Name>Broken Antenna</Name>
+            <SpawnDistance>1500</SpawnDistance>
+            <SpawnTimeMs>600000</SpawnTimeMs>
+            <FirstSpawnTimeMs>1000</FirstSpawnTimeMs>
+            <MaxDrones>1</MaxDrones>
+            <SpawnGroups>
+                <Group>DS_AutomatedGunShip</Group>
+            </SpawnGroups>
+        </Antenna>
+
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>GunshipPirateMissile</SubtypeId>
+            </Id>
+            <Name>Automated Gunship</Name>
+            <SpawnDistance>300</SpawnDistance>
+            <SpawnTimeMs>120000</SpawnTimeMs>
+            <FirstSpawnTimeMs>30000</FirstSpawnTimeMs>
+            <MaxDrones>1</MaxDrones>
+            <SpawnGroups>
+                <Group>DS_BummbleMissile</Group>
+            </SpawnGroups>
+        </Antenna>
+
+		<!-- Factorum -->
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>StorageFacilityBackup</SubtypeId>
+            </Id>
+            <Name>Storage facility breached</Name>
+            <SpawnDistance>1500</SpawnDistance>
+            <SpawnTimeMs>600000</SpawnTimeMs>
+            <FirstSpawnTimeMs>1000</FirstSpawnTimeMs>
+            <MaxDrones>1</MaxDrones>
+            <SpawnGroups>
+                <Group>DS_HighProfileEscort</Group>
+                <Group>DS_M2Barage</Group>
+            </SpawnGroups>
+        </Antenna>
+		
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>LogisticsFacilityReinforcements</SubtypeId>
+            </Id>
+            <Name>Factorum Communications Relay</Name>
+            <SpawnDistance>1500</SpawnDistance>
+            <SpawnTimeMs>600000</SpawnTimeMs>
+            <FirstSpawnTimeMs>1000</FirstSpawnTimeMs>
+            <MaxDrones>1</MaxDrones>
+            <SpawnGroups>
+                <Group>DS_HighProfileEscort</Group>
+                <Group>DS_M2Barage</Group>
+				<Group>DS_ReclaimerDrone</Group>
+            </SpawnGroups>
+        </Antenna>
+
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>FactorumWarshipMissiles</SubtypeId>
+            </Id>
+            <Name>Factorum Warship</Name>
+            <SpawnDistance>500</SpawnDistance>
+            <SpawnTimeMs>120000</SpawnTimeMs>
+            <FirstSpawnTimeMs>10000</FirstSpawnTimeMs>
+            <MaxDrones>3</MaxDrones>
+            <SpawnGroups>
+                <Group>DS_BummbleMissiles</Group>
+            </SpawnGroups>
+        </Antenna>
+
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>FactorumAmbush</SubtypeId>
+            </Id>
+            <Name>Factorum Signal</Name>
+            <SpawnDistance>1500</SpawnDistance>
+            <SpawnTimeMs>3600000</SpawnTimeMs>
+            <FirstSpawnTimeMs>1000</FirstSpawnTimeMs>
+            <MaxDrones>1</MaxDrones>
+            <SpawnGroups>
+                <Group>FactorumShips</Group>
+                <Group>FactorumWarship</Group>
+            </SpawnGroups>
+        </Antenna>
+        
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>BioResearch</SubtypeId>
+            </Id>
+            <Name>Factorum Research Facility</Name>
+            <SpawnDistance>1000</SpawnDistance>
+            <SpawnTimeMs>300000</SpawnTimeMs>
+            <FirstSpawnTimeMs>60000</FirstSpawnTimeMs>
+            <MaxDrones>1</MaxDrones>
+            <SpawnGroups>
+                <Group>DS_TwinrailDrone</Group>
+            </SpawnGroups>
+        </Antenna>
+
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>Listening Post Drones</SubtypeId>
+            </Id>
+            <Name>Listening Post</Name>
+            <SpawnDistance>200</SpawnDistance>
+            <SpawnTimeMs>300000</SpawnTimeMs>
+            <FirstSpawnTimeMs>3000</FirstSpawnTimeMs>
+            <MaxDrones>2</MaxDrones>
+            <SpawnGroups>
+                <Group>DS_Assault_Support</Group>
+            </SpawnGroups>
+        </Antenna>
+
+
+
+
+		<!-- Legacy Content -->
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>RaidingBase</SubtypeId>
+            </Id>
+            <Name>NO TRESPASSERS</Name>
+            <SpawnDistance>80</SpawnDistance>
+            <SpawnTimeMs>300000</SpawnTimeMs>
+            <FirstSpawnTimeMs>30000</FirstSpawnTimeMs>
+            <MaxDrones>2</MaxDrones>
+            <SpawnGroups>
+                <Group>Escord Drone</Group>
+                <Group>V2-Gunboat</Group>
+                <Group>Assailant_mk.1</Group>
+            </SpawnGroups>
+        </Antenna>
+
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>CallForRaid</SubtypeId>
+            </Id>
+            <Name>TARGET LOCATED</Name>
+            <SpawnDistance>3000</SpawnDistance>
+            <SpawnTimeMs>60000</SpawnTimeMs>
+            <FirstSpawnTimeMs>10000</FirstSpawnTimeMs>
+            <MaxDrones>2</MaxDrones>
+            <SpawnGroups>
+                <Group>V2-Gunboat</Group>
+            </SpawnGroups>
+        </Antenna>
+
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>RequestMilitaryAssistance</SubtypeId>
+            </Id>
+            <Name>Hostiles detected - Requesting Backup</Name>
+            <SpawnDistance>3000</SpawnDistance>
+            <SpawnTimeMs>300000</SpawnTimeMs>
+            <FirstSpawnTimeMs>30000</FirstSpawnTimeMs>
+            <MaxDrones>2</MaxDrones>
+            <SpawnGroups>
+                <Group>V2-Gunboat</Group>
+            </SpawnGroups>
+        </Antenna>
+
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>RequestAssistance</SubtypeId>
+            </Id>
+            <Name>EMERGENCY - REQUESTING ASSISTANCE</Name>
+            <SpawnDistance>3000</SpawnDistance>
+            <SpawnTimeMs>300000</SpawnTimeMs>
+            <FirstSpawnTimeMs>30000</FirstSpawnTimeMs>
+            <MaxDrones>3</MaxDrones>
+            <SpawnGroups>
+                <Group>Assailant_mk.1</Group>
+            </SpawnGroups>
+        </Antenna>
+
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>RaidingStation</SubtypeId>
+            </Id>
+            <Name>BEWARE OF TRESPASSING</Name>
+            <SpawnDistance>80</SpawnDistance>
+            <SpawnTimeMs>300000</SpawnTimeMs>
+            <FirstSpawnTimeMs>30000</FirstSpawnTimeMs>
+            <MaxDrones>3</MaxDrones>
+            <SpawnGroups>
+                <Group>Assailant_mk.1</Group>
+            </SpawnGroups>
+        </Antenna>
+
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>RaidingCarrier</SubtypeId>
+            </Id>
+            <Name>Raid in Progress</Name>
+            <SpawnDistance>80</SpawnDistance>
+            <SpawnTimeMs>580000</SpawnTimeMs>
+            <FirstSpawnTimeMs>240000</FirstSpawnTimeMs>
+            <MaxDrones>2</MaxDrones>
+            <SpawnGroups>
+                <Group>Salvage Drone</Group>
+                <Group>Raider Drone</Group>
+            </SpawnGroups>
+        </Antenna>
+
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>RaidingCarrierHeavyDrone</SubtypeId>
+            </Id>
+            <Name>Heavy Drone Manufacturing Started</Name>
+            <SpawnDistance>80</SpawnDistance>
+            <SpawnTimeMs>240000</SpawnTimeMs>
+            <FirstSpawnTimeMs>20000</FirstSpawnTimeMs>
+            <MaxDrones>3</MaxDrones>
+            <SpawnGroups>
+                <Group>Raider Drone</Group>
+            </SpawnGroups>
+        </Antenna>
+
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>EarthPirateSmall</SubtypeId>
+            </Id>
+            <Name>MiningOperationSite</Name>
+            <SpawnDistance>80</SpawnDistance>
+            <SpawnTimeMs>300000</SpawnTimeMs>
+            <FirstSpawnTimeMs>60000</FirstSpawnTimeMs>
+            <MaxDrones>2</MaxDrones>
+            <SpawnGroups>
+                <Group>FleetingRival</Group>
+                <Group>StingingAdversary</Group>
+            </SpawnGroups>
+        </Antenna>
+
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>EarthPirateMedium</SubtypeId>
+            </Id>
+            <Name>RemoteDroneAssembly</Name>
+            <SpawnDistance>80</SpawnDistance>
+            <SpawnTimeMs>300000</SpawnTimeMs>
+            <FirstSpawnTimeMs>60000</FirstSpawnTimeMs>
+            <MaxDrones>3</MaxDrones>
+            <SpawnGroups>
+                <Group>DriftingPursuant</Group>
+                <Group>FleetingRival</Group>
+                <Group>SpitefulAggressor</Group>
+                <Group>StingingAdversary</Group>
+            </SpawnGroups>
+        </Antenna>
+
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>EarthPirateLarge</SubtypeId>
+            </Id>
+            <Name>Headquarters</Name>
+            <SpawnDistance>80</SpawnDistance>
+            <SpawnTimeMs>300000</SpawnTimeMs>
+            <FirstSpawnTimeMs>30000</FirstSpawnTimeMs>
+            <MaxDrones>6</MaxDrones>
+            <SpawnGroups>
+                <Group>DriftingPursuant</Group>
+                <Group>SpitefulAggressor</Group>
+                <Group>StingingAdversary</Group>
+            </SpawnGroups>
+        </Antenna>
+
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>MoonPirateSmall</SubtypeId>
+            </Id>
+            <Name>Moon Mining Operation Site</Name>
+            <SpawnDistance>80</SpawnDistance>
+            <SpawnTimeMs>300000</SpawnTimeMs>
+            <FirstSpawnTimeMs>30000</FirstSpawnTimeMs>
+            <MaxDrones>2</MaxDrones>
+            <SpawnGroups>
+                <Group>Drones_Pirate_Space_Light</Group>
+            </SpawnGroups>
+        </Antenna>
+
+        <!-- Region Encounter Antenna's-->
+
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>Hostile Signal</SubtypeId>
+            </Id>
+            <Name>Hostile Signal</Name>
+            <SpawnDistance>3000</SpawnDistance>
+            <SpawnTimeMs>30000</SpawnTimeMs>
+            <FirstSpawnTimeMs>1000</FirstSpawnTimeMs>
+            <MaxDrones>3</MaxDrones>
+            <SpawnGroups>
+                <Group>Salvage Drone</Group>
+                <Group>V2-Gunboat</Group>
+                <Group>Red Drone MK1</Group>
+            </SpawnGroups>
+        </Antenna>
+
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>Homing Beacon</SubtypeId>
+            </Id>
+            <Name>Homing Beacon</Name>
+            <SpawnDistance>1200</SpawnDistance>
+            <SpawnTimeMs>20000</SpawnTimeMs>
+            <FirstSpawnTimeMs>1000</FirstSpawnTimeMs>
+            <MaxDrones>3</MaxDrones>
+            <SpawnGroups>
+                <Group>Red Drone MK1</Group>
+                <Group>Escord Drone</Group>
+                <Group>Blue Drone MK1</Group>
+                <Group>Blue Drone MK2</Group>
+                <Group>ProtectoBot</Group>
+            </SpawnGroups>
+        </Antenna>
+
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>HIGH ALERT</SubtypeId>
+            </Id>
+            <Name>HIGH ALERT</Name>
+            <SpawnDistance>1000</SpawnDistance>
+            <SpawnTimeMs>30000</SpawnTimeMs>
+            <FirstSpawnTimeMs>1000</FirstSpawnTimeMs>
+            <MaxDrones>2</MaxDrones>
+            <SpawnGroups>
+                <Group>Snub Fighter</Group>
+            </SpawnGroups>
+        </Antenna>
+
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>Hiding Pirate station</SubtypeId>
+            </Id>
+            <Name>Hiding Pirate station</Name>
+            <SpawnDistance>300</SpawnDistance>
+            <SpawnTimeMs>600000</SpawnTimeMs>
+            <FirstSpawnTimeMs>1000</FirstSpawnTimeMs>
+            <MaxDrones>1</MaxDrones>
+            <SpawnGroups>
+                <Group>Light patrol drone</Group>
+            </SpawnGroups>
+        </Antenna>
+
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>Mine Beacon</SubtypeId>
+            </Id>
+            <Name>Mine Beacon</Name>
+            <SpawnDistance>300</SpawnDistance>
+            <SpawnTimeMs>10000</SpawnTimeMs>
+            <FirstSpawnTimeMs>1000</FirstSpawnTimeMs>
+            <MaxDrones>1</MaxDrones>
+            <SpawnGroups>
+                <Group>Seeker Mine</Group>
+            </SpawnGroups>
+        </Antenna>
+
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>Pirate Raider</SubtypeId>
+            </Id>
+            <Name>Pirate Raider</Name>
+            <SpawnDistance>1000</SpawnDistance>
+            <SpawnTimeMs>600000</SpawnTimeMs>
+            <FirstSpawnTimeMs>1000</FirstSpawnTimeMs>
+            <MaxDrones>2</MaxDrones>
+            <SpawnGroups>
+                <Group>Raider Drone</Group>
+            </SpawnGroups>
+        </Antenna>
+
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>Salvage Station</SubtypeId>
+            </Id>
+            <Name>Salvage Station</Name>
+            <SpawnDistance>500</SpawnDistance>
+            <SpawnTimeMs>600000</SpawnTimeMs>
+            <FirstSpawnTimeMs>1000</FirstSpawnTimeMs>
+            <MaxDrones>2</MaxDrones>
+            <SpawnGroups>
+                <Group>Salvage Drone</Group>
+                <Group>Salvage Drone</Group>
+                <Group>Escord Drone</Group>
+            </SpawnGroups>
+        </Antenna>
+
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>Vulture Drone Antenna</SubtypeId>
+            </Id>
+            <Name>Vulture Drone Antenna</Name>
+            <SpawnDistance>500</SpawnDistance>
+            <SpawnTimeMs>60000</SpawnTimeMs>
+            <FirstSpawnTimeMs>1000</FirstSpawnTimeMs>
+            <MaxDrones>2</MaxDrones>
+            <SpawnGroups>
+                <Group>Vulture Drone</Group>
+            </SpawnGroups>
+        </Antenna>
+
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>Stash Beacon</SubtypeId>
+            </Id>
+            <Name>Stash Beacon</Name>
+            <SpawnDistance>1000</SpawnDistance>
+            <SpawnTimeMs>3600000</SpawnTimeMs>
+            <FirstSpawnTimeMs>1000</FirstSpawnTimeMs>
+            <MaxDrones>1</MaxDrones>
+            <SpawnGroups>
+                <Group>Stash-satellite</Group>
+            </SpawnGroups>
+        </Antenna>
+
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>Drone Facility</SubtypeId>
+            </Id>
+            <Name>Drone Facility</Name>
+            <SpawnDistance>1000</SpawnDistance>
+            <SpawnTimeMs>600000</SpawnTimeMs>
+            <FirstSpawnTimeMs>1000</FirstSpawnTimeMs>
+            <MaxDrones>2</MaxDrones>
+            <SpawnGroups>
+                <Group>Blue Drone MK1</Group>
+                <Group>Blue Drone MK2</Group>
+                <Group>Escord Drone</Group>
+                <Group>Red Drone MK1</Group>
+                <Group>Encounter Homing beacon</Group>
+            </SpawnGroups>
+        </Antenna>
+
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>Mining Outpost</SubtypeId>
+            </Id>
+            <Name>Mining Outpost</Name>
+            <SpawnDistance>1000</SpawnDistance>
+            <SpawnTimeMs>600000</SpawnTimeMs>
+            <FirstSpawnTimeMs>1000</FirstSpawnTimeMs>
+            <MaxDrones>2</MaxDrones>
+            <SpawnGroups>
+                <Group>Hostile Miner</Group>
+                <Group>Hostile Miner</Group>
+                <Group>ProtectoBot</Group>
+            </SpawnGroups>
+        </Antenna>
+
+
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>Scanning Antenna</SubtypeId>
+            </Id>
+            <Name>Scanning Antenna</Name>
+            <SpawnDistance>3000</SpawnDistance>
+            <SpawnTimeMs>300000</SpawnTimeMs>
+            <FirstSpawnTimeMs>30000</FirstSpawnTimeMs>
+            <MaxDrones>2</MaxDrones>
+            <SpawnGroups>
+                <Group>V2-Gunboat</Group>
+            </SpawnGroups>
+        </Antenna>
+
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>Military1</SubtypeId>
+            </Id>
+            <Name>Missile Designator Antenna</Name>
+            <SpawnDistance>500</SpawnDistance>
+            <SpawnTimeMs>60000</SpawnTimeMs>
+            <FirstSpawnTimeMs>10000</FirstSpawnTimeMs>
+            <MaxDrones>2</MaxDrones>
+            <SpawnGroups>
+                <Group>DS_MilitaryMissile</Group>
+            </SpawnGroups>
+        </Antenna>
+
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>Detection Range</SubtypeId>
+            </Id>
+            <Name>Detection Range</Name>
+            <SpawnDistance>3000</SpawnDistance>
+            <SpawnTimeMs>300000</SpawnTimeMs>
+            <FirstSpawnTimeMs>30000</FirstSpawnTimeMs>
+            <MaxDrones>3</MaxDrones>
+            <SpawnGroups>
+                <Group>Assailant_mk.1</Group>
+            </SpawnGroups>
+        </Antenna>
+
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>Argentavis Scanning</SubtypeId>
+            </Id>
+            <Name>Argentavis Scanning</Name>
+            <SpawnDistance>80</SpawnDistance>
+            <SpawnTimeMs>580000</SpawnTimeMs>
+            <FirstSpawnTimeMs>240000</FirstSpawnTimeMs>
+            <MaxDrones>2</MaxDrones>
+            <SpawnGroups>
+                <Group>Salvage Drone</Group>
+                <Group>Raider Drone</Group>
+            </SpawnGroups>
+        </Antenna>
+
+        <Antenna>
+            <Id>
+                <TypeId>MyObjectBuilder_PirateAntennaDefinition</TypeId>
+                <SubtypeId>Close Proximity</SubtypeId>
+            </Id>
+            <Name>Close Proximity</Name>
+            <SpawnDistance>80</SpawnDistance>
+            <SpawnTimeMs>240000</SpawnTimeMs>
+            <FirstSpawnTimeMs>20000</FirstSpawnTimeMs>
+            <MaxDrones>3</MaxDrones>
+            <SpawnGroups>
+                <Group>Raider Drone</Group>
+            </SpawnGroups>
+        </Antenna>
+
+    </PirateAntennas>
+</Definitions>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Definition xsi:type="MyObjectBuilder_SafeZoneSettingsDefinition">
+        <Id Type="MyObjectBuilder_SafeZoneSettingsDefinition" Subtype="SafeZoneSettings" />
+        <EnableAnimationTimeMs>1000</EnableAnimationTimeMs>
+    </Definition>
+
+    <!-- DisplayTextId must be UNIQUE! Searches for the text from MyTexts.resx -->
+    <Definition xsi:type="MyObjectBuilder_SafeZoneTexturesDefinition">
+        <Id Type="MyObjectBuilder_SafeZoneTexturesDefinition" Subtype="Default" />
+        <DisplayTextId>SafeZone_Texture_Default</DisplayTextId>
+        <Alphamask>Textures\Models\Environment\SafeZone\SafeZoneShield_Default_alphamask.DDS</Alphamask>
+        <NormalGloss>Textures\Models\Environment\SafeZone\SafeZoneShield_Default_ng.DDS</NormalGloss>
+    </Definition>
+
+    <!-- Aura is used as default for NPC Stations-->
+    <Definition xsi:type="MyObjectBuilder_SafeZoneTexturesDefinition">
+        <Id Type="MyObjectBuilder_SafeZoneTexturesDefinition" Subtype="Aura" />
+        <DisplayTextId>SafeZone_Texture_Aura</DisplayTextId>
+        <Alphamask>Textures\Models\Environment\SafeZone\SafeZoneShield_Aura_alphamask.DDS</Alphamask>
+        <NormalGloss>Textures\Models\Environment\SafeZone\SafeZoneShield_Aura_ng.DDS</NormalGloss>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_SafeZoneTexturesDefinition">
+        <Id Type="MyObjectBuilder_SafeZoneTexturesDefinition" Subtype="Organic" />
+        <DisplayTextId>SafeZone_Texture_Organic</DisplayTextId>
+        <Alphamask>Textures\Models\Environment\SafeZone\SafeZoneShield_Organic_alphamask.DDS</Alphamask>
+        <NormalGloss>Textures\Models\Environment\SafeZone\SafeZoneShield_Organic_ng.DDS</NormalGloss>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_SafeZoneTexturesDefinition">
+        <Id Type="MyObjectBuilder_SafeZoneTexturesDefinition" Subtype="Rain" />
+        <DisplayTextId>SafeZone_Texture_Rain</DisplayTextId>
+        <Alphamask>Textures\Models\Environment\SafeZone\SafeZoneShield_Rain_alphamask.DDS</Alphamask>
+        <NormalGloss>Textures\Models\Environment\SafeZone\SafeZoneShield_Rain_ng.DDS</NormalGloss>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_SafeZoneTexturesDefinition">
+        <Id Type="MyObjectBuilder_SafeZoneTexturesDefinition" Subtype="Dots" />
+        <DisplayTextId>SafeZone_Texture_Dots</DisplayTextId>
+        <Alphamask>Textures\Models\Environment\SafeZone\SafeZoneShield_Dots_alphamask.DDS</Alphamask>
+        <NormalGloss>Textures\Models\Environment\SafeZone\SafeZoneShield_Dots_ng.DDS</NormalGloss>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_SafeZoneTexturesDefinition">
+        <Id Type="MyObjectBuilder_SafeZoneTexturesDefinition" Subtype="Disco" />
+        <DisplayTextId>SafeZone_Texture_Disco</DisplayTextId>
+        <Alphamask>Textures\Models\Environment\SafeZone\SafeZoneShield_Disco_alphamask.DDS</Alphamask>
+        <NormalGloss>Textures\Models\Environment\SafeZone\SafeZoneShield_Disco_ng.DDS</NormalGloss>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_SafeZoneTexturesDefinition">
+        <Id Type="MyObjectBuilder_SafeZoneTexturesDefinition" Subtype="Noise" />
+        <DisplayTextId>SafeZone_Texture_Noise</DisplayTextId>
+        <Alphamask>Textures\Models\Environment\SafeZone\SafeZoneShield_Noise_alphamask.DDS</Alphamask>
+        <NormalGloss>Textures\Models\Environment\SafeZone\SafeZoneShield_Noise_ng.DDS</NormalGloss>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_SafeZoneTexturesDefinition">
+        <Id Type="MyObjectBuilder_SafeZoneTexturesDefinition" Subtype="Hexagon" />
+        <DisplayTextId>SafeZone_Texture_Hexagon</DisplayTextId>
+        <Alphamask>Textures\Models\Environment\SafeZone\SafeZoneShield_Hexagon_alphamask.DDS</Alphamask>
+        <NormalGloss>Textures\Models\Environment\SafeZone\SafeZoneShield_Hexagon_ng.DDS</NormalGloss>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_SafeZoneTexturesDefinition">
+        <Id Type="MyObjectBuilder_SafeZoneTexturesDefinition" Subtype="Lines" />
+        <DisplayTextId>SafeZone_Texture_Lines</DisplayTextId>
+        <Alphamask>Textures\Models\Environment\SafeZone\SafeZoneShield_Lines_alphamask.DDS</Alphamask>
+        <NormalGloss>Textures\Models\Environment\SafeZone\SafeZoneShield_Lines_ng.DDS</NormalGloss>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_SafeZoneTexturesDefinition">
+        <Id Type="MyObjectBuilder_SafeZoneTexturesDefinition" Subtype="Digital" />
+        <DisplayTextId>SafeZone_Texture_Digital</DisplayTextId>
+        <Alphamask>Textures\Models\Environment\SafeZone\SafeZoneShield_Digital_alphamask.DDS</Alphamask>
+        <NormalGloss>Textures\Models\Environment\SafeZone\SafeZoneShield_Digital_ng.DDS</NormalGloss>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_SafeZoneTexturesDefinition">
+        <Id Type="MyObjectBuilder_SafeZoneTexturesDefinition" Subtype="Gloura" />
+        <DisplayTextId>SafeZone_Texture_Gloura</DisplayTextId>
+        <Alphamask>Textures\Models\Environment\SafeZone\SafeZoneShield_Gloura_alphamask.DDS</Alphamask>
+        <NormalGloss>Textures\Models\Environment\SafeZone\SafeZoneShield_Gloura_ng.DDS</NormalGloss>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_SafeZoneTexturesDefinition">
+        <Id Type="MyObjectBuilder_SafeZoneTexturesDefinition" Subtype="Clang" />
+        <DisplayTextId>SafeZone_Texture_Clang</DisplayTextId>
+        <Alphamask>Textures\Models\Environment\SafeZone\SafeZoneShield_Clang_alphamask.DDS</Alphamask>
+        <NormalGloss>Textures\Models\Environment\SafeZone\SafeZoneShield_Clang_ng.DDS</NormalGloss>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_SafeZoneTexturesDefinition">
+        <Id Type="MyObjectBuilder_SafeZoneTexturesDefinition" Subtype="Veroni" />
+        <DisplayTextId>SafeZone_Texture_Voronoi</DisplayTextId>
+        <Alphamask>Textures\Models\Environment\SafeZone\SafeZoneShield_Voronoi_alphamask.DDS</Alphamask>
+        <NormalGloss>Textures\Models\Environment\SafeZone\SafeZoneShield_Voronoi_ng.DDS</NormalGloss>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_SafeZoneTexturesDefinition">
+        <Id Type="MyObjectBuilder_SafeZoneTexturesDefinition" Subtype="Restricted" />
+        <DisplayTextId>SafeZone_Texture_Restricted</DisplayTextId>
+        <Alphamask>Textures\Models\Environment\SafeZone\SafeZoneShield_Restricted_alphamask.DDS</Alphamask>
+        <NormalGloss>Textures\Models\Environment\SafeZone\SafeZoneShield_Restricted_ng.DDS</NormalGloss>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_SafeZoneTexturesDefinition">
+        <Id Type="MyObjectBuilder_SafeZoneTexturesDefinition" Subtype="KeenSWH" />
+        <DisplayTextId>SafeZone_Texture_KeenSWH</DisplayTextId>
+        <Alphamask>Textures\Models\Environment\SafeZone\SafeZoneShield_KeenSWH_alphamask.DDS</Alphamask>
+        <NormalGloss>Textures\Models\Environment\SafeZone\SafeZoneShield_KeenSWH_ng.DDS</NormalGloss>
+    </Definition>
+
+    <Definition xsi:type="MyObjectBuilder_SafeZoneTexturesDefinition">
+        <Id Type="MyObjectBuilder_SafeZoneTexturesDefinition" Subtype="Disabled" />
+        <DisplayTextId>SafeZone_Texture_Disabled</DisplayTextId>
+        <Alphamask>Textures\Models\Environment\SafeZone\SafeZoneShield_Disabled_alphamask.DDS</Alphamask>
+        <NormalGloss>Textures\Models\Environment\SafeZone\SafeZoneShield_Disabled_ng.DDS</NormalGloss>
+    </Definition>
+
+</Definitions>

@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <LCDTextures>
+        <LCDTextureDefinition>
+            <Id>
+                <TypeId>LCDTextureDefinition</TypeId>
+                <SubtypeId>Offline</SubtypeId>
+            </Id>
+            <LocalizationId>LCD_Offline</LocalizationId>
+            <TexturePath>Textures\Models\default_offline.dds</TexturePath>
+            <SpritePath>Textures\Sprites\default_offline.dds</SpritePath>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id>
+                <TypeId>LCDTextureDefinition</TypeId>
+                <SubtypeId>Offline_wide</SubtypeId>
+            </Id>
+            <LocalizationId>LCD_Offline_wide</LocalizationId>
+            <TexturePath>Textures\Models\default_offline_wide.dds</TexturePath>
+            <SpritePath>Textures\Sprites\default_offline_wide.dds</SpritePath>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id>
+                <TypeId>LCDTextureDefinition</TypeId>
+                <SubtypeId>Online</SubtypeId>
+            </Id>
+            <LocalizationId>LCD_Online</LocalizationId>
+            <TexturePath>Textures\Models\default_online.dds</TexturePath>
+            <SpritePath>Textures\Sprites\default_online.dds</SpritePath>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id>
+                <TypeId>LCDTextureDefinition</TypeId>
+                <SubtypeId>Online_wide</SubtypeId>
+            </Id>
+            <LocalizationId>LCD_Online_wide</LocalizationId>
+            <TexturePath>Textures\Models\default_online_wide.dds</TexturePath>
+            <SpritePath>Textures\Sprites\default_online_wide.dds</SpritePath>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id>
+                <TypeId>LCDTextureDefinition</TypeId>
+                <SubtypeId>Arrow</SubtypeId>
+            </Id>
+            <LocalizationId>LCD_Arrow</LocalizationId>
+            <TexturePath>Textures\Models\Arrow.dds</TexturePath>
+            <SpritePath>Textures\Sprites\Arrow.dds</SpritePath>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id>
+                <TypeId>LCDTextureDefinition</TypeId>
+                <SubtypeId>Cross</SubtypeId>
+            </Id>
+            <LocalizationId>LCD_Cross</LocalizationId>
+            <TexturePath>Textures\Models\Cross.dds</TexturePath>
+            <SpritePath>Textures\Sprites\Cross.dds</SpritePath>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id>
+                <TypeId>LCDTextureDefinition</TypeId>
+                <SubtypeId>Danger</SubtypeId>
+            </Id>
+            <LocalizationId>LCD_Danger</LocalizationId>
+            <TexturePath>Textures\Models\DangerZone.dds</TexturePath>
+            <SpritePath>Textures\Sprites\DangerZone.dds</SpritePath>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id>
+                <TypeId>LCDTextureDefinition</TypeId>
+                <SubtypeId>No Entry</SubtypeId>
+            </Id>
+            <LocalizationId>LCD_NoEntry</LocalizationId>
+            <TexturePath>Textures\Models\NoEntry.dds</TexturePath>
+            <SpritePath>Textures\Sprites\NoEntry.dds</SpritePath>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id>
+                <TypeId>LCDTextureDefinition</TypeId>
+                <SubtypeId>Construction</SubtypeId>
+            </Id>
+            <LocalizationId>LCD_Construction</LocalizationId>
+            <TexturePath>Textures\Models\UnderConstruction.dds</TexturePath>
+            <SpritePath>Textures\Sprites\UnderConstruction.dds</SpritePath>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id>
+                <TypeId>LCDTextureDefinition</TypeId>
+                <SubtypeId>White screen</SubtypeId>
+            </Id>
+            <LocalizationId>LCD_WhiteScreen</LocalizationId>
+            <TexturePath>Textures\Models\Blank.dds</TexturePath>
+            <SpritePath>Textures\Sprites\Blank.dds</SpritePath>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id>
+                <TypeId>LCDTextureDefinition</TypeId>
+                <SubtypeId>Grid</SubtypeId>
+            </Id>
+            <LocalizationId>LCD_Grid</LocalizationId>
+            <TexturePath>Textures\Models\Background_LCD_Square_Background.dds</TexturePath>
+            <SpritePath>Textures\Sprites\LCD_Grid.dds</SpritePath>
+        </LCDTextureDefinition>
+
+        <!-- UNSELECTABLE TEXTURES FOR SCRIPT USE -->
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="DecorativeBracketLeft" />
+            <SpritePath>Textures\Sprites\Left_Bracket.DDS</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="DecorativeBracketRight" />
+            <SpritePath>Textures\Sprites\Right_Bracket.DDS</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="SquareTapered" />
+            <SpritePath>Textures\Sprites\WhiteSprite.DDS</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="SquareSimple" />
+            <SpritePath>Textures\GUI\Blank.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="IconEnergy" />
+            <SpritePath>textures\gui\icons\hud 2017\energyicon.png</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="IconHydrogen" />
+            <SpritePath>textures\gui\icons\hud 2017\hydrogenicon.png</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="IconOxygen" />
+            <SpritePath>textures\gui\icons\hud 2017\oxygenicon.png</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="IconTemperature" />
+            <SpritePath>textures\gui\icons\hud 2017\outsidetemp.png</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+
+        <!-- ARTIFICIAL HORIZON -->
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="AH_GravityHudNegativeDegrees" />
+            <SpritePath>Textures\Sprites\ArtificialHorizon\GravityHudNegDegrees.png</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="AH_GravityHudPositiveDegrees" />
+            <SpritePath>Textures\Sprites\ArtificialHorizon\GravityHudPosDegrees.png</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="AH_TextBox" />
+            <SpritePath>Textures\Sprites\ArtificialHorizon\TextBox.png</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="AH_PullUp" />
+            <SpritePath>Textures\Sprites\ArtificialHorizon\PullUp.png</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="AH_VelocityVector" />
+            <SpritePath>Textures\Sprites\ArtificialHorizon\VelocityVec.png</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="AH_BoreSight" />
+            <SpritePath>Textures\GUI\Icons\buttons\ArrowSingle.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+
+        <!-- CTG DONATED TEXTURES -->
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="RightTriangle" />
+            <SpritePath>Textures\Sprites\Right_Triangle.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="Triangle" />
+            <SpritePath>Textures\Sprites\Triangle.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="Circle" />
+            <SpritePath>Textures\Sprites\Circle.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="SemiCircle" />
+            <SpritePath>Textures\Sprites\Semi_Circle.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="CircleHollow" />
+            <SpritePath>Textures\Sprites\Circle_Hollow.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="SquareHollow" />
+            <SpritePath>Textures\Sprites\Square_Hollow.dds</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+
+        <!-- DEBUG -->
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="UVChecker" />
+            <Public>false</Public>
+            <LocalizationId>[Debug] UV Checker</LocalizationId>
+            <TexturePath>Textures\Sprites\UVChecker.png</TexturePath>
+            <SpritePath>Textures\Sprites\UVChecker.png</SpritePath>
+            <Selectable>true</Selectable>
+        </LCDTextureDefinition>
+        <LCDTextureDefinition>
+            <Id Type="LCDTextureDefinition" Subtype="OutOfOrder" />
+            <Public>false</Public>
+            <LocalizationId>[Debug] Out of Order</LocalizationId>
+            <TexturePath>Textures\Sprites\VendingMachine\OutOfOrder.jpg</TexturePath>
+            <SpritePath>Textures\Sprites\VendingMachine\OutOfOrder.jpg</SpritePath>
+            <Selectable>false</Selectable>
+        </LCDTextureDefinition>
+    </LCDTextures>
+</Definitions>

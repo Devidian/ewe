@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <SoundCategories>
+        <SoundCategory>
+            <Id>
+                <TypeId>SoundCategoryDefinition</TypeId>
+                <SubtypeId>DefaultCategory</SubtypeId>
+            </Id>
+            <Sounds>
+                <SoundDesc Id="SoundBlockLightsOn" SoundName="SoundBlock_SoundName_LightsOn" />
+                <SoundDesc Id="SoundBlockLightsOff" SoundName="SoundBlock_SoundName_LightsOff" />
+                <SoundDesc Id="SoundBlockEnemyDetected" SoundName="SoundBlock_SoundName_EnemyDetected" />
+                <SoundDesc Id="SoundBlockObjectiveComplete" SoundName="SoundBlock_SoundName_ObjectiveComplete" />
+                <SoundDesc Id="SoundBlockAlert1" SoundName="SoundBlock_SoundName_Alert1" />
+                <SoundDesc Id="SoundBlockAlert2" SoundName="SoundBlock_SoundName_Alert2" />
+                <SoundDesc Id="SoundBlockAlert3" SoundName="SoundBlock_SoundName_Alert3" />
+                <SoundDesc Id="DroneLoopSmall" SoundName="SoundBlock_SoundName_Drone_Small" />
+                <SoundDesc Id="DroneLoopMedium" SoundName="SoundBlock_SoundName_Drone_Medium" />
+                <SoundDesc Id="DroneLoopLarge" SoundName="SoundBlock_SoundName_Drone_Large" />
+                <SoundDesc Id="DroneLoopHuge" SoundName="SoundBlock_SoundName_Drone_Huge" />
+            </Sounds>
+        </SoundCategory>
+        <SoundCategory>
+            <Id>
+                <TypeId>SoundCategoryDefinition</TypeId>
+                <SubtypeId>MusicCategory</SubtypeId>
+            </Id>
+            <Sounds>
+                <SoundDesc Id="MusCalm_01" SoundName="SoundBlock_SoundName_MusCalm_01" />
+                <SoundDesc Id="MusCalm_02" SoundName="SoundBlock_SoundName_MusCalm_02" />
+                <SoundDesc Id="MusCalm_03" SoundName="SoundBlock_SoundName_MusCalm_03" />
+                <SoundDesc Id="MusCalm_04" SoundName="SoundBlock_SoundName_MusCalm_04" />
+                <SoundDesc Id="MusCalm_05" SoundName="SoundBlock_SoundName_MusCalm_05" />
+                <SoundDesc Id="MusCalm_06" SoundName="SoundBlock_SoundName_MusCalm_06" />
+                <SoundDesc Id="MusCalm_07" SoundName="SoundBlock_SoundName_MusCalm_07" />
+                <SoundDesc Id="MusCalm_08" SoundName="SoundBlock_SoundName_MusCalm_08" />
+                <SoundDesc Id="MusCalm_09" SoundName="SoundBlock_SoundName_MusCalm_09" />
+                <SoundDesc Id="MusCalm_10" SoundName="SoundBlock_SoundName_MusCalm_10" />
+                <SoundDesc Id="MusCalm_11" SoundName="SoundBlock_SoundName_MusCalm_11" />
+                <SoundDesc Id="MusCalm_12" SoundName="SoundBlock_SoundName_MusCalm_12" />
+                <SoundDesc Id="MusCalm_13" SoundName="SoundBlock_SoundName_MusCalm_13" />
+                <SoundDesc Id="MusMystery_01" SoundName="SoundBlock_SoundName_MusMystery_01" />
+                <SoundDesc Id="MusMystery_02" SoundName="SoundBlock_SoundName_MusMystery_02" />
+                <SoundDesc Id="MusMystery_03" SoundName="SoundBlock_SoundName_MusMystery_03" />
+                <SoundDesc Id="MusMystery_04" SoundName="SoundBlock_SoundName_MusMystery_04" />
+                <SoundDesc Id="MusMystery_05" SoundName="SoundBlock_SoundName_MusMystery_05" />
+                <SoundDesc Id="MusMystery_06" SoundName="SoundBlock_SoundName_MusMystery_06" />
+                <SoundDesc Id="MusMystery_07" SoundName="SoundBlock_SoundName_MusMystery_07" />
+                <SoundDesc Id="MusMystery_08" SoundName="SoundBlock_SoundName_MusMystery_08" />
+                <SoundDesc Id="MusBuild_01" SoundName="SoundBlock_SoundName_MusBuild_01" />
+                <SoundDesc Id="MusBuild_02" SoundName="SoundBlock_SoundName_MusBuild_02" />
+                <SoundDesc Id="MusBuild_03" SoundName="SoundBlock_SoundName_MusBuild_03" />
+                <SoundDesc Id="MusBuild_04" SoundName="SoundBlock_SoundName_MusBuild_04" />
+                <SoundDesc Id="MusBuild_05" SoundName="SoundBlock_SoundName_MusBuild_05" />
+                <SoundDesc Id="MusBuild_06" SoundName="SoundBlock_SoundName_MusBuild_06" />
+                <SoundDesc Id="MusBuild_07" SoundName="SoundBlock_SoundName_MusBuild_07" />
+                <SoundDesc Id="MusSpace_01" SoundName="SoundBlock_SoundName_MusSpace_01" />
+                <SoundDesc Id="MusSpace_02" SoundName="SoundBlock_SoundName_MusSpace_02" />
+                <SoundDesc Id="MusSpace_03" SoundName="SoundBlock_SoundName_MusSpace_03" />
+                <SoundDesc Id="MusSpace_04" SoundName="SoundBlock_SoundName_MusSpace_04" />
+                <SoundDesc Id="MusSpace_05" SoundName="SoundBlock_SoundName_MusSpace_05" />
+                <SoundDesc Id="MusSpace_06" SoundName="SoundBlock_SoundName_MusSpace_06" />
+                <SoundDesc Id="MusSpace_07" SoundName="SoundBlock_SoundName_MusSpace_07" />
+                <SoundDesc Id="MusSpace_08" SoundName="SoundBlock_SoundName_MusSpace_08" />
+                <SoundDesc Id="MusSpace_09" SoundName="SoundBlock_SoundName_MusSpace_09" />
+                <SoundDesc Id="MusSpace_10" SoundName="SoundBlock_SoundName_MusSpace_10" />
+                <SoundDesc Id="MusSpace_11" SoundName="SoundBlock_SoundName_MusSpace_11" />
+                <SoundDesc Id="MusSpace_12" SoundName="SoundBlock_SoundName_MusSpace_12" />
+                <SoundDesc Id="MusLightFight_01" SoundName="SoundBlock_SoundName_MusLightFight_01" />
+                <SoundDesc Id="MusLightFight_02" SoundName="SoundBlock_SoundName_MusLightFight_02" />
+                <SoundDesc Id="MusLightFight_03" SoundName="SoundBlock_SoundName_MusLightFight_03" />
+                <SoundDesc Id="MusLightFight_04" SoundName="SoundBlock_SoundName_MusLightFight_04" />
+                <SoundDesc Id="MusLightFight_05" SoundName="SoundBlock_SoundName_MusLightFight_05" />
+                <SoundDesc Id="MusLightFight_06" SoundName="SoundBlock_SoundName_MusLightFight_06" />
+                <SoundDesc Id="MusLightFight_07" SoundName="SoundBlock_SoundName_MusLightFight_07" />
+                <SoundDesc Id="MusLightFight_08" SoundName="SoundBlock_SoundName_MusLightFight_08" />
+                <SoundDesc Id="MusLightFight_09" SoundName="SoundBlock_SoundName_MusLightFight_09" />
+                <SoundDesc Id="MusLightFight_10" SoundName="SoundBlock_SoundName_MusLightFight_10" />
+                <SoundDesc Id="MusLightFight_11" SoundName="SoundBlock_SoundName_MusLightFight_11" />
+                <SoundDesc Id="MusLightFight_12" SoundName="SoundBlock_SoundName_MusLightFight_12" />
+                <SoundDesc Id="MusLightFight_13" SoundName="SoundBlock_SoundName_MusLightFight_13" />
+                <SoundDesc Id="MusLightFight_14" SoundName="SoundBlock_SoundName_MusLightFight_14" />
+                <SoundDesc Id="MusHeavyFight_01" SoundName="SoundBlock_SoundName_MusHeavyFight_01" />
+                <SoundDesc Id="MusHeavyFight_02" SoundName="SoundBlock_SoundName_MusHeavyFight_02" />
+                <SoundDesc Id="MusHeavyFight_03" SoundName="SoundBlock_SoundName_MusHeavyFight_03" />
+                <SoundDesc Id="MusHeavyFight_04" SoundName="SoundBlock_SoundName_MusHeavyFight_04" />
+                <SoundDesc Id="MusHeavyFight_05" SoundName="SoundBlock_SoundName_MusHeavyFight_05" />
+                <SoundDesc Id="MusHeavyFight_06" SoundName="SoundBlock_SoundName_MusHeavyFight_06" />
+                <SoundDesc Id="MusHeavyFight_07" SoundName="SoundBlock_SoundName_MusHeavyFight_07" />
+                <SoundDesc Id="MusHeavyFight_08" SoundName="SoundBlock_SoundName_MusHeavyFight_08" />
+                <SoundDesc Id="MusHeavyFight_09" SoundName="SoundBlock_SoundName_MusHeavyFight_09" />
+                <SoundDesc Id="MusHeavyFight_10" SoundName="SoundBlock_SoundName_MusHeavyFight_10" />
+                <SoundDesc Id="MusHeavyFight_11" SoundName="SoundBlock_SoundName_MusHeavyFight_11" />
+                <SoundDesc Id="MusHeavyFight_12" SoundName="SoundBlock_SoundName_MusHeavyFight_12" />
+                <SoundDesc Id="MusHeavyFight_13" SoundName="SoundBlock_SoundName_MusHeavyFight_13" />
+                <SoundDesc Id="MusHeavyFight_14" SoundName="SoundBlock_SoundName_MusHeavyFight_14" />
+                <SoundDesc Id="MusDanger_01" SoundName="SoundBlock_SoundName_MusDanger_01" />
+                <SoundDesc Id="MusDanger_02" SoundName="SoundBlock_SoundName_MusDanger_02" />
+                <SoundDesc Id="MusDanger_03" SoundName="SoundBlock_SoundName_MusDanger_03" />
+                <SoundDesc Id="MusDanger_04" SoundName="SoundBlock_SoundName_MusDanger_04" />
+                <SoundDesc Id="MusDanger_05" SoundName="SoundBlock_SoundName_MusDanger_05" />
+                <SoundDesc Id="MusDanger_06" SoundName="SoundBlock_SoundName_MusDanger_06" />
+                <SoundDesc Id="MusEarthlike_01" SoundName="SoundBlock_SoundName_MusEarthlike_01" />
+                <SoundDesc Id="MusEarthlike_02" SoundName="SoundBlock_SoundName_MusEarthlike_02" />
+                <SoundDesc Id="MusEarthlike_03" SoundName="SoundBlock_SoundName_MusEarthlike_03" />
+                <SoundDesc Id="MusEarthlike_04" SoundName="SoundBlock_SoundName_MusEarthlike_04" />
+                <SoundDesc Id="MusEarthlike_05" SoundName="SoundBlock_SoundName_MusEarthlike_05" />
+                <SoundDesc Id="MusEarthlike_06" SoundName="SoundBlock_SoundName_MusEarthlike_06" />
+                <SoundDesc Id="MusPlanet_01" SoundName="SoundBlock_SoundName_MusPlanet_01" />
+                <SoundDesc Id="MusPlanet_02" SoundName="SoundBlock_SoundName_MusPlanet_02" />
+                <SoundDesc Id="MusPlanet_03" SoundName="SoundBlock_SoundName_MusPlanet_03" />
+                <SoundDesc Id="MusPlanet_04" SoundName="SoundBlock_SoundName_MusPlanet_04" />
+                <SoundDesc Id="MusPlanet_05" SoundName="SoundBlock_SoundName_MusPlanet_05" />
+                <SoundDesc Id="MusPlanet_06" SoundName="SoundBlock_SoundName_MusPlanet_06" />
+                <SoundDesc Id="MusAlien_01" SoundName="SoundBlock_SoundName_MusAlien_01" />
+                <SoundDesc Id="MusAlien_02" SoundName="SoundBlock_SoundName_MusAlien_02" />
+                <SoundDesc Id="MusAlien_03" SoundName="SoundBlock_SoundName_MusAlien_03" />
+                <SoundDesc Id="MusAlien_04" SoundName="SoundBlock_SoundName_MusAlien_04" />
+                <SoundDesc Id="MusAlien_05" SoundName="SoundBlock_SoundName_MusAlien_05" />
+                <SoundDesc Id="MusFun" SoundName="SoundBlock_SoundName_MusFun" />
+                <SoundDesc Id="MusComp_01" SoundName="SoundBlock_SoundName_MusCompetition_01" />
+                <SoundDesc Id="MusComp_02" SoundName="SoundBlock_SoundName_MusCompetition_02" />
+                <SoundDesc Id="MusComp_03" SoundName="SoundBlock_SoundName_MusCompetition_03" />
+                <SoundDesc Id="MusComp_04" SoundName="SoundBlock_SoundName_MusCompetition_04" />
+                <SoundDesc Id="MusComp_05" SoundName="SoundBlock_SoundName_MusCompetition_05" />
+                <SoundDesc Id="MusComp_06" SoundName="SoundBlock_SoundName_MusCompetition_06" />
+                <SoundDesc Id="MusComp_07" SoundName="SoundBlock_SoundName_MusCompetition_07" />
+                <SoundDesc Id="MusComp_08" SoundName="SoundBlock_SoundName_MusCompetition_08" />
+                <SoundDesc Id="MusComp_09" SoundName="SoundBlock_SoundName_MusCompetition_09" />
+                <SoundDesc Id="MusComp_10" SoundName="SoundBlock_SoundName_MusCompetition_10" />
+                <SoundDesc Id="MusComp_11" SoundName="SoundBlock_SoundName_MusCompetition_11" />
+                <SoundDesc Id="MusComp_12" SoundName="SoundBlock_SoundName_MusCompetition_12" />
+                <SoundDesc Id="MusComp_13" SoundName="SoundBlock_SoundName_MusCompetition_13" />
+                <SoundDesc Id="MusComp_14" SoundName="SoundBlock_SoundName_MusCompetition_14" />
+                <SoundDesc Id="MusComp_15" SoundName="SoundBlock_SoundName_MusCompetition_15" />
+                <SoundDesc Id="MusComp_16" SoundName="SoundBlock_SoundName_MusCompetition_16" />
+                <SoundDesc Id="MusComp2_01" SoundName="SoundBlock_SoundName_MusCompetition2_01" />
+                <SoundDesc Id="MusComp2_02" SoundName="SoundBlock_SoundName_MusCompetition2_02" />
+                <SoundDesc Id="MusComp2_03" SoundName="SoundBlock_SoundName_MusCompetition2_03" />
+                <SoundDesc Id="MusComp2_04" SoundName="SoundBlock_SoundName_MusCompetition2_04" />
+                <SoundDesc Id="MusComp2_05" SoundName="SoundBlock_SoundName_MusCompetition2_05" />
+                <SoundDesc Id="MusComp2_06" SoundName="SoundBlock_SoundName_MusCompetition2_06" />
+                <SoundDesc Id="MusComp2_07" SoundName="SoundBlock_SoundName_MusCompetition2_07" />
+                <SoundDesc Id="MusComp2_08" SoundName="SoundBlock_SoundName_MusCompetition2_08" />
+                <SoundDesc Id="MusComp2_09" SoundName="SoundBlock_SoundName_MusCompetition2_09" />
+                <SoundDesc Id="MusComp2_10" SoundName="SoundBlock_SoundName_MusCompetition2_10" />
+                <SoundDesc Id="MusComp2_11" SoundName="SoundBlock_SoundName_MusCompetition2_11" />
+                <SoundDesc Id="MusComp2_12" SoundName="SoundBlock_SoundName_MusCompetition2_12" />
+                <SoundDesc Id="MusComp2_13" SoundName="SoundBlock_SoundName_MusCompetition2_13" />
+                <SoundDesc Id="MusComp2_14" SoundName="SoundBlock_SoundName_MusCompetition2_14" />
+                <SoundDesc Id="MusComp2_15" SoundName="SoundBlock_SoundName_MusCompetition2_15" />
+                <SoundDesc Id="MusComp2_16" SoundName="SoundBlock_SoundName_MusCompetition2_16" />
+                <SoundDesc Id="MusConcert_2" SoundName="SoundBlock_SoundName_MusicConcert1" DLC="Signal" />
+                <SoundDesc Id="MusConcert_3" SoundName="SoundBlock_SoundName_MusicConcert2" DLC="Signal" />
+                <SoundDesc Id="MusConcert_4" SoundName="SoundBlock_SoundName_MusicConcert3" DLC="Signal" />
+                <SoundDesc Id="MusConcert_5" SoundName="SoundBlock_SoundName_MusicConcert4" DLC="Signal" />
+                <SoundDesc Id="MusConcert_6" SoundName="SoundBlock_SoundName_MusicConcert5" DLC="Signal" />
+                <SoundDesc Id="MusConcert_7" SoundName="SoundBlock_SoundName_MusicConcert6" DLC="Signal" />
+                <SoundDesc Id="MusConcert_8" SoundName="SoundBlock_SoundName_MusicConcert7" DLC="Signal" />
+                <SoundDesc Id="MusConcert_9" SoundName="SoundBlock_SoundName_MusicConcert8" DLC="Signal" />
+                <SoundDesc Id="MusConcert_10" SoundName="SoundBlock_SoundName_MusicConcert9" DLC="Signal" />
+                
+            </Sounds>
+        </SoundCategory>
+    </SoundCategories>
+</Definitions>

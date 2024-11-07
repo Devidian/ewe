@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <VoxelMaterials>
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">      <!-- IceEuropa2 -->
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>IceEuropa2</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>false</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Ice</MaterialTypeName>
+      <MinedOre>EuropaIce</MinedOre>
+      <MinedOreRatio>1</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+
+      <VoxelHandPreview>Textures\Voxels\IceEuropa2_Thumbnail.dds</VoxelHandPreview>
+      <ColorMetalXZnY>Textures\Voxels\IceEuropa2_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\IceEuropa2_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Dummy_add.dds</ExtXZnY>
+
+
+      <ColorMetalXZnYFar1>Textures\Voxels\IceEuropa2_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\IceEuropa2_Far1_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Dummy_add.dds</ExtXZnYFar1>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\IceEuropa2_Far2_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\IceEuropa2_Far2_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\Dummy_add.dds</ExtXZnYFar2>
+
+      <SimpleTilingSetup>
+        <InitialScale>4</InitialScale>
+        <ScaleMultiplier>8</ScaleMultiplier>
+        <InitialDistance>4</InitialDistance>
+
+        <ExtDetailScale>0.005</ExtDetailScale>
+        <Scale>500</Scale>
+        <Far1Distance>22</Far1Distance>
+        <Far2Distance>500</Far2Distance>
+        <Far1Scale>300</Far1Scale>
+        <Far2Scale>3000</Far2Scale>
+
+        <Far3Distance>50000</Far3Distance>
+      </SimpleTilingSetup>
+
+      <InitialScale>2</InitialScale>
+      <ScaleMultiplier>6</ScaleMultiplier>
+      <InitialDistance>4</InitialDistance>
+      <DistanceMultiplier>2</DistanceMultiplier>
+      <TilingScale>36</TilingScale>
+
+      <ExtDetailScale>0.005</ExtDetailScale>
+      <Scale>500</Scale>
+      <Far1Distance>500</Far1Distance>
+      <Far2Distance>1500</Far2Distance>
+      <Far1Scale>750</Far1Scale>
+      <Far2Scale>4000</Far2Scale>
+
+      <Far3Distance>50000</Far3Distance>
+      <Far3Color>
+        <X>0.72</X>
+        <Y>0.94</Y>
+        <Z>1</Z>
+        <W>1.0</W>
+      </Far3Color>
+
+
+      <Friction>0.15</Friction>
+      <Restitution>0.9</Restitution>
+
+      <ColorKey Hex="#A4B94D"/>
+    </VoxelMaterial>
+  </VoxelMaterials>
+</Definitions>

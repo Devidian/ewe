@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <BlueprintClassEntries>
+        <!-- Survival Kit -->
+        <!-- SurvivalKitIngots -->
+        <!-- BasicComponents -->
+        <Entry Class="BasicComponents" BlueprintSubtypeId="SteelBall" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="BasicComponentsComponent" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="SteelBolt" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="SteelNut" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="SteelWasher" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="BrazingRod" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="SteelRivet" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="AluminumCotterPin" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="Clamp" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="GirderComponent" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="BareSteelWire" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="BareAluminumWire" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="BareCopperWire" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="BareBrassWire" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="BareNitinolWire" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="BulletproofGlass" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="AluminumPlate" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="SteelPlate" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="TitaniumPlate" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="NitinolPlate" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="GraphenePlate" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="InteriorPlate" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="MetalGrid" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="SmallTube" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="LargeTube" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="SmallCopperTube" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="LargeCopperTube" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="CarbonTube" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="SteelRod" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="AluminumRod" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="TitaniumRod" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="CopperRod" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="BrassRod" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="NitinolRod" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="RubberHose" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="PolyCarbonatePlate" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="Insulation" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="Rebar" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="Concrete" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="PipeFitting" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="Solenoid" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="Fuse" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="Resistor" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="Diode" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="POT" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="PowerCell" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="Transistor" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="Coil" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="LED" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="Bulb" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="Sensor" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="HeatSink" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="RadioCommunicationComponent" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="SolarCell" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="Processor" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="PCB" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="InsulatedCopperWire" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="DataCable" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="FiberOpticWire" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="Switch" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="ComputerComponent" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="SteelSpring" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="NitinolSpring" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="BallBearing" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="AluminumFanBlade" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="MechanicalCable" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="SteelPulley" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="SteelGear" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="RubberBushing" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="CarbideTooling" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="DiamondTooling" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="CarbideRing" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="RubberGasket" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="Filter" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="Tape" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="ZipTies" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="BallValve" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="Chain" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="Belt" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="Bladder" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="AluminumPiston" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="TitaniumPiston" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="SteelStemValve" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="NitinolStemValve" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="Canvas" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="201Steel" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="ChromiumSteel" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="945Steel" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="Nitinol" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="Brass" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="Cupronickel" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="Electrum" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="GumMetal" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="PolyCarbonate" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="Glass" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="Rubber" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="Magnet" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="TungstenCarbide" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="Cement" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="MineralSpirits" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="Stearate" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="Grease" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="Oil" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="Coolant" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="ThermalPaste" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="LiquidGasoline" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="LiquidJetFuel" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="IngotToWater" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="IngotToIce" />
+        <Entry Class="BasicComponents" BlueprintSubtypeId="WaterToIce" />
+        <!-- BasicEquipment -->
+        <!-- BasicTools -->
+        <!-- BasicWeapons -->
+        <!-- BasicConsumables -->
+    </BlueprintClassEntries>
+</Definitions>

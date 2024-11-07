@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <VoxelMaterials>
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">      <!-- Molybdenum -->
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>Molybdenum</SubtypeId>
+      </Id>
+      <MaterialTypeName>Rock</MaterialTypeName>
+      <MinedOre>Molybdenum</MinedOre>
+      <MinedOreRatio>1</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>true</IsRare>
+      <SpawnsInAsteroids>true</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>true</SpawnsFromMeteorites>
+
+      <VoxelHandPreview>Textures\Voxels\PureMetals\Aluminum_cm.dds</VoxelHandPreview>
+
+      <ColorMetalXZnY>Textures\Voxels\PureMetals\Aluminum_cm.dds</ColorMetalXZnY>
+      <ColorMetalXZnYFar1>Textures\Voxels\PureMetals\Aluminum_cm.dds</ColorMetalXZnYFar1>
+      <ColorMetalXZnYFar2>Textures\Voxels\PureMetals\Aluminum_cm.dds</ColorMetalXZnYFar2>
+
+      <ColorMetalY>Textures\Voxels\PureMetals\Aluminum_cm.dds</ColorMetalY>
+      <ColorMetalYFar1>Textures\Voxels\PureMetals\Aluminum_cm.dds</ColorMetalYFar1>
+      <ColorMetalYFar2>Textures\Voxels\PureMetals\Aluminum_cm.dds</ColorMetalYFar2>
+
+      <NormalGlossXZnY>Textures\Voxels\PureMetals\Aluminum_ng.dds</NormalGlossXZnY>
+      <NormalGlossXZnYFar1>Textures\Voxels\PureMetals\Aluminum_ng.dds</NormalGlossXZnYFar1>
+      <NormalGlossXZnYFar2>Textures\Voxels\PureMetals\Aluminum_ng.dds</NormalGlossXZnYFar2>
+
+      <NormalGlossY>Textures\Voxels\PureMetals\Aluminum_ng.dds</NormalGlossY>
+      <NormalGlossYFar1>Textures\Voxels\PureMetals\Aluminum_ng.dds</NormalGlossYFar1>
+      <NormalGlossYFar2>Textures\Voxels\PureMetals\Aluminum_ng.dds</NormalGlossYFar2>
+      <ExtXZnY>Textures\Voxels\Dummy_add.dds</ExtXZnY>
+
+      <Scale>500</Scale>
+      <ScaleFar1>1000</ScaleFar1>
+      <ScaleFar2>2500</ScaleFar2>
+    </VoxelMaterial>
+  </VoxelMaterials>
+</Definitions>

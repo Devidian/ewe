@@ -1,0 +1,2384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Blueprints>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>DetectorX100</SubtypeId>
+			</Id>
+			<DisplayName>Detector x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Detector_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Sensor" Amount="10000" />
+				<Item TypeId="Component" SubtypeId="Diode" Amount="2000" />
+				<Item TypeId="Component" SubtypeId="BareCopperWire" Amount="200" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="50" />
+				<Item TypeId="Component" SubtypeId="Processor" Amount="500" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>50</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Detector" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>DetectorX10</SubtypeId>
+			</Id>
+			<DisplayName>Detector x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Detector_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Sensor" Amount="1000" />
+				<Item TypeId="Component" SubtypeId="Diode" Amount="200" />
+				<Item TypeId="Component" SubtypeId="BareCopperWire" Amount="20" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="5" />
+				<Item TypeId="Component" SubtypeId="Processor" Amount="50" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Detector" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>DetectorComponent</SubtypeId>
+			</Id>
+			<DisplayName>Detector</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Detector_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Sensor" Amount="100" />
+				<Item TypeId="Component" SubtypeId="Diode" Amount="20" />
+				<Item TypeId="Component" SubtypeId="BareCopperWire" Amount="2" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="0.5" />
+				<Item TypeId="Component" SubtypeId="Processor" Amount="5" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Detector" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>BreakerX100</SubtypeId>
+			</Id>
+			<DisplayName>Breaker x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Breaker_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Switch" Amount="100" />
+				<Item TypeId="Component" SubtypeId="Resistor" Amount="600" />
+				<Item TypeId="Component" SubtypeId="NitinolSpring" Amount="12.5" />
+				<Item TypeId="Component" SubtypeId="Construction" Amount="400" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>75</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Breaker" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>BreakerX10</SubtypeId>
+			</Id>
+			<DisplayName>Breaker x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Breaker_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Switch" Amount="10" />
+				<Item TypeId="Component" SubtypeId="Resistor" Amount="60" />
+				<Item TypeId="Component" SubtypeId="NitinolSpring" Amount="1.25" />
+				<Item TypeId="Component" SubtypeId="Construction" Amount="40" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="0.1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Breaker" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Breaker</SubtypeId>
+			</Id>
+			<DisplayName>Breaker</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Breaker_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Switch" Amount="1" />
+				<Item TypeId="Component" SubtypeId="Resistor" Amount="6" />
+				<Item TypeId="Component" SubtypeId="NitinolSpring" Amount="0.125" />
+				<Item TypeId="Component" SubtypeId="Construction" Amount="4" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="0.01" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>3</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Breaker" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>SolenoidX100</SubtypeId>
+			</Id>
+			<DisplayName>Solenoid x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Solenoid_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Coil" Amount="100" />
+				<Item TypeId="Component" SubtypeId="SteelRod" Amount="10" />
+				<Item TypeId="Ingot" SubtypeId="Magnet" Amount="50" />
+				<Item TypeId="Component" SubtypeId="InsulatedCopperWire" Amount="10" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="5" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>50</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Solenoid" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>SolenoidX10</SubtypeId>
+			</Id>
+			<DisplayName>Solenoid x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Solenoid_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Coil" Amount="10" />
+				<Item TypeId="Component" SubtypeId="SteelRod" Amount="1" />
+				<Item TypeId="Ingot" SubtypeId="Magnet" Amount="5" />
+				<Item TypeId="Component" SubtypeId="InsulatedCopperWire" Amount="1" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="0.5" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Solenoid" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Solenoid</SubtypeId>
+			</Id>
+			<DisplayName>Solenoid</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Solenoid_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Coil" Amount="1" />
+				<Item TypeId="Component" SubtypeId="SteelRod" Amount="0.1" />
+				<Item TypeId="Ingot" SubtypeId="Magnet" Amount="0.5" />
+				<Item TypeId="Component" SubtypeId="InsulatedCopperWire" Amount="0.1" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="0.05" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Solenoid" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>StatorX100</SubtypeId>
+			</Id>
+			<DisplayName>Stator x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\Stator_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Coil" Amount="10" />
+				<Item TypeId="Component" SubtypeId="ZipTies" Amount="400" />
+				<Item TypeId="Component" SubtypeId="Diode" Amount="600" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="10" />
+				<Item TypeId="Component" SubtypeId="InsulatedCopperWire" Amount="100" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>50</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Stator" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>StatorX10</SubtypeId>
+			</Id>
+			<DisplayName>Stator x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\Stator_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Coil" Amount="1" />
+				<Item TypeId="Component" SubtypeId="ZipTies" Amount="40" />
+				<Item TypeId="Component" SubtypeId="Diode" Amount="60" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="1" />
+				<Item TypeId="Component" SubtypeId="InsulatedCopperWire" Amount="10" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Stator" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Stator</SubtypeId>
+			</Id>
+			<DisplayName>Stator</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Mechanical\Stator_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Coil" Amount="0.1" />
+				<Item TypeId="Component" SubtypeId="ZipTies" Amount="4" />
+				<Item TypeId="Component" SubtypeId="Diode" Amount="6" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="0.1" />
+				<Item TypeId="Component" SubtypeId="InsulatedCopperWire" Amount="1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Stator" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>ControlRodX100</SubtypeId>
+			</Id>
+			<DisplayName>Control Rod x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\ControlRod_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="SteelRod" Amount="100" />
+				<Item TypeId="Component" SubtypeId="BallBearing" Amount="100" />
+				<Item TypeId="Ingot" SubtypeId="Beryllium" Amount="100" />
+				<Item TypeId="Component" SubtypeId="Solenoid" Amount="100" />
+				<Item TypeId="Component" SubtypeId="Detector" Amount="100" />
+				<Item TypeId="Component" SubtypeId="InsulatedCopperWire" Amount="300" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>250</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="ControlRod" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>ControlRodX10</SubtypeId>
+			</Id>
+			<DisplayName>Control Rod x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\ControlRod_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="SteelRod" Amount="10" />
+				<Item TypeId="Component" SubtypeId="BallBearing" Amount="10" />
+				<Item TypeId="Ingot" SubtypeId="Beryllium" Amount="10" />
+				<Item TypeId="Component" SubtypeId="Solenoid" Amount="10" />
+				<Item TypeId="Component" SubtypeId="Detector" Amount="10" />
+				<Item TypeId="Component" SubtypeId="InsulatedCopperWire" Amount="30" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>50</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="ControlRod" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>ControlRod</SubtypeId>
+			</Id>
+			<DisplayName>Control Rod</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\ControlRod_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="SteelRod" Amount="1" />
+				<Item TypeId="Component" SubtypeId="BallBearing" Amount="1" />
+				<Item TypeId="Ingot" SubtypeId="Beryllium" Amount="1" />
+				<Item TypeId="Component" SubtypeId="Solenoid" Amount="1" />
+				<Item TypeId="Component" SubtypeId="Detector" Amount="1" />
+				<Item TypeId="Component" SubtypeId="InsulatedCopperWire" Amount="3" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>6</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="ControlRod" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>CameraX100</SubtypeId>
+			</Id>
+			<DisplayName>Camera x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Camera_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Glass" Amount="5" />
+				<Item TypeId="Component" SubtypeId="Sensor" Amount="1000" />
+				<Item TypeId="Component" SubtypeId="Diode" Amount="1000" />
+				<Item TypeId="Component" SubtypeId="Resistor" Amount="400" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="2" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>125</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Camera" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>CameraX10</SubtypeId>
+			</Id>
+			<DisplayName>Camera x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Camera_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Glass" Amount="0.5" />
+				<Item TypeId="Component" SubtypeId="Sensor" Amount="100" />
+				<Item TypeId="Component" SubtypeId="Diode" Amount="100" />
+				<Item TypeId="Component" SubtypeId="Resistor" Amount="40" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="0.2" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>25</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Camera" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Camera</SubtypeId>
+			</Id>
+			<DisplayName>Camera</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Camera_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Glass" Amount="0.05" />
+				<Item TypeId="Component" SubtypeId="Sensor" Amount="10" />
+				<Item TypeId="Component" SubtypeId="Diode" Amount="10" />
+				<Item TypeId="Component" SubtypeId="Resistor" Amount="4" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="0.02" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Camera" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>SpeakerX100</SubtypeId>
+			</Id>
+			<DisplayName>Speaker x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Speaker_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Coil" Amount="100" />
+				<Item TypeId="Ingot" SubtypeId="Magnet" Amount="100" />
+				<Item TypeId="Component" SubtypeId="Canvas" Amount="5" />
+				<Item TypeId="Component" SubtypeId="InsulatedCopperWire" Amount="10" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="10" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>50</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Speaker" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>SpeakerX10</SubtypeId>
+			</Id>
+			<DisplayName>Speaker x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Speaker_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Coil" Amount="10" />
+				<Item TypeId="Ingot" SubtypeId="Magnet" Amount="10" />
+				<Item TypeId="Component" SubtypeId="Canvas" Amount="0.5" />
+				<Item TypeId="Component" SubtypeId="InsulatedCopperWire" Amount="1" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Speaker" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Speaker</SubtypeId>
+			</Id>
+			<DisplayName>Speaker</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Speaker_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Coil" Amount="1" />
+				<Item TypeId="Ingot" SubtypeId="Magnet" Amount="1" />
+				<Item TypeId="Component" SubtypeId="Canvas" Amount="0.05" />
+				<Item TypeId="Component" SubtypeId="InsulatedCopperWire" Amount="0.1" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="0.1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Speaker" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>DisplayX100</SubtypeId>
+			</Id>
+			<DisplayName>Display x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Display_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Arsenic" Amount="250" />
+				<Item TypeId="Component" SubtypeId="LED" Amount="1000000" />
+				<Item TypeId="Ingot" SubtypeId="Glass" Amount="400" />
+				<Item TypeId="Component" SubtypeId="InsulatedCopperWire" Amount="400" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="20" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>125</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Display" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>DisplayX10</SubtypeId>
+			</Id>
+			<DisplayName>Display x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Display_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Arsenic" Amount="25" />
+				<Item TypeId="Component" SubtypeId="LED" Amount="100000" />
+				<Item TypeId="Ingot" SubtypeId="Glass" Amount="40" />
+				<Item TypeId="Component" SubtypeId="InsulatedCopperWire" Amount="40" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="2" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>25</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Display" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Display</SubtypeId>
+			</Id>
+			<DisplayName>Display</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Display_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Arsenic" Amount="2.5" />
+				<Item TypeId="Component" SubtypeId="LED" Amount="10000" />
+				<Item TypeId="Ingot" SubtypeId="Glass" Amount="4" />
+				<Item TypeId="Component" SubtypeId="InsulatedCopperWire" Amount="4" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="0.2" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Display" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>HardDriveX100</SubtypeId>
+			</Id>
+			<DisplayName>Hard Drive x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\HardDrive_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Tellurium" Amount="2" />
+				<Item TypeId="Ingot" SubtypeId="Platinum" Amount="0.1" />
+				<Item TypeId="Ingot" SubtypeId="Arsenic" Amount="4" />
+				<Item TypeId="Ingot" SubtypeId="Silicon" Amount="50" />
+				<Item TypeId="Component" SubtypeId="Motor" Amount="1" />
+				<Item TypeId="Component" SubtypeId="DataCable" Amount="1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>100</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="HardDrive" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>HardDriveX10</SubtypeId>
+			</Id>
+			<DisplayName>Hard Drive x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\HardDrive_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Tellurium" Amount="0.2" />
+				<Item TypeId="Ingot" SubtypeId="Platinum" Amount="0.01" />
+				<Item TypeId="Ingot" SubtypeId="Arsenic" Amount="0.4" />
+				<Item TypeId="Ingot" SubtypeId="Silicon" Amount="5" />
+				<Item TypeId="Component" SubtypeId="Motor" Amount="0.1" />
+				<Item TypeId="Component" SubtypeId="DataCable" Amount="0.1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>20</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="HardDrive" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>HardDrive</SubtypeId>
+			</Id>
+			<DisplayName>Hard Drive</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\HardDrive_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Tellurium" Amount="0.02" />
+				<Item TypeId="Ingot" SubtypeId="Platinum" Amount="0.001" />
+				<Item TypeId="Ingot" SubtypeId="Arsenic" Amount="0.04" />
+				<Item TypeId="Ingot" SubtypeId="Silicon" Amount="0.5" />
+				<Item TypeId="Component" SubtypeId="Motor" Amount="0.01" />
+				<Item TypeId="Component" SubtypeId="DataCable" Amount="0.01" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>4</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="HardDrive" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>SolidStateDriveX100</SubtypeId>
+			</Id>
+			<DisplayName>Solid State Drive x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\SolidStateDrive_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Germanium" Amount="2" />
+				<Item TypeId="Ingot" SubtypeId="Arsenic" Amount="2" />
+				<Item TypeId="Ingot" SubtypeId="Gold" Amount="0.4" />
+				<Item TypeId="Component" SubtypeId="DataCable" Amount="1" />
+				<Item TypeId="Ingot" SubtypeId="Yttrium" Amount="0.4" />
+				<Item TypeId="Component" SubtypeId="Resistor" Amount="2000" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>125</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="SolidStateDrive" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>SolidStateDriveX10</SubtypeId>
+			</Id>
+			<DisplayName>Solid State Drive x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\SolidStateDrive_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Germanium" Amount="0.2" />
+				<Item TypeId="Ingot" SubtypeId="Arsenic" Amount="0.2" />
+				<Item TypeId="Ingot" SubtypeId="Gold" Amount="0.04" />
+				<Item TypeId="Component" SubtypeId="DataCable" Amount="0.1" />
+				<Item TypeId="Ingot" SubtypeId="Yttrium" Amount="0.04" />
+				<Item TypeId="Component" SubtypeId="Resistor" Amount="200" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>25</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="SolidStateDrive" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>SolidStateDrive</SubtypeId>
+			</Id>
+			<DisplayName>Solid State Drive</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\SolidStateDrive_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Germanium" Amount="0.02" />
+				<Item TypeId="Ingot" SubtypeId="Arsenic" Amount="0.02" />
+				<Item TypeId="Ingot" SubtypeId="Gold" Amount="0.004" />
+				<Item TypeId="Component" SubtypeId="DataCable" Amount="0.01" />
+				<Item TypeId="Ingot" SubtypeId="Yttrium" Amount="0.004" />
+				<Item TypeId="Component" SubtypeId="Resistor" Amount="20" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="SolidStateDrive" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>QuantumDriveX100</SubtypeId>
+			</Id>
+			<DisplayName>Quantum Drive x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\QuantumDrive_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Platinum" Amount="37.5" />
+				<Item TypeId="Ingot" SubtypeId="Arsenic" Amount="187.5" />
+				<Item TypeId="Ingot" SubtypeId="Gold" Amount="37.5" />
+				<Item TypeId="Component" SubtypeId="FiberOpticWire" Amount="10" />
+				<Item TypeId="Ingot" SubtypeId="Xenon" Amount="7.5" />
+				<Item TypeId="Component" SubtypeId="Transistor" Amount="4800" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>200</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="QuantumDrive" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>QuantumDriveX10</SubtypeId>
+			</Id>
+			<DisplayName>Quantum Drive x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\QuantumDrive_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Platinum" Amount="3.75" />
+				<Item TypeId="Ingot" SubtypeId="Arsenic" Amount="18.75" />
+				<Item TypeId="Ingot" SubtypeId="Gold" Amount="3.75" />
+				<Item TypeId="Component" SubtypeId="FiberOpticWire" Amount="1" />
+				<Item TypeId="Ingot" SubtypeId="Xenon" Amount="0.75" />
+				<Item TypeId="Component" SubtypeId="Transistor" Amount="480" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>40</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="QuantumDrive" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>QuantumDrive</SubtypeId>
+			</Id>
+			<DisplayName>Quantum Drive</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\QuantumDrive_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Platinum" Amount="0.375" />
+				<Item TypeId="Ingot" SubtypeId="Arsenic" Amount="1.875" />
+				<Item TypeId="Ingot" SubtypeId="Gold" Amount="0.375" />
+				<Item TypeId="Component" SubtypeId="FiberOpticWire" Amount="0.1" />
+				<Item TypeId="Ingot" SubtypeId="Xenon" Amount="0.075" />
+				<Item TypeId="Component" SubtypeId="Transistor" Amount="48" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>8</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="QuantumDrive" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>MicroChipX100</SubtypeId>
+			</Id>
+			<DisplayName>Micro Chip x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\computer_component.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Gold" Amount="0.1" />
+				<Item TypeId="Component" SubtypeId="Processor" Amount="100" />
+				<Item TypeId="Component" SubtypeId="Diode" Amount="1600" />
+				<Item TypeId="Component" SubtypeId="Transistor" Amount="800" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="0.1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>100</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="MicroChip" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>MicroChipX10</SubtypeId>
+			</Id>
+			<DisplayName>Micro Chip x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\computer_component.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Gold" Amount="0.01" />
+				<Item TypeId="Component" SubtypeId="Processor" Amount="10" />
+				<Item TypeId="Component" SubtypeId="Diode" Amount="160" />
+				<Item TypeId="Component" SubtypeId="Transistor" Amount="80" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="0.01" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>20</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="MicroChip" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>MicroChip</SubtypeId>
+			</Id>
+			<DisplayName>Micro Chip</DisplayName>
+			<Icon>Textures\GUI\Icons\component\computer_component.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Gold" Amount="0.001" />
+				<Item TypeId="Component" SubtypeId="Processor" Amount="1" />
+				<Item TypeId="Component" SubtypeId="Diode" Amount="16" />
+				<Item TypeId="Component" SubtypeId="Transistor" Amount="8" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="0.001" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>4</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="MicroChip" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>SolderX100</SubtypeId>
+			</Id>
+			<DisplayName>Computer x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Computer_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="MicroChip" Amount="400" />
+				<Item TypeId="Component" SubtypeId="HardDrive" Amount="100" />
+				<Item TypeId="Component" SubtypeId="Resistor" Amount="1600" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="1" />
+				<Item TypeId="Component" SubtypeId="DataCable" Amount="20" />
+				<Item TypeId="Component" SubtypeId="TitaniumPlate" Amount="20" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>125</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Solder" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>SolderX10</SubtypeId>
+			</Id>
+			<DisplayName>Computer x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Computer_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="MicroChip" Amount="40" />
+				<Item TypeId="Component" SubtypeId="HardDrive" Amount="10" />
+				<Item TypeId="Component" SubtypeId="Resistor" Amount="160" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="0.1" />
+				<Item TypeId="Component" SubtypeId="DataCable" Amount="2" />
+				<Item TypeId="Component" SubtypeId="TitaniumPlate" Amount="2" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>25</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Solder" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Solder</SubtypeId>
+			</Id>
+			<DisplayName>Computer</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Computer_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="MicroChip" Amount="4" />
+				<Item TypeId="Component" SubtypeId="HardDrive" Amount="1" />
+				<Item TypeId="Component" SubtypeId="Resistor" Amount="16" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="0.01" />
+				<Item TypeId="Component" SubtypeId="DataCable" Amount="0.2" />
+				<Item TypeId="Component" SubtypeId="TitaniumPlate" Amount="0.2" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Solder" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>QuantumProcessorX100</SubtypeId>
+			</Id>
+			<DisplayName>Quantum Processor x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\QuantumProcessor_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="FiberOpticWire" Amount="5" />
+				<Item TypeId="Component" SubtypeId="LED" Amount="12800" />
+				<Item TypeId="Ingot" SubtypeId="Vanadium" Amount="1" />
+				<Item TypeId="Ingot" SubtypeId="Krypton" Amount="10" />
+				<Item TypeId="Ingot" SubtypeId="Thallium" Amount="15" />
+				<Item TypeId="Ingot" SubtypeId="Electrum" Amount="10" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>200</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="QuantumProcessor" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>QuantumProcessorX10</SubtypeId>
+			</Id>
+			<DisplayName>Quantum Processor x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\QuantumProcessor_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="FiberOpticWire" Amount="0.5" />
+				<Item TypeId="Component" SubtypeId="LED" Amount="1280" />
+				<Item TypeId="Ingot" SubtypeId="Vanadium" Amount="0.1" />
+				<Item TypeId="Ingot" SubtypeId="Krypton" Amount="1" />
+				<Item TypeId="Ingot" SubtypeId="Thallium" Amount="1.5" />
+				<Item TypeId="Ingot" SubtypeId="Electrum" Amount="1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>40</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="QuantumProcessor" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>QuantumProcessor</SubtypeId>
+			</Id>
+			<DisplayName>Quantum Processor</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\QuantumProcessor_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="FiberOpticWire" Amount="0.05" />
+				<Item TypeId="Component" SubtypeId="LED" Amount="128" />
+				<Item TypeId="Ingot" SubtypeId="Vanadium" Amount="0.01" />
+				<Item TypeId="Ingot" SubtypeId="Krypton" Amount="0.1" />
+				<Item TypeId="Ingot" SubtypeId="Thallium" Amount="0.15" />
+				<Item TypeId="Ingot" SubtypeId="Electrum" Amount="0.1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>8</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="QuantumProcessor" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>AIMainframeX100</SubtypeId>
+			</Id>
+			<DisplayName>AI Mainframe x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\AIMainframe_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="QuantumProcessor" Amount="100" />
+				<Item TypeId="Component" SubtypeId="QuantumDrive" Amount="100" />
+				<Item TypeId="Component" SubtypeId="EnergyCoupler" Amount="100" />
+				<Item TypeId="Component" SubtypeId="Detector" Amount="300" />
+				<Item TypeId="Component" SubtypeId="PowerSupply" Amount="100" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>250</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="AIMainframe" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>AIMainframeX10</SubtypeId>
+			</Id>
+			<DisplayName>AI Mainframe x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\AIMainframe_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="QuantumProcessor" Amount="10" />
+				<Item TypeId="Component" SubtypeId="QuantumDrive" Amount="10" />
+				<Item TypeId="Component" SubtypeId="EnergyCoupler" Amount="10" />
+				<Item TypeId="Component" SubtypeId="Detector" Amount="30" />
+				<Item TypeId="Component" SubtypeId="PowerSupply" Amount="10" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>50</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="AIMainframe" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>AIMainframe</SubtypeId>
+			</Id>
+			<DisplayName>AI Mainframe</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\AIMainframe_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="QuantumProcessor" Amount="1" />
+				<Item TypeId="Component" SubtypeId="QuantumDrive" Amount="1" />
+				<Item TypeId="Component" SubtypeId="EnergyCoupler" Amount="1" />
+				<Item TypeId="Component" SubtypeId="Detector" Amount="3" />
+				<Item TypeId="Component" SubtypeId="PowerSupply" Amount="1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="AIMainframe" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>NetworkingMainframeX100</SubtypeId>
+			</Id>
+			<DisplayName>Networking Mainframe x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\NetworkingMainframe_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="QuantumProcessor" Amount="100" />
+				<Item TypeId="Component" SubtypeId="QuantumDrive" Amount="400" />
+				<Item TypeId="Component" SubtypeId="EnergyCoupler" Amount="100" />
+				<Item TypeId="Component" SubtypeId="RadioCommunication" Amount="600" />
+				<Item TypeId="Component" SubtypeId="PowerSupply" Amount="100" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>375</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="NetworkingMainframe" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>NetworkingMainframeX10</SubtypeId>
+			</Id>
+			<DisplayName>Networking Mainframe x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\NetworkingMainframe_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="QuantumProcessor" Amount="10" />
+				<Item TypeId="Component" SubtypeId="QuantumDrive" Amount="40" />
+				<Item TypeId="Component" SubtypeId="EnergyCoupler" Amount="10" />
+				<Item TypeId="Component" SubtypeId="RadioCommunication" Amount="60" />
+				<Item TypeId="Component" SubtypeId="PowerSupply" Amount="10" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>75</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="NetworkingMainframe" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>NetworkingMainframe</SubtypeId>
+			</Id>
+			<DisplayName>Networking Mainframe</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\NetworkingMainframe_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="QuantumProcessor" Amount="1" />
+				<Item TypeId="Component" SubtypeId="QuantumDrive" Amount="4" />
+				<Item TypeId="Component" SubtypeId="EnergyCoupler" Amount="1" />
+				<Item TypeId="Component" SubtypeId="RadioCommunication" Amount="6" />
+				<Item TypeId="Component" SubtypeId="PowerSupply" Amount="1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="NetworkingMainframe" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>TargetingMainframeX100</SubtypeId>
+			</Id>
+			<DisplayName>Targeting Mainframe x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\NetworkingMainframe_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="QuantumProcessor" Amount="400" />
+				<Item TypeId="Component" SubtypeId="QuantumDrive" Amount="100" />
+				<Item TypeId="Component" SubtypeId="EnergyCoupler" Amount="100" />
+				<Item TypeId="Component" SubtypeId="Detector" Amount="600" />
+				<Item TypeId="Component" SubtypeId="PowerSupply" Amount="100" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>375</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="TargetingMainframe" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>TargetingMainframeX10</SubtypeId>
+			</Id>
+			<DisplayName>Targeting Mainframe x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\NetworkingMainframe_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="QuantumProcessor" Amount="40" />
+				<Item TypeId="Component" SubtypeId="QuantumDrive" Amount="10" />
+				<Item TypeId="Component" SubtypeId="EnergyCoupler" Amount="10" />
+				<Item TypeId="Component" SubtypeId="Detector" Amount="60" />
+				<Item TypeId="Component" SubtypeId="PowerSupply" Amount="10" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>75</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="TargetingMainframe" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>TargetingMainframe</SubtypeId>
+			</Id>
+			<DisplayName>Targeting Mainframe</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\NetworkingMainframe_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="QuantumProcessor" Amount="4" />
+				<Item TypeId="Component" SubtypeId="QuantumDrive" Amount="1" />
+				<Item TypeId="Component" SubtypeId="EnergyCoupler" Amount="1" />
+				<Item TypeId="Component" SubtypeId="Detector" Amount="6" />
+				<Item TypeId="Component" SubtypeId="PowerSupply" Amount="1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="TargetingMainframe" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>RectifierX100</SubtypeId>
+			</Id>
+			<DisplayName>Rectifier x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Rectifier_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="HeatSink" Amount="100" />
+				<Item TypeId="Ingot" SubtypeId="ThermalPaste" Amount="100" />
+				<Item TypeId="Component" SubtypeId="Transistor" Amount="300" />
+				<Item TypeId="Component" SubtypeId="Diode" Amount="1200" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="1500" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>50</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Rectifier" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>RectifierX10</SubtypeId>
+			</Id>
+			<DisplayName>Rectifier x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Rectifier_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="HeatSink" Amount="10" />
+				<Item TypeId="Ingot" SubtypeId="ThermalPaste" Amount="10" />
+				<Item TypeId="Component" SubtypeId="Transistor" Amount="30" />
+				<Item TypeId="Component" SubtypeId="Diode" Amount="120" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="150" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Rectifier" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Rectifier</SubtypeId>
+			</Id>
+			<DisplayName>Rectifier</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Rectifier_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="HeatSink" Amount="1" />
+				<Item TypeId="Ingot" SubtypeId="ThermalPaste" Amount="1" />
+				<Item TypeId="Component" SubtypeId="Transistor" Amount="3" />
+				<Item TypeId="Component" SubtypeId="Diode" Amount="12" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="15" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>2</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Rectifier" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>AmplifierX100</SubtypeId>
+			</Id>
+			<DisplayName>Amplifier x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Amplifier_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Rectifier" Amount="100" />
+				<Item TypeId="Component" SubtypeId="Resistor" Amount="1800" />
+				<Item TypeId="Component" SubtypeId="Fuse" Amount="300" />
+				<Item TypeId="Component" SubtypeId="Coil" Amount="600" />
+				<Item TypeId="Component" SubtypeId="InsulatedCopperWire" Amount="600" />
+				<Item TypeId="Component" SubtypeId="POT" Amount="1000" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>100</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Amplifier" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>AmplifierX10</SubtypeId>
+			</Id>
+			<DisplayName>Amplifier x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Amplifier_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Rectifier" Amount="10" />
+				<Item TypeId="Component" SubtypeId="Resistor" Amount="180" />
+				<Item TypeId="Component" SubtypeId="Fuse" Amount="30" />
+				<Item TypeId="Component" SubtypeId="Coil" Amount="60" />
+				<Item TypeId="Component" SubtypeId="InsulatedCopperWire" Amount="60" />
+				<Item TypeId="Component" SubtypeId="POT" Amount="10" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="0.1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>20</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Amplifier" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Amplifier</SubtypeId>
+			</Id>
+			<DisplayName>Amplifier</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Amplifier_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Rectifier" Amount="1" />
+				<Item TypeId="Component" SubtypeId="Resistor" Amount="18" />
+				<Item TypeId="Component" SubtypeId="Fuse" Amount="3" />
+				<Item TypeId="Component" SubtypeId="Coil" Amount="6" />
+				<Item TypeId="Component" SubtypeId="InsulatedCopperWire" Amount="6" />
+				<Item TypeId="Component" SubtypeId="POT" Amount="1" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="0.01" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>4</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Amplifier" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>PowerSupplyX100</SubtypeId>
+			</Id>
+			<DisplayName>Power Supply x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\PowerSupply_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Coil" Amount="500" />
+				<Item TypeId="Component" SubtypeId="Breaker" Amount="100" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="30" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>125</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="PowerSupply" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>PowerSupplyX10</SubtypeId>
+			</Id>
+			<DisplayName>Power Supply x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\PowerSupply_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Coil" Amount="50" />
+				<Item TypeId="Component" SubtypeId="Breaker" Amount="10" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="3" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="PowerSupply" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>PowerSupply</SubtypeId>
+			</Id>
+			<DisplayName>Power Supply</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\PowerSupply_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Coil" Amount="5" />
+				<Item TypeId="Component" SubtypeId="Breaker" Amount="1" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="0.3" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="PowerSupply" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>TransformerX100</SubtypeId>
+			</Id>
+			<DisplayName>Transformer x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Transformer_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="PowerSupply" Amount="100" />
+				<Item TypeId="Component" SubtypeId="SteelRod" Amount="100" />
+				<Item TypeId="Component" SubtypeId="Coil" Amount="5000" />
+				<Item TypeId="Ingot" SubtypeId="MineralSpirits" Amount="1000" />
+				<Item TypeId="Component" SubtypeId="AluminumPlate" Amount="1000" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="6500" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>150</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Transformer" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>TransformerX10</SubtypeId>
+			</Id>
+			<DisplayName>Transformer  x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Transformer_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="PowerSupply" Amount="10" />
+				<Item TypeId="Component" SubtypeId="SteelRod" Amount="10" />
+				<Item TypeId="Component" SubtypeId="Coil" Amount="500" />
+				<Item TypeId="Ingot" SubtypeId="MineralSpirits" Amount="100" />
+				<Item TypeId="Component" SubtypeId="AluminumPlate" Amount="100" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="650" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>30</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Transformer" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Transformer</SubtypeId>
+			</Id>
+			<DisplayName>Transformer</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Transformer_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="PowerSupply" Amount="1" />
+				<Item TypeId="Component" SubtypeId="SteelRod" Amount="1" />
+				<Item TypeId="Component" SubtypeId="Coil" Amount="50" />
+				<Item TypeId="Ingot" SubtypeId="MineralSpirits" Amount="10" />
+				<Item TypeId="Component" SubtypeId="AluminumPlate" Amount="10" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="65" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>6</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Transformer" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>EnergyCouplerX100</SubtypeId>
+			</Id>
+			<DisplayName>Energy Coupler x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\EnergyCoupler_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Palladium" Amount="10" />
+				<Item TypeId="Ingot" SubtypeId="Copper" Amount="50" />
+				<Item TypeId="Ingot" SubtypeId="Rubber" Amount="50" />
+				<Item TypeId="Ingot" SubtypeId="Silver" Amount="50" />
+				<Item TypeId="Component" SubtypeId="InsulatedCopperWire" Amount="60" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="100" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>225</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="EnergyCoupler" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>EnergyCouplerX10</SubtypeId>
+			</Id>
+			<DisplayName>Energy Coupler x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\EnergyCoupler_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Palladium" Amount="1" />
+				<Item TypeId="Ingot" SubtypeId="Copper" Amount="5" />
+				<Item TypeId="Ingot" SubtypeId="Rubber" Amount="5" />
+				<Item TypeId="Ingot" SubtypeId="Silver" Amount="5" />
+				<Item TypeId="Component" SubtypeId="InsulatedCopperWire" Amount="6" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="10" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>45</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="EnergyCoupler" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>EnergyCoupler</SubtypeId>
+			</Id>
+			<DisplayName>Energy Coupler</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\EnergyCoupler_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Palladium" Amount="0.1" />
+				<Item TypeId="Ingot" SubtypeId="Copper" Amount="0.5" />
+				<Item TypeId="Ingot" SubtypeId="Rubber" Amount="0.5" />
+				<Item TypeId="Ingot" SubtypeId="Silver" Amount="0.5" />
+				<Item TypeId="Component" SubtypeId="InsulatedCopperWire" Amount="0.6" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>9</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="EnergyCoupler" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>SuperconductorX100</SubtypeId>
+			</Id>
+			<DisplayName>Super Conductor x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\superconductor_conducts_component.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Electrum" Amount="500" />
+				<Item TypeId="Component" SubtypeId="EnergyCoupler" Amount="200" />
+				<Item TypeId="Ingot" SubtypeId="Rubber" Amount="600" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="400" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>150</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Superconductor" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>SuperconductorX10</SubtypeId>
+			</Id>
+			<DisplayName>Super Conductor x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\superconductor_conducts_component.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Electrum" Amount="50" />
+				<Item TypeId="Component" SubtypeId="EnergyCoupler" Amount="20" />
+				<Item TypeId="Ingot" SubtypeId="Rubber" Amount="60" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="40" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>30</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Superconductor" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Superconductor</SubtypeId>
+			</Id>
+			<DisplayName>Super Conductor</DisplayName>
+			<Icon>Textures\GUI\Icons\component\superconductor_conducts_component.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Electrum" Amount="5" />
+				<Item TypeId="Component" SubtypeId="EnergyCoupler" Amount="2" />
+				<Item TypeId="Ingot" SubtypeId="Rubber" Amount="6" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="4" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>6</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Superconductor" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>FluxCoilX100</SubtypeId>
+			</Id>
+			<DisplayName>Flux Coil x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\FluxCoil_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Ruthenium" Amount="50" />
+				<Item TypeId="Ingot" SubtypeId="Electrum" Amount="100" />
+				<Item TypeId="Ingot" SubtypeId="Thallium" Amount="50" />
+				<Item TypeId="Ingot" SubtypeId="Neon" Amount="900" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>500</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="FluxCoil" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>FluxCoilX10</SubtypeId>
+			</Id>
+			<DisplayName>Flux Coil x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\FluxCoil_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Ruthenium" Amount="5" />
+				<Item TypeId="Ingot" SubtypeId="Electrum" Amount="10" />
+				<Item TypeId="Ingot" SubtypeId="Thallium" Amount="5" />
+				<Item TypeId="Ingot" SubtypeId="Neon" Amount="90" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>50</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="FluxCoil" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>FluxCoil</SubtypeId>
+			</Id>
+			<DisplayName>Flux Coil</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\FluxCoil_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Ruthenium" Amount="0.5" />
+				<Item TypeId="Ingot" SubtypeId="Electrum" Amount="1" />
+				<Item TypeId="Ingot" SubtypeId="Thallium" Amount="0.5" />
+				<Item TypeId="Ingot" SubtypeId="Neon" Amount="9" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="FluxCoil" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>FluxCapacitorX100</SubtypeId>
+			</Id>
+			<DisplayName>Flux Capacitor x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\FluxCapacitor_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Radium" Amount="23" />
+				<Item TypeId="Ingot" SubtypeId="Electrum" Amount="44" />
+				<Item TypeId="Ingot" SubtypeId="Vanadium" Amount="33" />
+				<Item TypeId="Ingot" SubtypeId="Xenon" Amount="2080" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>250</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="FluxCapacitor" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>FluxCapacitorX10</SubtypeId>
+			</Id>
+			<DisplayName>Flux Capacitor x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\FluxCapacitor_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Radium" Amount="2.3" />
+				<Item TypeId="Ingot" SubtypeId="Electrum" Amount="4.4" />
+				<Item TypeId="Ingot" SubtypeId="Vanadium" Amount="3.3" />
+				<Item TypeId="Ingot" SubtypeId="Xenon" Amount="208" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>50</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="FluxCapacitor" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>FluxCapacitor</SubtypeId>
+			</Id>
+			<DisplayName>Flux Capacitor</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\FluxCapacitor_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Radium" Amount="0.23" />
+				<Item TypeId="Ingot" SubtypeId="Electrum" Amount="0.44" />
+				<Item TypeId="Ingot" SubtypeId="Vanadium" Amount="0.33" />
+				<Item TypeId="Ingot" SubtypeId="Xenon" Amount="20.8" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="FluxCapacitor" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>MagneticCouplerX100</SubtypeId>
+			</Id>
+			<DisplayName>Magnetic Coupler x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\MagneticCoupler_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Magnet" Amount="150" />
+				<Item TypeId="Component" SubtypeId="InsulatedCopperWire" Amount="100" />
+				<Item TypeId="Component" SubtypeId="Coil" Amount="300" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="10" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>125</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="MagneticCoupler" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>MagneticCouplerX10</SubtypeId>
+			</Id>
+			<DisplayName>Magnetic Coupler x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\MagneticCoupler_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Magnet" Amount="15" />
+				<Item TypeId="Component" SubtypeId="InsulatedCopperWire" Amount="10" />
+				<Item TypeId="Component" SubtypeId="Coil" Amount="30" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>25</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="MagneticCoupler" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>MagneticCoupler</SubtypeId>
+			</Id>
+			<DisplayName>Magnetic Coupler</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\MagneticCoupler_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Magnet" Amount="1.5" />
+				<Item TypeId="Component" SubtypeId="InsulatedCopperWire" Amount="1" />
+				<Item TypeId="Component" SubtypeId="Coil" Amount="3" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="0.1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="MagneticCoupler" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>ThermoCoupleX100</SubtypeId>
+			</Id>
+			<DisplayName>Thermo Couple x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\ThermoCouple_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Tungsten" Amount="40" />
+				<Item TypeId="Component" SubtypeId="InsulatedCopperWire" Amount="20" />
+				<Item TypeId="Component" SubtypeId="Processor" Amount="100" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>125</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="ThermoCouple" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>ThermoCoupleX10</SubtypeId>
+			</Id>
+			<DisplayName>Thermo Couple x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\ThermoCouple_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Tungsten" Amount="4" />
+				<Item TypeId="Component" SubtypeId="InsulatedCopperWire" Amount="2" />
+				<Item TypeId="Component" SubtypeId="Processor" Amount="10" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>25</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="ThermoCouple" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>ThermoCouple</SubtypeId>
+			</Id>
+			<DisplayName>Thermo Couple</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\ThermoCouple_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Tungsten" Amount="0.4" />
+				<Item TypeId="Component" SubtypeId="InsulatedCopperWire" Amount="0.2" />
+				<Item TypeId="Component" SubtypeId="Processor" Amount="1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="ThermoCouple" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>IgniterX100</SubtypeId>
+			</Id>
+			<DisplayName>Igniter x1000</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Igniter_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="945Steel" Amount="3" />
+				<Item TypeId="Ingot" SubtypeId="Potassium" Amount="1.1" />
+				<Item TypeId="Ingot" SubtypeId="Chlorine" Amount="1" />
+				<Item TypeId="Ingot" SubtypeId="Zirconium" Amount="2.5" />
+				<Item TypeId="Ore" SubtypeId="Oxygen" Amount="1.8" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>125</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Igniter" Amount="1000" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>IgniterX10</SubtypeId>
+			</Id>
+			<DisplayName>Igniter x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Igniter_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="945Steel" Amount="0.3" />
+				<Item TypeId="Ingot" SubtypeId="Potassium" Amount="0.11" />
+				<Item TypeId="Ingot" SubtypeId="Chlorine" Amount="0.1" />
+				<Item TypeId="Ingot" SubtypeId="Zirconium" Amount="0.25" />
+				<Item TypeId="Ore" SubtypeId="Oxygen" Amount="0.18" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>25</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Igniter" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Igniter</SubtypeId>
+			</Id>
+			<DisplayName>Igniter x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Igniter_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="945Steel" Amount="0.03" />
+				<Item TypeId="Ingot" SubtypeId="Potassium" Amount="0.011" />
+				<Item TypeId="Ingot" SubtypeId="Chlorine" Amount="0.01" />
+				<Item TypeId="Ingot" SubtypeId="Zirconium" Amount="0.025" />
+				<Item TypeId="Ore" SubtypeId="Oxygen" Amount="0.018" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Igniter" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>ProjectorX100</SubtypeId>
+			</Id>
+			<DisplayName>Projector x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Projector_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Lanthanum" Amount="10" />
+				<Item TypeId="Component" SubtypeId="MicroChip" Amount="100" />
+				<Item TypeId="Component" SubtypeId="LED" Amount="3200" />
+				<Item TypeId="Component" SubtypeId="Rectifier" Amount="10" />
+				<Item TypeId="Component" SubtypeId="Sensor" Amount="1000" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="15" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>125</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Projector" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>ProjectorX10</SubtypeId>
+			</Id>
+			<DisplayName>Projector x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Projector_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Lanthanum" Amount="1" />
+				<Item TypeId="Component" SubtypeId="MicroChip" Amount="10" />
+				<Item TypeId="Component" SubtypeId="LED" Amount="320" />
+				<Item TypeId="Component" SubtypeId="Rectifier" Amount="1" />
+				<Item TypeId="Component" SubtypeId="Sensor" Amount="100" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="1.5" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>25</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Projector" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Projector</SubtypeId>
+			</Id>
+			<DisplayName>Projector</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Projector_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Lanthanum" Amount="0.1" />
+				<Item TypeId="Component" SubtypeId="MicroChip" Amount="1" />
+				<Item TypeId="Component" SubtypeId="LED" Amount="32" />
+				<Item TypeId="Component" SubtypeId="Rectifier" Amount="0.1" />
+				<Item TypeId="Component" SubtypeId="Sensor" Amount="10" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="0.15" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Projector" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>BeamEmiterX100</SubtypeId>
+			</Id>
+			<DisplayName>Beam Emiter x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\BeamEmiter_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Thallium" Amount="10" />
+				<Item TypeId="Component" SubtypeId="Projector" Amount="100" />
+				<Item TypeId="Component" SubtypeId="Amplifier" Amount="20" />
+				<Item TypeId="Component" SubtypeId="ThermoCouple" Amount="100" />
+				<Item TypeId="Ingot" SubtypeId="Electrum" Amount="30" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="10" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>250</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="BeamEmiter" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>BeamEmiterX10</SubtypeId>
+			</Id>
+			<DisplayName>Beam Emiter x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\BeamEmiter_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Thallium" Amount="1" />
+				<Item TypeId="Component" SubtypeId="Projector" Amount="10" />
+				<Item TypeId="Component" SubtypeId="Amplifier" Amount="2" />
+				<Item TypeId="Component" SubtypeId="ThermoCouple" Amount="10" />
+				<Item TypeId="Ingot" SubtypeId="Electrum" Amount="3" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>50</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="BeamEmiter" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>BeamEmiter</SubtypeId>
+			</Id>
+			<DisplayName>Beam Emiter</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\BeamEmiter_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Thallium" Amount="0.1" />
+				<Item TypeId="Component" SubtypeId="Projector" Amount="1" />
+				<Item TypeId="Component" SubtypeId="Amplifier" Amount="0.2" />
+				<Item TypeId="Component" SubtypeId="ThermoCouple" Amount="1" />
+				<Item TypeId="Ingot" SubtypeId="Electrum" Amount="0.3" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="0.1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="BeamEmiter" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>IonProjectorX100</SubtypeId>
+			</Id>
+			<DisplayName>Ion Projector x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\IonProjector_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="BeamEmiter" Amount="100" />
+				<Item TypeId="Component" SubtypeId="PowerSupply" Amount="100" />
+				<Item TypeId="Component" SubtypeId="MagneticCoupler" Amount="100" />
+				<Item TypeId="Ingot" SubtypeId="Platinum" Amount="150" />
+				<Item TypeId="Ingot" SubtypeId="Electrum" Amount="125" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>250</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="IonProjector" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>IonProjectorX10</SubtypeId>
+			</Id>
+			<DisplayName>Ion Projector x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\IonProjector_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="BeamEmiter" Amount="10" />
+				<Item TypeId="Component" SubtypeId="PowerSupply" Amount="10" />
+				<Item TypeId="Component" SubtypeId="MagneticCoupler" Amount="10" />
+				<Item TypeId="Ingot" SubtypeId="Platinum" Amount="15" />
+				<Item TypeId="Ingot" SubtypeId="Electrum" Amount="12.5" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>50</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="IonProjector" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>IonProjector</SubtypeId>
+			</Id>
+			<DisplayName>Ion Projector</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\IonProjector_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="BeamEmiter" Amount="1" />
+				<Item TypeId="Component" SubtypeId="PowerSupply" Amount="1" />
+				<Item TypeId="Component" SubtypeId="MagneticCoupler" Amount="1" />
+				<Item TypeId="Ingot" SubtypeId="Platinum" Amount="1.5" />
+				<Item TypeId="Ingot" SubtypeId="Electrum" Amount="1.25" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="IonProjector" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>GravityGeneratorX100</SubtypeId>
+			</Id>
+			<DisplayName>Gravity Generator x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\gravity_generator_components_component.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Solder" Amount="100" />
+				<Item TypeId="Component" SubtypeId="PowerSupply" Amount="700" />
+				<Item TypeId="Component" SubtypeId="Amplifier" Amount="1000" />
+				<Item TypeId="Component" SubtypeId="MagneticCoupler" Amount="700" />
+				<Item TypeId="Ingot" SubtypeId="Mercury" Amount="100" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="150" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>250</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="GravityGenerator" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>GravityGeneratorX10</SubtypeId>
+			</Id>
+			<DisplayName>Gravity Generator x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\gravity_generator_components_component.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Solder" Amount="10" />
+				<Item TypeId="Component" SubtypeId="PowerSupply" Amount="70" />
+				<Item TypeId="Component" SubtypeId="Amplifier" Amount="100" />
+				<Item TypeId="Component" SubtypeId="MagneticCoupler" Amount="70" />
+				<Item TypeId="Ingot" SubtypeId="Mercury" Amount="10" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="15" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>50</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="GravityGenerator" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>GravityGeneratorComponent</SubtypeId>
+			</Id>
+			<DisplayName>Gravity Generator</DisplayName>
+			<Icon>Textures\GUI\Icons\component\gravity_generator_components_component.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Solder" Amount="1" />
+				<Item TypeId="Component" SubtypeId="PowerSupply" Amount="7" />
+				<Item TypeId="Component" SubtypeId="Amplifier" Amount="10" />
+				<Item TypeId="Component" SubtypeId="MagneticCoupler" Amount="7" />
+				<Item TypeId="Ingot" SubtypeId="Mercury" Amount="1" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="1.5" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="GravityGenerator" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>ParticleAcceleratorX100</SubtypeId>
+			</Id>
+			<DisplayName>Particle Accelerator x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\ParticleAccelerator_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Osmium" Amount="10" />
+				<Item TypeId="Ingot" SubtypeId="Iridium" Amount="10" />
+				<Item TypeId="Component" SubtypeId="GravityGenerator" Amount="50" />
+				<Item TypeId="Component" SubtypeId="MagneticCoupler" Amount="200" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>375</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="ParticleAccelerator" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>ParticleAcceleratorX10</SubtypeId>
+			</Id>
+			<DisplayName>Particle Accelerator x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\ParticleAccelerator_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Osmium" Amount="1" />
+				<Item TypeId="Ingot" SubtypeId="Iridium" Amount="1" />
+				<Item TypeId="Component" SubtypeId="GravityGenerator" Amount="5" />
+				<Item TypeId="Component" SubtypeId="MagneticCoupler" Amount="20" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="0.1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>75</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="ParticleAccelerator" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>ParticleAccelerator</SubtypeId>
+			</Id>
+			<DisplayName>Particle Accelerator</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\ParticleAccelerator_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Osmium" Amount="0.1" />
+				<Item TypeId="Ingot" SubtypeId="Iridium" Amount="0.1" />
+				<Item TypeId="Component" SubtypeId="GravityGenerator" Amount="0.5" />
+				<Item TypeId="Component" SubtypeId="MagneticCoupler" Amount="2" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="0.01" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="ParticleAccelerator" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>ShieldComponentX100</SubtypeId>
+			</Id>
+			<DisplayName>Shield Emitter x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\ShieldEmitter_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Solder" Amount="100" />
+				<Item TypeId="Component" SubtypeId="IonProjector" Amount="400" />
+				<Item TypeId="Component" SubtypeId="PowerSupply" Amount="800" />
+				<Item TypeId="Component" SubtypeId="EnergyCoupler" Amount="200" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="300" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>375</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="ShieldComponent" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>ShieldComponentX10</SubtypeId>
+			</Id>
+			<DisplayName>Shield Emitter x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\ShieldEmitter_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Solder" Amount="10" />
+				<Item TypeId="Component" SubtypeId="IonProjector" Amount="40" />
+				<Item TypeId="Component" SubtypeId="PowerSupply" Amount="80" />
+				<Item TypeId="Component" SubtypeId="EnergyCoupler" Amount="20" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="30" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>75</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="ShieldComponent" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>ShieldComponent</SubtypeId>
+			</Id>
+			<DisplayName>Shield Emitter</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\ShieldEmitter_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Solder" Amount="1" />
+				<Item TypeId="Component" SubtypeId="IonProjector" Amount="4" />
+				<Item TypeId="Component" SubtypeId="PowerSupply" Amount="8" />
+				<Item TypeId="Component" SubtypeId="EnergyCoupler" Amount="2" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="3" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="ShieldComponent" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>HeatingElementX100</SubtypeId>
+			</Id>
+			<DisplayName>Heating Element x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\HeatingElement_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="InsulatedCopperWire" Amount="150" />
+				<Item TypeId="Component" SubtypeId="Resistor" Amount="100" />
+				<Item TypeId="Ingot" SubtypeId="Chromium" Amount="100" />
+				<Item TypeId="Ingot" SubtypeId="Nickel" Amount="300" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="25" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>100</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="HeatingElement" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>HeatingElementX10</SubtypeId>
+			</Id>
+			<DisplayName>Heating Element x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\HeatingElement_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="InsulatedCopperWire" Amount="15" />
+				<Item TypeId="Component" SubtypeId="Resistor" Amount="10" />
+				<Item TypeId="Ingot" SubtypeId="Chromium" Amount="10" />
+				<Item TypeId="Ingot" SubtypeId="Nickel" Amount="30" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="2.5" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>20</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="HeatingElement" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>HeatingElement</SubtypeId>
+			</Id>
+			<DisplayName>Heating Element</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\HeatingElement_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="InsulatedCopperWire" Amount="1.5" />
+				<Item TypeId="Component" SubtypeId="Resistor" Amount="1" />
+				<Item TypeId="Ingot" SubtypeId="Chromium" Amount="1" />
+				<Item TypeId="Ingot" SubtypeId="Nickel" Amount="3" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="0.25" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>4</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="HeatingElement" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>CatalyticConvertorX100</SubtypeId>
+			</Id>
+			<DisplayName>Catalytic Convertor x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\CatalyticConvertor_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Platinum" Amount="0.5" />
+				<Item TypeId="Ingot" SubtypeId="Palladium" Amount="0.1" />
+				<Item TypeId="Ingot" SubtypeId="Strontium" Amount="5" />
+				<Item TypeId="Ingot" SubtypeId="Tellurium" Amount="4" />
+				<Item TypeId="Ingot" SubtypeId="Cadmium" Amount="2" />
+				<Item TypeId="Ingot" SubtypeId="Calcium" Amount="35" />
+				<Item TypeId="Component" SubtypeId="MetalGrid" Amount="10" />
+				<Item TypeId="Component" SubtypeId="Insulation" Amount="100" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>125</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="CatalyticConvertor" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>CatalyticConvertorX10</SubtypeId>
+			</Id>
+			<DisplayName>Catalytic Convertor x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\CatalyticConvertor_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Platinum" Amount="0.05" />
+				<Item TypeId="Ingot" SubtypeId="Palladium" Amount="0.01" />
+				<Item TypeId="Ingot" SubtypeId="Strontium" Amount="0.5" />
+				<Item TypeId="Ingot" SubtypeId="Tellurium" Amount="0.4" />
+				<Item TypeId="Ingot" SubtypeId="Cadmium" Amount="0.2" />
+				<Item TypeId="Ingot" SubtypeId="Calcium" Amount="3.5" />
+				<Item TypeId="Component" SubtypeId="MetalGrid" Amount="1" />
+				<Item TypeId="Component" SubtypeId="Insulation" Amount="10" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>25</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="CatalyticConvertor" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>CatalyticConvertor</SubtypeId>
+			</Id>
+			<DisplayName>Catalytic Convertor</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\CatalyticConvertor_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Platinum" Amount="0.005" />
+				<Item TypeId="Ingot" SubtypeId="Palladium" Amount="0.001" />
+				<Item TypeId="Ingot" SubtypeId="Strontium" Amount="0.05" />
+				<Item TypeId="Ingot" SubtypeId="Tellurium" Amount="0.04" />
+				<Item TypeId="Ingot" SubtypeId="Cadmium" Amount="0.02" />
+				<Item TypeId="Ingot" SubtypeId="Calcium" Amount="0.35" />
+				<Item TypeId="Component" SubtypeId="MetalGrid" Amount="0.1" />
+				<Item TypeId="Component" SubtypeId="Insulation" Amount="1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="CatalyticConvertor" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>ReactorX100</SubtypeId>
+			</Id>
+			<DisplayName>Reactor x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Reactor_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Rhodium" Amount="100" />
+				<Item TypeId="Ingot" SubtypeId="Beryllium" Amount="200" />
+				<Item TypeId="Ingot" SubtypeId="Lead" Amount="2000" />
+				<Item TypeId="Component" SubtypeId="SteelPlate" Amount="600" />
+				<Item TypeId="Component" SubtypeId="SmallTube" Amount="2000" />
+				<Item TypeId="Component" SubtypeId="HeatingElement" Amount="300" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>250</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Reactor" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>ReactorX10</SubtypeId>
+			</Id>
+			<DisplayName>Reactor x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Reactor_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Rhodium" Amount="10" />
+				<Item TypeId="Ingot" SubtypeId="Beryllium" Amount="20" />
+				<Item TypeId="Ingot" SubtypeId="Lead" Amount="200" />
+				<Item TypeId="Component" SubtypeId="SteelPlate" Amount="60" />
+				<Item TypeId="Component" SubtypeId="SmallTube" Amount="200" />
+				<Item TypeId="Component" SubtypeId="HeatingElement" Amount="30" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>50</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Reactor" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>ReactorComponent</SubtypeId>
+			</Id>
+			<DisplayName>Reactor</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\Reactor_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Rhodium" Amount="1" />
+				<Item TypeId="Ingot" SubtypeId="Beryllium" Amount="2" />
+				<Item TypeId="Ingot" SubtypeId="Lead" Amount="20" />
+				<Item TypeId="Component" SubtypeId="SteelPlate" Amount="6" />
+				<Item TypeId="Component" SubtypeId="SmallTube" Amount="20" />
+				<Item TypeId="Component" SubtypeId="HeatingElement" Amount="3" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="Reactor" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>FusionChamberX100</SubtypeId>
+			</Id>
+			<DisplayName>Fusion Chamber x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\FusionChamber_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Reactor" Amount="100" />
+				<Item TypeId="Component" SubtypeId="ParticleAccelerator" Amount="100" />
+				<Item TypeId="Component" SubtypeId="Superconductor" Amount="100" />
+				<Item TypeId="Ingot" SubtypeId="Scandium" Amount="100" />
+				<Item TypeId="Ingot" SubtypeId="Xenon" Amount="10000" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>250</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="FusionChamber" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>FusionChamberX10</SubtypeId>
+			</Id>
+			<DisplayName>Fusion Chamber x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\FusionChamber_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Reactor" Amount="10" />
+				<Item TypeId="Component" SubtypeId="ParticleAccelerator" Amount="10" />
+				<Item TypeId="Component" SubtypeId="Superconductor" Amount="10" />
+				<Item TypeId="Ingot" SubtypeId="Scandium" Amount="10" />
+				<Item TypeId="Ingot" SubtypeId="Xenon" Amount="1000" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>50</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="FusionChamber" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>FusionChamber</SubtypeId>
+			</Id>
+			<DisplayName>Fusion Chamber</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\FusionChamber_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Reactor" Amount="1" />
+				<Item TypeId="Component" SubtypeId="ParticleAccelerator" Amount="1" />
+				<Item TypeId="Component" SubtypeId="Superconductor" Amount="1" />
+				<Item TypeId="Ingot" SubtypeId="Scandium" Amount="1" />
+				<Item TypeId="Ingot" SubtypeId="Xenon" Amount="100" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="FusionChamber" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>LithiumPowerCellX100</SubtypeId>
+			</Id>
+			<DisplayName>Lithium Power Cell x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\LithiumPowerCell_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Transistor" Amount="100" />
+				<Item TypeId="Component" SubtypeId="BareCopperWire" Amount="50" />
+				<Item TypeId="Ingot" SubtypeId="Lithium" Amount="105" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="10" />
+				<Item TypeId="Ingot" SubtypeId="Cobalt" Amount="870" />
+				<Item TypeId="Ingot" SubtypeId="Carbon" Amount="1060" />
+				<Item TypeId="Ore" SubtypeId="Oxygen" Amount="470" />
+				<Item TypeId="Component" SubtypeId="PolyCarbonatePlate" Amount="1000" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>125</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="LithiumPowerCell" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>LithiumPowerCellX10</SubtypeId>
+			</Id>
+			<DisplayName>Lithium Power Cell x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\LithiumPowerCell_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Transistor" Amount="10" />
+				<Item TypeId="Component" SubtypeId="BareCopperWire" Amount="5" />
+				<Item TypeId="Ingot" SubtypeId="Lithium" Amount="10.5" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="1" />
+				<Item TypeId="Ingot" SubtypeId="Cobalt" Amount="87" />
+				<Item TypeId="Ingot" SubtypeId="Carbon" Amount="106" />
+				<Item TypeId="Ore" SubtypeId="Oxygen" Amount="47" />
+				<Item TypeId="Component" SubtypeId="PolyCarbonatePlate" Amount="100" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>25</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="LithiumPowerCell" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>LithiumPowerCell</SubtypeId>
+			</Id>
+			<DisplayName>Lithium Power Cell</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\LithiumPowerCell_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Transistor" Amount="1" />
+				<Item TypeId="Component" SubtypeId="BareCopperWire" Amount="0.5" />
+				<Item TypeId="Ingot" SubtypeId="Lithium" Amount="1.05" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="0.1" />
+				<Item TypeId="Ingot" SubtypeId="Cobalt" Amount="8.7" />
+				<Item TypeId="Ingot" SubtypeId="Carbon" Amount="10.6" />
+				<Item TypeId="Ore" SubtypeId="Oxygen" Amount="4.7" />
+				<Item TypeId="Component" SubtypeId="PolyCarbonatePlate" Amount="10" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="LithiumPowerCell" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>LeadPowerCellX100</SubtypeId>
+			</Id>
+			<DisplayName>Lead Power Cell x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\LeadPowerCell_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Transistor" Amount="100" />
+				<Item TypeId="Component" SubtypeId="BareCopperWire" Amount="50" />
+				<Item TypeId="Ingot" SubtypeId="Lead" Amount="2100" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="10" />
+				<Item TypeId="Ore" SubtypeId="Hydrogen" Amount="10" />
+				<Item TypeId="Component" SubtypeId="PolyCarbonatePlate" Amount="1000" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>100</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="LeadPowerCell" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>LeadPowerCellX10</SubtypeId>
+			</Id>
+			<DisplayName>Lead Power Cell x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\LeadPowerCell_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Transistor" Amount="10" />
+				<Item TypeId="Component" SubtypeId="BareCopperWire" Amount="5" />
+				<Item TypeId="Ingot" SubtypeId="Lead" Amount="210" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="1" />
+				<Item TypeId="Ore" SubtypeId="Hydrogen" Amount="1" />
+				<Item TypeId="Component" SubtypeId="PolyCarbonatePlate" Amount="100" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>20</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="LeadPowerCell" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>LeadPowerCell</SubtypeId>
+			</Id>
+			<DisplayName>Lead Power Cell</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\LeadPowerCell_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Transistor" Amount="1" />
+				<Item TypeId="Component" SubtypeId="BareCopperWire" Amount="0.5" />
+				<Item TypeId="Ingot" SubtypeId="Lead" Amount="21" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="0.1" />
+				<Item TypeId="Ore" SubtypeId="Hydrogen" Amount="0.1" />
+				<Item TypeId="Component" SubtypeId="PolyCarbonatePlate" Amount="10" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>4</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="LeadPowerCell" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>FluoridePowerCellX100</SubtypeId>
+			</Id>
+			<DisplayName>Fluoride Power Cell x100</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\FluoridePowerCell_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Transistor" Amount="300" />
+				<Item TypeId="Component" SubtypeId="BareCopperWire" Amount="50" />
+				<Item TypeId="Ingot" SubtypeId="Fluorine" Amount="2683" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="20" />
+				<Item TypeId="Ore" SubtypeId="Hydrogen" Amount="142" />
+				<Item TypeId="Component" SubtypeId="BulletproofGlass" Amount="130" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>200</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="FluoridePowerCell" Amount="100" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>FluoridePowerCellX10</SubtypeId>
+			</Id>
+			<DisplayName>Fluoride Power Cell x10</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\FluoridePowerCell_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Transistor" Amount="30" />
+				<Item TypeId="Component" SubtypeId="BareCopperWire" Amount="5" />
+				<Item TypeId="Ingot" SubtypeId="Fluorine" Amount="268.3" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="2" />
+				<Item TypeId="Ore" SubtypeId="Hydrogen" Amount="14.2" />
+				<Item TypeId="Component" SubtypeId="BulletproofGlass" Amount="13" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>40</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="FluoridePowerCell" Amount="10" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>FluoridePowerCell</SubtypeId>
+			</Id>
+			<DisplayName>Fluoride Power Cell</DisplayName>
+			<Icon>Textures\GUI\Icons\component\Electronic\FluoridePowerCell_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Transistor" Amount="3" />
+				<Item TypeId="Component" SubtypeId="BareCopperWire" Amount="0.5" />
+				<Item TypeId="Ingot" SubtypeId="Fluorine" Amount="26.83" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="0.2" />
+				<Item TypeId="Ore" SubtypeId="Hydrogen" Amount="1.42" />
+				<Item TypeId="Component" SubtypeId="BulletproofGlass" Amount="1.3" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>8</BaseProductionTimeInSeconds>
+			<Results>
+				<Item TypeId="Component" SubtypeId="FluoridePowerCell" Amount="1" />
+			</Results>
+		</Blueprint>
+	</Blueprints>
+</Definitions>

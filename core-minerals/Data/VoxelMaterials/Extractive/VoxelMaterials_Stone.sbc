@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <VoxelMaterials>
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">      <!-- Stone -->
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>Stone</SubtypeId>
+      </Id>
+      <SpawnsInAsteroids>true</SpawnsInAsteroids>
+      <SpawnsFromMeteorites>false</SpawnsFromMeteorites>
+      <MaterialTypeName>Rock</MaterialTypeName>
+      <MinedOre>Stone</MinedOre>
+      <MinedOreRatio>1</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>false</IsRare>
+
+      <VoxelHandPreview>Textures\Voxels\EarthStone_Thumbnail.dds</VoxelHandPreview>
+      <ColorMetalXZnY>Textures\Voxels\EarthStone_cm.dds</ColorMetalXZnY>
+      <NormalGlossXZnY>Textures\Voxels\EarthStone_ng.dds</NormalGlossXZnY>
+      <ExtXZnY>Textures\Voxels\Dummy_add.dds</ExtXZnY>
+
+      <ColorMetalXZnYFar1>Textures\Voxels\EarthStone_Far1_cm.dds</ColorMetalXZnYFar1>
+      <NormalGlossXZnYFar1>Textures\Voxels\EarthStone_Far1_ng.dds</NormalGlossXZnYFar1>
+      <ExtXZnYFar1>Textures\Voxels\Dummy_add.dds</ExtXZnYFar1>
+
+      <ColorMetalXZnYFar2>Textures\Voxels\EarthStone_Far2_cm.dds</ColorMetalXZnYFar2>
+      <NormalGlossXZnYFar2>Textures\Voxels\EarthStone_Far2_ng.dds</NormalGlossXZnYFar2>
+      <ExtXZnYFar2>Textures\Voxels\Dummy_add.dds</ExtXZnYFar2>
+
+      <SimpleTilingSetup>
+        <ExtDetailScale>0.005</ExtDetailScale>
+        <InitialDistance>4</InitialDistance>
+        <ScaleMultiplier>4</ScaleMultiplier>
+        <Far1Distance>70</Far1Distance>
+        <Far2Distance>320</Far2Distance>
+        <Far1Scale>350</Far1Scale>
+        <Far2Scale>1500</Far2Scale>
+        <Far3Distance>10000</Far3Distance>
+      </SimpleTilingSetup>
+
+      <!--Distance values that look great-->
+      <ExtDetailScale>0.005</ExtDetailScale>
+      <InitialDistance>4</InitialDistance>
+      <ScaleMultiplier>8</ScaleMultiplier>
+      <Far1Distance>70</Far1Distance>
+      <Far2Distance>320</Far2Distance>
+      <Far1Scale>350</Far1Scale>
+      <Far2Scale>1500</Far2Scale>
+
+
+      <Far3Distance>10000</Far3Distance>
+      <Far3Color>
+        <X>0.11</X>
+        <Y>0.10</Y>
+        <Z>0.08</Z>
+        <W>1.0</W>
+      </Far3Color>
+
+
+      <ColorKey Hex="#BCBB56"/>
+    </VoxelMaterial>
+  </VoxelMaterials>
+</Definitions>

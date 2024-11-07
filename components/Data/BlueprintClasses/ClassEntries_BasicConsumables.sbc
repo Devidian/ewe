@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <BlueprintClassEntries>
+        <!-- SurvivalKitLarge -->
+        <!-- SurvivalKit -->
+        <Entry Class="BasicConsumables" BlueprintSubtypeId="Medkit" />
+        <Entry Class="BasicConsumables" BlueprintSubtypeId="Adv_Medkit" />
+        <Entry Class="BasicConsumables" BlueprintSubtypeId="Eli_Medkit" />
+        <Entry Class="BasicConsumables" BlueprintSubtypeId="Bsc_Inst_Medkit" />
+        <Entry Class="BasicConsumables" BlueprintSubtypeId="Adv_Inst_Medkit" />
+        <Entry Class="BasicConsumables" BlueprintSubtypeId="Eli_Inst_Medkit" />
+        <Entry Class="BasicConsumables" BlueprintSubtypeId="Powerkit" />
+        <Entry Class="BasicConsumables" BlueprintSubtypeId="Adv_Powerkit" />
+        <Entry Class="BasicConsumables" BlueprintSubtypeId="Eli_Powerkit" />
+        <Entry Class="BasicConsumables" BlueprintSubtypeId="Bsc_Inst_Powerkit" />
+        <Entry Class="BasicConsumables" BlueprintSubtypeId="Adv_Inst_Powerkit" />
+        <Entry Class="BasicConsumables" BlueprintSubtypeId="Eli_Inst_Powerkit" />
+        <Entry Class="BasicConsumables" BlueprintSubtypeId="SurvivalKit" />
+        <Entry Class="BasicConsumables" BlueprintSubtypeId="Adv_SurvivalKit" />
+        <Entry Class="BasicConsumables" BlueprintSubtypeId="Eli_SurvivalKit" />
+        <Entry Class="BasicConsumables" BlueprintSubtypeId="Bsc_Inst_SurvivalKit" />
+        <Entry Class="BasicConsumables" BlueprintSubtypeId="Adv_Inst_SurvivalKit" />
+        <Entry Class="BasicConsumables" BlueprintSubtypeId="Eli_Inst_SurvivalKit" />
+    </BlueprintClassEntries>
+</Definitions>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <MainMenuInventoryScenes>
+
+        <MainMenuInventoryScene>
+            <Id>
+                <TypeId>MyObjectBuilder_MainMenuInventorySceneDefinition</TypeId>
+                <SubtypeId>Scene9</SubtypeId>
+            </Id>
+            <SceneDirectory>InventoryScenes\\Inventory-9</SceneDirectory>
+        </MainMenuInventoryScene>
+
+    </MainMenuInventoryScenes>
+</Definitions>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <BlueprintClassEntries>
+        <!-- SurvivalKitLarge -->
+        <!-- SurvivalKit -->
+        <Entry Class="BasicChemicals" BlueprintSubtypeId="MineralSpirits" />
+        <Entry Class="BasicChemicals" BlueprintSubtypeId="Stearate" />
+        <Entry Class="BasicChemicals" BlueprintSubtypeId="Grease" />
+        <Entry Class="BasicChemicals" BlueprintSubtypeId="Oil" />
+        <Entry Class="BasicChemicals" BlueprintSubtypeId="Coolant" />
+        <Entry Class="BasicChemicals" BlueprintSubtypeId="ThermalPaste" />
+        <Entry Class="BasicChemicals" BlueprintSubtypeId="LiquidGasoline" />
+        <Entry Class="BasicChemicals" BlueprintSubtypeId="LiquidJetFuel" />
+        <Entry Class="BasicChemicals" BlueprintSubtypeId="IngotToWater" />
+        <Entry Class="BasicChemicals" BlueprintSubtypeId="IngotToIce" />
+        <Entry Class="BasicChemicals" BlueprintSubtypeId="WaterToIce" />
+
+        <Entry Class="BasicChemicals" BlueprintSubtypeId="201Steel" />
+        <Entry Class="BasicChemicals" BlueprintSubtypeId="ChromiumSteel" />
+        <Entry Class="BasicChemicals" BlueprintSubtypeId="945Steel" />
+        <Entry Class="BasicChemicals" BlueprintSubtypeId="Nitinol" />
+        <Entry Class="BasicChemicals" BlueprintSubtypeId="Brass" />
+        <Entry Class="BasicChemicals" BlueprintSubtypeId="Cupronickel" />
+        <Entry Class="BasicChemicals" BlueprintSubtypeId="Electrum" />
+        <Entry Class="BasicChemicals" BlueprintSubtypeId="GumMetal" />
+        <Entry Class="BasicChemicals" BlueprintSubtypeId="PolyCarbonate" />
+        <Entry Class="BasicChemicals" BlueprintSubtypeId="Glass" />
+        <Entry Class="BasicChemicals" BlueprintSubtypeId="Rubber" />
+        <Entry Class="BasicChemicals" BlueprintSubtypeId="Magnet" />
+        <Entry Class="BasicChemicals" BlueprintSubtypeId="TungstenCarbide" />
+        <Entry Class="BasicChemicals" BlueprintSubtypeId="Cement" />
+    </BlueprintClassEntries>
+</Definitions>

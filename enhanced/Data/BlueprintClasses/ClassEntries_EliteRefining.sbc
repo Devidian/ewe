@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <BlueprintClassEntries>
+
+        <!-- Composites -->
+        <Entry Class="EliteRefining" BlueprintSubtypeId="UraniumOreToUraninite" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="UraniumFuelRodConversion" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="ScrapIngotToIronIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="ScrapToIronIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Arsenolite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Bauxite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Beryl_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Bismutotantalite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Boracite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Borcarite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Cadmoindite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Cadmoselite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Calaverite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Cassiterite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Cerite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Chalcopyrite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Chamosite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Chaoite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Chromferide_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Chromite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Cinnabar_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Coal_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Cobaltite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Coffinite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Columbite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Dolomite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Ferchromide_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Fluorapatite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Fontarnauite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Germanite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Graphite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Hafnon_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Halite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Hematite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Huttonite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Ilmenite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Indite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Iodargyrite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Kentbrooksite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Lepidolite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Monazite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Olivine_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Orpiment_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Palladseite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Pyrite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Pyrochlore_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Quartz_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Realgar_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Rhodochrosite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Ruthenarsenite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Rutheniridosmine_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Sphalerite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Spodumene_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Stibiotantalite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Strontiofluorite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Sulfur_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Sylvite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Telluropalladinite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Thorite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Titanite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Uraninite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Pitchblend_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Wulfenite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Zircon_OreToIngot" />
+
+        <!-- Extractive -->
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Stone_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_DesertRock_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_MarsRocks_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Anorthite_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_AlienRock_01_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Sand_02_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_AlienSand_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Soil_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_MarsSoil_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Regolith_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_AlienSoil_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Organic_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_AlienOrganic_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_AminoAcids_OreToIngot" />
+
+        <!-- Ice -->
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Ice_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_AmberIce_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_BlueIce_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_GreenIce_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_PinkIce_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_PurpleIce_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_EuropaIce_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_AlienIce_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Brine_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_MineralIce_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_AmmoniumHydroxide_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_CHON_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_MethaneHydrate_OreToIngot" />
+
+        <!-- PureMetal -->
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Aluminum_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Iron_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Titanium_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Copper_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Cobalt_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Nickel_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Tin_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Silver_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Gold_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Lead_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Magnesium_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Silicon_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Zinc_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Platinum_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Molybdenum_OreToIngot" />
+        <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Zirconium_OreToIngot" />
+
+        <Entry Class="EliteRefining" BlueprintSubtypeId="DemolishedConcreteToIngot" />
+    </BlueprintClassEntries>
+</Definitions>

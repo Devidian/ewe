@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <BlueprintClassEntries>
+        <!-- BasicAssembler -->
+        <!-- LargeAssembler -->
+        <!-- SurvivalKitLarge -->
+        <!-- SurvivalKit -->
+        <Entry Class="AdvancedMechanics" BlueprintSubtypeId="PneumaticMotor" />
+        <Entry Class="AdvancedMechanics" BlueprintSubtypeId="PneumaticPump" />
+        <Entry Class="AdvancedMechanics" BlueprintSubtypeId="PressureRegulator" />
+        <Entry Class="AdvancedMechanics" BlueprintSubtypeId="PressurizedTubing" />
+        <Entry Class="AdvancedMechanics" BlueprintSubtypeId="Radiator" />
+        <Entry Class="AdvancedMechanics" BlueprintSubtypeId="MotorComponent" />
+        <Entry Class="AdvancedMechanics" BlueprintSubtypeId="Armature" />
+        <Entry Class="AdvancedMechanics" BlueprintSubtypeId="Compressor" />
+        <Entry Class="AdvancedMechanics" BlueprintSubtypeId="Turbine" />
+        <Entry Class="AdvancedMechanics" BlueprintSubtypeId="ThrustComponent" />
+        <Entry Class="AdvancedMechanics" BlueprintSubtypeId="MedicalComponent" />
+        <Entry Class="AdvancedMechanics" BlueprintSubtypeId="MotorBlock" />
+        <Entry Class="AdvancedMechanics" BlueprintSubtypeId="AluminumPistonAssembly" />
+        <Entry Class="AdvancedMechanics" BlueprintSubtypeId="TitaniumPistonAssembly" />
+        <Entry Class="AdvancedMechanics" BlueprintSubtypeId="SteelValveAssembly" />
+        <Entry Class="AdvancedMechanics" BlueprintSubtypeId="NitinolValveAssembly" />
+        <Entry Class="AdvancedMechanics" BlueprintSubtypeId="CoolingUnit" />
+    </BlueprintClassEntries>
+</Definitions>

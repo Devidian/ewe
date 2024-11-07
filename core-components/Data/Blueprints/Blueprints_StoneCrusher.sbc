@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Blueprints>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>DemolishedConcreteToIngot</SubtypeId>
+			</Id>
+			<DisplayName>Demolished Concrete</DisplayName>
+			<Icon>Textures\GUI\Icons\DemolishedConcrete_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ore" SubtypeId="DemolishedConcrete" Amount="100" />
+			</Prerequisites>
+			<Results>
+				<Item TypeId="Ingot" SubtypeId="Calcium" Amount="150" />
+				<Item TypeId="Ingot" SubtypeId="Aluminum" Amount="80" />
+				<Item TypeId="Ingot" SubtypeId="Silicon" Amount="60" />
+				<Item TypeId="Ore" SubtypeId="Oxygen" Amount="150" />
+			</Results>
+			<BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>DemolishedConcreteToGravel</SubtypeId>
+			</Id>
+			<DisplayName>Concrete</DisplayName>
+			<Icon>Textures\GUI\Icons\ingot\Alloys\Gravel_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ore" SubtypeId="DemolishedConcrete" Amount="100" />
+			</Prerequisites>
+			<Results>
+				<Item TypeId="Ingot" SubtypeId="Stone" Amount="80" />
+				<Item TypeId="Ingot" SubtypeId="FineSand" Amount="20" />
+			</Results>
+			<BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>FineSandToIngot</SubtypeId>
+			</Id>
+			<DisplayName>Sand</DisplayName>
+			<Icon>Textures\GUI\Icons\ore_sand.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="FineSand" Amount="100" />
+			</Prerequisites>
+			<Results>
+				<Item TypeId="Ingot" SubtypeId="Silicon" Amount="237" />
+				<Item TypeId="Ore" SubtypeId="Oxygen" Amount="475" />
+			</Results>
+			<BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>StonetoGravel</SubtypeId>
+			</Id>
+			<DisplayName>Gravel</DisplayName>
+			<Icon>Textures\GUI\Icons\ingot\Alloys\Gravel_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ore" SubtypeId="Stone" Amount="500" />
+			</Prerequisites>
+			<Results>
+				<Item TypeId="Ingot" SubtypeId="FineSand" Amount="50" />
+				<Item TypeId="Ingot" SubtypeId="Stone" Amount="100" />
+			</Results>
+			<BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>DesertRocktoGravel</SubtypeId>
+			</Id>
+			<DisplayName>Gravel</DisplayName>
+			<Icon>Textures\GUI\Icons\ingot\Alloys\Gravel_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ore" SubtypeId="DesertRock" Amount="500" />
+			</Prerequisites>
+			<Results>
+				<Item TypeId="Ingot" SubtypeId="FineSand" Amount="50" />
+				<Item TypeId="Ingot" SubtypeId="Stone" Amount="100" />
+			</Results>
+			<BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>AnorthitetoGravel</SubtypeId>
+			</Id>
+			<DisplayName>Gravel</DisplayName>
+			<Icon>Textures\GUI\Icons\ingot\Alloys\Gravel_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ore" SubtypeId="Anorthite" Amount="500" />
+			</Prerequisites>
+			<Results>
+				<Item TypeId="Ingot" SubtypeId="FineSand" Amount="50" />
+				<Item TypeId="Ingot" SubtypeId="Stone" Amount="100" />
+			</Results>
+			<BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>MarsRockstoGravel</SubtypeId>
+			</Id>
+			<DisplayName>Gravel</DisplayName>
+			<Icon>Textures\GUI\Icons\ingot\Alloys\Gravel_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ore" SubtypeId="MarsRocks" Amount="500" />
+			</Prerequisites>
+			<Results>
+				<Item TypeId="Ingot" SubtypeId="FineSand" Amount="50" />
+				<Item TypeId="Ingot" SubtypeId="Stone" Amount="100" />
+			</Results>
+			<BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>AlienRock_01toGravel</SubtypeId>
+			</Id>
+			<DisplayName>Gravel</DisplayName>
+			<Icon>Textures\GUI\Icons\ingot\Alloys\Gravel_Icon.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ore" SubtypeId="AlienRock_01" Amount="500" />
+			</Prerequisites>
+			<Results>
+				<Item TypeId="Ingot" SubtypeId="FineSand" Amount="50" />
+				<Item TypeId="Ingot" SubtypeId="Stone" Amount="100" />
+			</Results>
+			<BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>SandtoFineSand</SubtypeId>
+			</Id>
+			<DisplayName>Fine Sand</DisplayName>
+			<Icon>Textures\GUI\Icons\ore_sand.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ore" SubtypeId="Sand_02" Amount="500" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+			<Results>
+				<Item TypeId="Ingot" SubtypeId="FineSand" Amount="400" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>AlienSandtoFineSand</SubtypeId>
+			</Id>
+			<DisplayName>Fine Sand</DisplayName>
+			<Icon>Textures\GUI\Icons\ore_sand.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ore" SubtypeId="AlienSand" Amount="500" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+			<Results>
+				<Item TypeId="Ingot" SubtypeId="FineSand" Amount="400" />
+			</Results>
+		</Blueprint>
+	</Blueprints>
+</Definitions>

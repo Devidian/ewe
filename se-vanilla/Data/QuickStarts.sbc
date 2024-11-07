@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <QuickStarts>
+        <QuickStart>
+            <Id>
+                <TypeId>QuickStartDefinition</TypeId>
+                <SubtypeId>StarSystemSurvival</SubtypeId>
+            </Id>
+            <ContentPath>CustomWorlds\Star System</ContentPath>
+            <GameMode>Survival</GameMode>
+            <OnlineMode>OFFLINE</OnlineMode>
+        </QuickStart>
+        <QuickStart>
+            <Id>
+                <TypeId>QuickStartDefinition</TypeId>
+                <SubtypeId>FirstJump</SubtypeId>
+            </Id>
+            <ContentPath>Scenarios\The First Jump\Worlds\Mission 01</ContentPath>
+            <GameMode>Survival</GameMode>
+            <OnlineMode>OFFLINE</OnlineMode>
+        </QuickStart>
+    </QuickStarts>
+</Definitions>

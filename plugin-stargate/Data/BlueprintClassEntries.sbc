@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <BlueprintClassEntries>
+
+    <Entry Class="Construction" BlueprintSubtypeId="Trinium" />
+    <Entry Class="Construction" BlueprintSubtypeId="Neutronium" />
+
+    <Entry Class="AdvMassProdAmmo" BlueprintSubtypeId="Liquid Naquadah" />
+
+    <Entry Class="BscMassProdElect" BlueprintSubtypeId="Drone" />
+
+    <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Naquadah_OreToIngot" />
+    <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Trinium_OreToIngot" />
+    <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Neutronium_OreToIngot" />
+
+    <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Naquadah_OreToIngot" />
+    <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Trinium_OreToIngot" />
+    <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Neutronium_OreToIngot" />
+    
+    <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Trinium_OreToIngot" />
+    <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Naquadah_OreToIngot" />
+    <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Neutronium_OreToIngot" />
+    
+  </BlueprintClassEntries>
+</Definitions>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Blueprints>
+    <!-- Naquadah -->
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Bsc_Naquadah_OreToIngot</SubtypeId>
+      </Id>
+      <DisplayName>Refined Naquadah</DisplayName>
+      <Icon>Textures\gui\naquadah_ingot.dds</Icon>
+      <Prerequisites>
+        <Item Amount="500" TypeId="Ore" SubtypeId="Naquadah" />
+      </Prerequisites>
+      <Result Amount="20" TypeId="Ingot" SubtypeId="Naquadah" />
+      <BaseProductionTimeInSeconds>45</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Adv_Naquadah_OreToIngot</SubtypeId>
+      </Id>
+      <DisplayName>Refined Naquadah</DisplayName>
+      <Icon>Textures\gui\naquadah_ingot.dds</Icon>
+      <Prerequisites>
+        <Item Amount="5000" TypeId="Ore" SubtypeId="Naquadah" />
+      </Prerequisites>
+      <Result Amount="200" TypeId="Ingot" SubtypeId="Naquadah" />
+      <BaseProductionTimeInSeconds>90</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Eli_Naquadah_OreToIngot</SubtypeId>
+      </Id>
+      <DisplayName>Refined Naquadah</DisplayName>
+      <Icon>Textures\gui\naquadah_ingot.dds</Icon>
+      <Prerequisites>
+        <Item Amount="50000" TypeId="Ore" SubtypeId="Naquadah" />
+      </Prerequisites>
+      <Result Amount="2000" TypeId="Ingot" SubtypeId="Naquadah" />
+      <BaseProductionTimeInSeconds>90</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+    <!-- Trinium -->
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Bsc_Trinium_OreToIngot</SubtypeId>
+      </Id>
+      <DisplayName>Refined Trinium</DisplayName>
+      <Icon>Textures\gui\trinium_ingot.dds</Icon>
+      <Prerequisites>
+        <Item Amount="250" TypeId="Ore" SubtypeId="Trinium" />
+      </Prerequisites>
+      <Result Amount="20" TypeId="Ingot" SubtypeId="Trinium" />
+      <BaseProductionTimeInSeconds>60</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Adv_Trinium_OreToIngot</SubtypeId>
+      </Id>
+      <DisplayName>Refined Trinium</DisplayName>
+      <Icon>Textures\gui\trinium_ingot.dds</Icon>
+      <Prerequisites>
+        <Item Amount="2500" TypeId="Ore" SubtypeId="Trinium" />
+      </Prerequisites>
+      <Result Amount="200" TypeId="Ingot" SubtypeId="Trinium" />
+      <BaseProductionTimeInSeconds>120</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Eli_Trinium_OreToIngot</SubtypeId>
+      </Id>
+      <DisplayName>Refined Trinium</DisplayName>
+      <Icon>Textures\gui\trinium_ingot.dds</Icon>
+      <Prerequisites>
+        <Item Amount="25000" TypeId="Ore" SubtypeId="Trinium" />
+      </Prerequisites>
+      <Result Amount="2000" TypeId="Ingot" SubtypeId="Trinium" />
+      <BaseProductionTimeInSeconds>240</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+    <!-- Neutronium -->
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Bsc_Neutronium_OreToIngot</SubtypeId>
+      </Id>
+      <DisplayName>Refined Neutronium</DisplayName>
+      <Icon>Textures\gui\neutronium_ingot.dds</Icon>
+      <Prerequisites>
+        <Item Amount="400" TypeId="Ore" SubtypeId="Neutronium" />
+      </Prerequisites>
+      <Result Amount="20" TypeId="Ingot" SubtypeId="Neutronium" />
+      <BaseProductionTimeInSeconds>30</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Adv_Neutronium_OreToIngot</SubtypeId>
+      </Id>
+      <DisplayName>Refined Neutronium</DisplayName>
+      <Icon>Textures\gui\neutronium_ingot.dds</Icon>
+      <Prerequisites>
+        <Item Amount="4000" TypeId="Ore" SubtypeId="Neutronium" />
+      </Prerequisites>
+      <Result Amount="200" TypeId="Ingot" SubtypeId="Neutronium" />
+      <BaseProductionTimeInSeconds>60</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Eli_Neutronium_OreToIngot</SubtypeId>
+      </Id>
+      <DisplayName>Refined Neutronium</DisplayName>
+      <Icon>Textures\gui\neutronium_ingot.dds</Icon>
+      <Prerequisites>
+        <Item Amount="40000" TypeId="Ore" SubtypeId="Neutronium" />
+      </Prerequisites>
+      <Result Amount="2000" TypeId="Ingot" SubtypeId="Neutronium" />
+      <BaseProductionTimeInSeconds>120</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+    <!-- Naquadah component/plate -->
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>NaquadahX10</SubtypeId>
+      </Id>
+      <DisplayName>Naquadah Component</DisplayName>
+      <Icon>Textures\gui\naquadah_component.dds</Icon>
+      <Prerequisites>
+        <Item Amount="25" TypeId="Ingot" SubtypeId="Naquadah" />
+      </Prerequisites>
+      <Result Amount="10" TypeId="Component" SubtypeId="Naquadah" />
+      <BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+    <!-- info -->
+    <!-- Earth stargate iris was made of an alloy trinium+titanium -->
+    <!-- Prometheus and Daedalus were made with an alloy trinium+naquadah -->
+    <!-- Asgard ships used that alloy with an addition of carbon -->
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Trinium</SubtypeId>
+      </Id>
+      <DisplayName>Trinium Plate</DisplayName>
+      <Icon>Textures\gui\trinium_component.dds</Icon>
+      <BaseProductionTimeInSeconds>18</BaseProductionTimeInSeconds>
+      <Prerequisites>
+        <Item Amount="0.25" TypeId="Ingot" SubtypeId="Naquadah" />
+        <Item Amount="0.5" TypeId="Ingot" SubtypeId="Carbon" />
+        <Item Amount="1.5" TypeId="Ingot" SubtypeId="Titanium" />
+        <Item Amount="4.0" TypeId="Ingot" SubtypeId="Trinium" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="Trinium" />
+    </Blueprint>
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Neutronium</SubtypeId>
+      </Id>
+      <DisplayName>Neutronium Crate</DisplayName>
+      <Icon>Textures\gui\neutronium_component.dds</Icon>
+      <BaseProductionTimeInSeconds>16</BaseProductionTimeInSeconds>
+      <Prerequisites>
+        <Item Amount="0.5" TypeId="Ingot" SubtypeId="Carbon" />
+        <Item Amount="1" TypeId="Ingot" SubtypeId="Titanium" />
+        <Item Amount="2" TypeId="Ingot" SubtypeId="Naquadah" />
+        <Item Amount="3" TypeId="Ingot" SubtypeId="Neutronium" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="Neutronium" />
+    </Blueprint>
+    <!-- TODO:
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Drone</SubtypeId>
+      </Id>
+      <DisplayName>Drone Weapon (no function)</DisplayName>
+      <Icon>Textures\gui\Drone.dds</Icon>
+      <BaseProductionTimeInSeconds>7</BaseProductionTimeInSeconds>
+      <Prerequisites>
+        <Item Amount="2" TypeId="Ingot" SubtypeId="Neutronium" />
+        <Item Amount="0.3" TypeId="Ingot" SubtypeId="Trinium" />
+        <Item Amount="8" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="4" TypeId="Ingot" SubtypeId="Gold" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="Drone" />
+    </Blueprint>
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Zat</SubtypeId>
+      </Id>
+      <DisplayName>Zat'nik'tel</DisplayName>
+      <Icon>Textures\gui\Zat.dds</Icon>
+      <Prerequisites>
+        <Item Amount="10" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="10" TypeId="Ingot" SubtypeId="Naquadah" />
+        <Item Amount="5" TypeId="Ingot" SubtypeId="Gold" />
+        <Item Amount="4" TypeId="Ingot" SubtypeId="Silver" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="PhysicalGunObject" SubtypeId="Zat" />
+      <BaseProductionTimeInSeconds>9</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Staff</SubtypeId>
+      </Id>
+      <DisplayName>Jaffa Staff Weapon</DisplayName>
+      <Icon>Textures\gui\Staff.dds</Icon>
+      <Prerequisites>
+        <Item Amount="20" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="12" TypeId="Ingot" SubtypeId="Naquadah" />
+        <Item Amount="8" TypeId="Ingot" SubtypeId="Gold" />
+        <Item Amount="3" TypeId="Ingot" SubtypeId="Silver" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="PhysicalGunObject" SubtypeId="Staff" />
+      <BaseProductionTimeInSeconds>13</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Liquid Naquadah</SubtypeId>
+      </Id>
+      <DisplayName>Liquid Naquadah</DisplayName>
+      <Icon>Textures\gui\Liquid Naquadah.dds</Icon>
+      <Prerequisites>
+        <Item Amount="10" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="18" TypeId="Ingot" SubtypeId="Naquadah" />
+        <Item Amount="9" TypeId="Ingot" SubtypeId="Gold" />
+        <Item Amount="4" TypeId="Ingot" SubtypeId="Platinum" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="AmmoMagazine" SubtypeId="Liquid Naquadah" />
+      <BaseProductionTimeInSeconds>17</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>P90</SubtypeId>
+      </Id>
+      <DisplayName>Stargate P90</DisplayName>
+      <Icon>Textures\gui\P90.dds</Icon>
+      <Prerequisites>
+        <Item Amount="20" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="30" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="3" TypeId="Ingot" SubtypeId="Platinum" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="PhysicalGunObject" SubtypeId="P90" />
+      <BaseProductionTimeInSeconds>18</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>ZPM</SubtypeId>
+      </Id>
+      <DisplayName>Zero point module</DisplayName>
+      <Icon>Textures\gui\ZPMComponent.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1" TypeId="Component" SubtypeId="ZPM" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="ZPM" />
+      <BaseProductionTimeInSeconds>9999999</BaseProductionTimeInSeconds>
+    </Blueprint> -->
+
+  </Blueprints>
+</Definitions>
+<!-- vim: set tabstop=2 expandtab shiftwidth=2 nobackup: -->

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BlueprintClassEntries>
+
+    <!-- Vanilla SurvivalKit -->
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_Ice_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_AmberIce_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_BlueIce_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_GreenIce_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_PinkIce_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_PurpleIce_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_EuropaIce_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_AlienIce_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_Brine_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_MineralIce_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_AmmoniumHydroxide_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_CHON_OreToIngot" />
+    <Entry Class="SurvivalKitIngots" BlueprintSubtypeId="Bsc_MethaneHydrate_OreToIngot" />
+
+    <!-- Vanilla Basic Refinery -->
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_Ice_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_AmberIce_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_BlueIce_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_GreenIce_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_PinkIce_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_PurpleIce_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_EuropaIce_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_AlienIce_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_Brine_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_MineralIce_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_AmmoniumHydroxide_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_CHON_OreToIngot" />
+    <Entry Class="CommonMetals" BlueprintSubtypeId="Bsc_MethaneHydrate_OreToIngot" />
+
+    <!-- Vanilla Refinery -->
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_Ice_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_AmberIce_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_BlueIce_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_GreenIce_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_PinkIce_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_PurpleIce_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_EuropaIce_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_AlienIce_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_Brine_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_MineralIce_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_AmmoniumHydroxide_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_CHON_OreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="Adv_MethaneHydrate_OreToIngot" />
+
+  </BlueprintClassEntries>
+</Definitions>

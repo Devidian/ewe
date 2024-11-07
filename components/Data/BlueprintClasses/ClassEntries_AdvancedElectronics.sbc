@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <BlueprintClassEntries>
+
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="DetectorComponent" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="Breaker" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="Stator" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="ControlRod" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="Camera" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="Speaker" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="Display" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="HardDrive" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="SolidStateDrive" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="QuantumDrive" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="MicroChip" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="Solder" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="QuantumProcessor" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="AIMainframe" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="NetworkingMainframe" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="TargetingMainframe" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="Rectifier" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="Amplifier" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="PowerSupply" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="Transformer" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="EnergyCoupler" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="Superconductor" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="FluxCoil" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="FluxCapacitor" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="MagneticCoupler" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="ThermoCouple" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="Igniter" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="Projector" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="BeamEmiter" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="IonProjector" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="GravityGeneratorComponent" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="ParticleAccelerator" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="ShieldComponent" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="HeatingElement" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="CatalyticConvertor" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="ReactorComponent" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="FusionChamber" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="LithiumPowerCell" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="LeadPowerCell" />
+        <Entry Class="AdvancedElectronics" BlueprintSubtypeId="FluoridePowerCell" />
+    </BlueprintClassEntries>
+</Definitions>

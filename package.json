@@ -1,0 +1,20 @@
+{
+  "name": "se-mods",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "commonjs",
+  "engines": {
+    "node": "^22"
+  },
+  "devDependencies": {
+    "@types/node": "^22.8.1",
+    "simple-xml-to-json": "^1.2.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "packageManager": "yarn@4.5.1",
+  "dependencies": {
+    "excel4node": "^1.8.2"
+  }
+}

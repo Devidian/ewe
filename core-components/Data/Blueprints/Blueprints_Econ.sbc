@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Blueprints>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>ZoneChip</SubtypeId>
+			</Id>
+			<DisplayName>Zone Chip</DisplayName>
+			<Icon>Textures\GUI\Icons\Items\ZoneChip_Item.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="ShieldComponent" Amount="1" />
+				<Item TypeId="Ingot" SubtypeId="Electrum" Amount="1" />
+				<Item TypeId="Ingot" SubtypeId="Hafnium" Amount="5" />
+				<Item TypeId="Ingot" SubtypeId="Krypton" Amount="5" />
+				<Item TypeId="Ingot" SubtypeId="Polonium" Amount="5" />
+				<Item TypeId="Ingot" SubtypeId="Plutonium" Amount="1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>300</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+			<Results>
+				<Item TypeId="Component" SubtypeId="ZoneChip" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Datapad</SubtypeId>
+			</Id>
+			<DisplayName>DisplayName_Item_Datapad</DisplayName>
+			<Icon>Textures\GUI\Icons\Items\Datapad_Item.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Component" SubtypeId="Display" Amount="1" />
+				<Item TypeId="Component" SubtypeId="PolyCarbonatePlate" Amount="1" />
+				<Item TypeId="Component" SubtypeId="LithiumPowerCell" Amount="1" />
+				<Item TypeId="Component" SubtypeId="Resistor" Amount="15" />
+				<Item TypeId="Component" SubtypeId="PowerCell" Amount="5" />
+				<Item TypeId="Component" SubtypeId="Fuse" Amount="1" />
+				<Item TypeId="Component" SubtypeId="InsulatedCopperWire" Amount="3" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="0.5" />
+			</Prerequisites>
+			<Results>
+				<Item TypeId="Datapad" SubtypeId="Datapad" Amount="1" />
+			</Results>
+			<BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Medkit</SubtypeId>
+			</Id>
+			<DisplayName>Basic Medkit</DisplayName>
+			<Icon>Textures\GUI\Icons\Items\Medkit.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Water" Amount="0.25" />
+				<Item TypeId="Component" SubtypeId="PolyCarbonatePlate" Amount="0.025" />
+				<Item TypeId="Ingot" SubtypeId="Calcium" Amount="0.062" />
+				<Item TypeId="Ingot" SubtypeId="Carbon" Amount="0.123" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+			<Results>
+				<Item TypeId="ConsumableItem" SubtypeId="Medkit" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Adv_Medkit</SubtypeId>
+			</Id>
+			<DisplayName>Advanced Medkit</DisplayName>
+			<Icon>Textures\GUI\Icons\Items\Medkit.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="ConsumableItem" SubtypeId="Medkit" Amount="2" />
+				<Item TypeId="Ingot" SubtypeId="Phosphorus" Amount="0.1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+			<Results>
+				<Item TypeId="ConsumableItem" SubtypeId="Adv_Medkit" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Eli_Medkit</SubtypeId>
+			</Id>
+			<DisplayName>Elite Medkit</DisplayName>
+			<Icon>Textures\GUI\Icons\Items\Medkit.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="ConsumableItem" SubtypeId="Adv_Medkit" Amount="2" />
+				<Item TypeId="Ingot" SubtypeId="Phosphorus" Amount="0.1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+			<Results>
+				<Item TypeId="ConsumableItem" SubtypeId="Eli_Medkit" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Bsc_Inst_Medkit</SubtypeId>
+			</Id>
+			<DisplayName>Basic Instant Medkit</DisplayName>
+			<Icon>Textures\GUI\Icons\Items\Medkit.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Water" Amount="0.25" />
+				<Item TypeId="Component" SubtypeId="PolyCarbonatePlate" Amount="0.025" />
+				<Item TypeId="Ingot" SubtypeId="Iodine" Amount="0.025" />
+				<Item TypeId="Ingot" SubtypeId="Calcium" Amount="0.062" />
+				<Item TypeId="Ingot" SubtypeId="Carbon" Amount="0.123" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+			<Results>
+				<Item TypeId="ConsumableItem" SubtypeId="Bsc_Inst_Medkit" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Adv_Inst_Medkit</SubtypeId>
+			</Id>
+			<DisplayName>Advanced Instant Medkit</DisplayName>
+			<Icon>Textures\GUI\Icons\Items\Medkit.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="ConsumableItem" SubtypeId="Bsc_Inst_Medkit" Amount="2" />
+				<Item TypeId="Ingot" SubtypeId="Phosphorus" Amount="0.1" />
+				<Item TypeId="Ingot" SubtypeId="Iodine" Amount="1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+			<Results>
+				<Item TypeId="ConsumableItem" SubtypeId="Adv_Inst_Medkit" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Eli_Inst_Medkit</SubtypeId>
+			</Id>
+			<DisplayName>Elite Instant Medkit</DisplayName>
+			<Icon>Textures\GUI\Icons\Items\Medkit.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="ConsumableItem" SubtypeId="Adv_Inst_Medkit" Amount="2" />
+				<Item TypeId="Ingot" SubtypeId="Phosphorus" Amount="0.1" />
+				<Item TypeId="Ingot" SubtypeId="Iodine" Amount="1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+			<Results>
+				<Item TypeId="ConsumableItem" SubtypeId="Eli_Inst_Medkit" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Powerkit</SubtypeId>
+			</Id>
+			<DisplayName>Basic Power Kit</DisplayName>
+			<Icon>Textures\GUI\Icons\Items\PowerKit.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Cupronickel" Amount="0.05" />
+				<Item TypeId="Component" SubtypeId="LithiumPowerCell" Amount="0.01" />
+				<Item TypeId="Component" SubtypeId="Resistor" Amount="1" />
+				<Item TypeId="Component" SubtypeId="InsulatedCopperWire" Amount="0.05" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="0.2" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+			<Results>
+				<Item TypeId="ConsumableItem" SubtypeId="Powerkit" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Adv_Powerkit</SubtypeId>
+			</Id>
+			<DisplayName>Advanced Power Kit</DisplayName>
+			<Icon>Textures\GUI\Icons\Items\PowerKit.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="ConsumableItem" SubtypeId="Powerkit" Amount="2" />
+				<Item TypeId="Component" SubtypeId="InsulatedCopperWire" Amount="1" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="0.1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+			<Results>
+				<Item TypeId="ConsumableItem" SubtypeId="Adv_Powerkit" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Eli_Powerkit</SubtypeId>
+			</Id>
+			<DisplayName>Elite Power Kit</DisplayName>
+			<Icon>Textures\GUI\Icons\Items\PowerKit.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="ConsumableItem" SubtypeId="Adv_Powerkit" Amount="2" />
+				<Item TypeId="Component" SubtypeId="InsulatedCopperWire" Amount="1" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="0.1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>10</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+			<Results>
+				<Item TypeId="ConsumableItem" SubtypeId="Eli_Powerkit" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Bsc_Inst_Powerkit</SubtypeId>
+			</Id>
+			<DisplayName>Basic Instant Power Kit</DisplayName>
+			<Icon>Textures\GUI\Icons\Items\PowerKit.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="Ingot" SubtypeId="Electrum" Amount="1" />
+				<Item TypeId="Component" SubtypeId="FluxCapacitor" Amount="1" />
+				<Item TypeId="Component" SubtypeId="Superconductor" Amount="1" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+			<Results>
+				<Item TypeId="ConsumableItem" SubtypeId="Bsc_Inst_Powerkit" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Adv_Inst_Powerkit</SubtypeId>
+			</Id>
+			<DisplayName>Advanced Instant Power Kit</DisplayName>
+			<Icon>Textures\GUI\Icons\Items\PowerKit.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="ConsumableItem" SubtypeId="Bsc_Inst_Powerkit" Amount="2" />
+				<Item TypeId="Component" SubtypeId="Superconductor" Amount="1" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+			<Results>
+				<Item TypeId="ConsumableItem" SubtypeId="Adv_Inst_Powerkit" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Eli_Inst_Powerkit</SubtypeId>
+			</Id>
+			<DisplayName>Elite Instant Power Kit</DisplayName>
+			<Icon>Textures\GUI\Icons\Items\PowerKit.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="ConsumableItem" SubtypeId="Adv_Inst_Powerkit" Amount="2" />
+				<Item TypeId="Component" SubtypeId="Superconductor" Amount="1" />
+				<Item TypeId="Component" SubtypeId="Computer" Amount="1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+			<Results>
+				<Item TypeId="ConsumableItem" SubtypeId="Eli_Inst_Powerkit" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>SurvivalKit</SubtypeId>
+			</Id>
+			<DisplayName>Basic Survival Kit</DisplayName>
+			<Icon>Textures\GUI\Icons\Items\Medkit.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="ConsumableItem" SubtypeId="Medkit" Amount="1" />
+				<Item TypeId="ConsumableItem" SubtypeId="Powerkit" Amount="1" />
+				<Item TypeId="Ingot" SubtypeId="Polonium" Amount="1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+			<Results>
+				<Item TypeId="ConsumableItem" SubtypeId="SurvivalKit" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Adv_SurvivalKit</SubtypeId>
+			</Id>
+			<DisplayName>Advanced Survival Kit</DisplayName>
+			<Icon>Textures\GUI\Icons\Items\Medkit.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="ConsumableItem" SubtypeId="Adv_Medkit" Amount="2" />
+				<Item TypeId="ConsumableItem" SubtypeId="Adv_Powerkit" Amount="2" />
+				<Item TypeId="Ingot" SubtypeId="Polonium" Amount="1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+			<Results>
+				<Item TypeId="ConsumableItem" SubtypeId="Adv_SurvivalKit" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Eli_SurvivalKit</SubtypeId>
+			</Id>
+			<DisplayName>Elite Survival Kit</DisplayName>
+			<Icon>Textures\GUI\Icons\Items\Medkit.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="ConsumableItem" SubtypeId="Eli_Medkit" Amount="2" />
+				<Item TypeId="ConsumableItem" SubtypeId="Eli_Powerkit" Amount="2" />
+				<Item TypeId="Ingot" SubtypeId="Polonium" Amount="1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+			<Results>
+				<Item TypeId="ConsumableItem" SubtypeId="Eli_SurvivalKit" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Bsc_Inst_SurvivalKit</SubtypeId>
+			</Id>
+			<DisplayName>Basic Instant Survival Kit</DisplayName>
+			<Icon>Textures\GUI\Icons\Items\Medkit.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="ConsumableItem" SubtypeId="Bsc_Inst_Medkit" Amount="1" />
+				<Item TypeId="ConsumableItem" SubtypeId="Bsc_Inst_Powerkit" Amount="1" />
+				<Item TypeId="Ingot" SubtypeId="Plutonium" Amount="1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>30</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+			<Results>
+				<Item TypeId="ConsumableItem" SubtypeId="Bsc_Inst_SurvivalKit" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Adv_Inst_SurvivalKit</SubtypeId>
+			</Id>
+			<DisplayName>Advanced Instant Survival Kit</DisplayName>
+			<Icon>Textures\GUI\Icons\Items\Medkit.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="ConsumableItem" SubtypeId="Adv_Inst_Medkit" Amount="2" />
+				<Item TypeId="ConsumableItem" SubtypeId="Adv_Inst_Powerkit" Amount="2" />
+				<Item TypeId="Ingot" SubtypeId="Plutonium" Amount="1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>30</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+			<Results>
+				<Item TypeId="ConsumableItem" SubtypeId="Adv_Inst_SurvivalKit" Amount="1" />
+			</Results>
+		</Blueprint>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Eli_Inst_SurvivalKit</SubtypeId>
+			</Id>
+			<DisplayName>Elite Instant Survival Kit</DisplayName>
+			<Icon>Textures\GUI\Icons\Items\Medkit.dds</Icon>
+			<Prerequisites>
+				<Item TypeId="ConsumableItem" SubtypeId="Eli_Inst_Medkit" Amount="2" />
+				<Item TypeId="ConsumableItem" SubtypeId="Eli_Inst_Powerkit" Amount="2" />
+				<Item TypeId="Ingot" SubtypeId="Plutonium" Amount="1" />
+			</Prerequisites>
+			<BaseProductionTimeInSeconds>30</BaseProductionTimeInSeconds>
+			<IsPrimary>true</IsPrimary>
+			<Results>
+				<Item TypeId="ConsumableItem" SubtypeId="Eli_Inst_SurvivalKit" Amount="1" />
+			</Results>
+		</Blueprint>
+	</Blueprints>
+</Definitions>

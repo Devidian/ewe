@@ -1,0 +1,452 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Fonts>
+        <Font>
+            <Id>
+                <TypeId>FontDefinition</TypeId>
+                <SubtypeId>Debug</SubtypeId>
+            </Id>
+            <Default>true</Default>
+            <Resources>
+                <Resource Path="Fonts\white_shadow\FontDataPA.xml" SwappedPath="Fonts\white_shadow\FontDataSwappedPA.xml"/>
+            </Resources>
+            <LanguageSpecificDefinitions>
+                <LanguageDefinition Language="ChineseChina">
+                    <Resources>
+                        <Resource Path="Fonts\white_shadow\FontDataCH.xml" SwappedPath="Fonts\white_shadow\FontDataSwappedCH.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+
+                <LanguageDefinition Language="Japanese">
+                    <Resources>
+                        <Resource Path="Fonts\white_shadow\FontDataJP.xml"  SwappedPath="Fonts\white_shadow\FontDataSwappedJP.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+            </LanguageSpecificDefinitions>
+        </Font>
+        <Font>
+            <Id>
+                <TypeId>FontDefinition</TypeId>
+                <SubtypeId>Red</SubtypeId>
+            </Id>
+            <ColorMask>
+                <X>227</X>
+                <Y>65</Y>
+                <Z>65</Z>
+            </ColorMask>
+            <Resources>
+                <Resource Path="Fonts\white_shadow\FontDataPA.xml" SwappedPath="Fonts\white_shadow\FontDataSwappedPA.xml"/>
+            </Resources>
+            <LanguageSpecificDefinitions>
+                <LanguageDefinition Language="ChineseChina">
+                    <Resources>
+                        <Resource Path="Fonts\white_shadow\FontDataCH.xml" SwappedPath="Fonts\white_shadow\FontDataSwappedCH.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+
+                <LanguageDefinition Language="Japanese">
+                    <Resources>
+                        <Resource Path="Fonts\white_shadow\FontDataJP.xml" SwappedPath="Fonts\white_shadow\FontDataSwappedJP.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+            </LanguageSpecificDefinitions>
+        </Font>
+        <Font>
+            <Id>
+                <TypeId>FontDefinition</TypeId>
+                <SubtypeId>Green</SubtypeId>
+            </Id>
+            <ColorMask>
+                <X>101</X>
+                <Y>182</Y>
+                <Z>93</Z>
+            </ColorMask>
+            <Resources>
+                <Resource Path="Fonts\white\FontDataPA.xml" SwappedPath="Fonts\white\FontDataSwappedPA.xml"/>
+            </Resources>
+            <LanguageSpecificDefinitions>
+                <LanguageDefinition Language="ChineseChina">
+                    <Resources>
+                        <Resource Path="Fonts\white\FontDataCH.xml" SwappedPath="Fonts\white\FontDataSwappedCH.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+
+                <LanguageDefinition Language="Japanese">
+                    <Resources>
+                        <Resource Path="Fonts\white\FontDataJP.xml" SwappedPath="Fonts\white\FontDataSwappedJP.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+            </LanguageSpecificDefinitions>
+        </Font>
+        <Font>
+            <Id>
+                <TypeId>FontDefinition</TypeId>
+                <SubtypeId>Blue</SubtypeId>
+            </Id>
+            <ColorMask>
+                <X>220</X>
+                <Y>244</Y>
+                <Z>252</Z>
+            </ColorMask>
+            <Resources>
+                <Resource Path="Fonts\white\FontDataPA.xml" SwappedPath="Fonts\white\FontDataSwappedPA.xml"/>
+            </Resources>
+            <LanguageSpecificDefinitions>
+                <LanguageDefinition Language="ChineseChina">
+                    <Resources>
+                        <Resource Path="Fonts\white\FontDataCH.xml" SwappedPath="Fonts\white\FontDataSwappedCH.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+
+                <LanguageDefinition Language="Japanese">
+                    <Resources>
+                        <Resource Path="Fonts\white\FontDataJP.xml" SwappedPath="Fonts\white\FontDataSwappedJP.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+            </LanguageSpecificDefinitions>
+        </Font>
+        <Font>
+            <Id>
+                <TypeId>FontDefinition</TypeId>
+                <SubtypeId>White</SubtypeId>
+            </Id>
+            <Resources>
+                <Resource Path="Fonts\white\FontDataPA.xml" SwappedPath="Fonts\white\FontDataSwappedPA.xml"/>
+            </Resources>
+            <LanguageSpecificDefinitions>
+                <LanguageDefinition Language="ChineseChina">
+                    <Resources>
+                        <Resource Path="Fonts\white\FontDataCH.xml" SwappedPath="Fonts\white\FontDataSwappedCH.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+
+                <LanguageDefinition Language="Japanese">
+                    <Resources>
+                        <Resource Path="Fonts\white\FontDataJP.xml" SwappedPath="Fonts\white\FontDataSwappedJP.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+            </LanguageSpecificDefinitions>
+        </Font>
+        <Font>
+            <Id>
+                <TypeId>FontDefinition</TypeId>
+                <SubtypeId>DarkBlue</SubtypeId>
+            </Id>
+            <ColorMask>
+                <X>94</X>
+                <Y>115</Y>
+                <Z>127</Z>
+            </ColorMask>
+            <Resources>
+                <Resource Path="Fonts\white\FontDataPA.xml" SwappedPath="Fonts\white\FontDataSwappedPA.xml"/>
+            </Resources>
+            <LanguageSpecificDefinitions>
+                <LanguageDefinition Language="ChineseChina">
+                    <Resources>
+                        <Resource Path="Fonts\white\FontDataCH.xml" SwappedPath="Fonts\white\FontDataSwappedCH.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+
+                <LanguageDefinition Language="Japanese">
+                    <Resources>
+                        <Resource Path="Fonts\white\FontDataJP.xml" SwappedPath="Fonts\white\FontDataSwappedJP.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+            </LanguageSpecificDefinitions>
+        </Font>
+        <Font>
+            <Id>
+                <TypeId>FontDefinition</TypeId>
+                <SubtypeId>UrlNormal</SubtypeId>
+            </Id>
+            <ColorMask>
+                <X>220</X>
+                <Y>244</Y>
+                <Z>252</Z>
+            </ColorMask>
+            <Resources>
+                <Resource Path="Fonts\white\FontDataPA.xml" SwappedPath="Fonts\white\FontDataSwappedPA.xml"/>
+            </Resources>
+            <LanguageSpecificDefinitions>
+                <LanguageDefinition Language="ChineseChina">
+                    <Resources>
+                        <Resource Path="Fonts\white\FontDataCH.xml" SwappedPath="Fonts\white\FontDataSwappedCH.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+
+                <LanguageDefinition Language="Japanese">
+                    <Resources>
+                        <Resource Path="Fonts\white\FontDataJP.xml" SwappedPath="Fonts\white\FontDataSwappedJP.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+            </LanguageSpecificDefinitions>
+        </Font>
+        <Font>
+            <Id>
+                <TypeId>FontDefinition</TypeId>
+                <SubtypeId>UrlHighlight</SubtypeId>
+            </Id>
+            <Resources>
+                <Resource Path="Fonts\white\FontDataPA.xml" SwappedPath="Fonts\white\FontDataSwappedPA.xml"/>
+            </Resources>
+            <LanguageSpecificDefinitions>
+                <LanguageDefinition Language="ChineseChina">
+                    <Resources>
+                        <Resource Path="Fonts\white\FontDataCH.xml"  SwappedPath="Fonts\white\FontDataSwappedCH.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+
+                <LanguageDefinition Language="Japanese">
+                    <Resources>
+                        <Resource Path="Fonts\white\FontDataJP.xml"  SwappedPath="Fonts\white\FontDataSwappedJP.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+            </LanguageSpecificDefinitions>
+        </Font>
+        <Font>
+            <Id>
+                <TypeId>FontDefinition</TypeId>
+                <SubtypeId>ErrorMessageBoxCaption</SubtypeId>
+            </Id>
+            <Resources>
+                <Resource Path="Fonts\white\FontDataPA.xml" SwappedPath="Fonts\white\FontDataSwappedPA.xml"/>
+            </Resources>
+            <LanguageSpecificDefinitions>
+                <LanguageDefinition Language="ChineseChina">
+                    <Resources>
+                        <Resource Path="Fonts\white\FontDataCH.xml" SwappedPath="Fonts\white\FontDataSwappedCH.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+
+                <LanguageDefinition Language="Japanese">
+                    <Resources>
+                        <Resource Path="Fonts\white\FontDataJP.xml" SwappedPath="Fonts\white\FontDataSwappedJP.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+            </LanguageSpecificDefinitions>
+        </Font>
+        <Font>
+            <Id>
+                <TypeId>FontDefinition</TypeId>
+                <SubtypeId>ErrorMessageBoxText</SubtypeId>
+            </Id>
+            <ColorMask>
+                <X>227</X>
+                <Y>65</Y>
+                <Z>65</Z>
+            </ColorMask>
+            <Resources>
+                <Resource Path="Fonts\white\FontDataPA.xml" SwappedPath="Fonts\white\FontDataSwappedPA.xml"/>
+            </Resources>
+            <LanguageSpecificDefinitions>
+                <LanguageDefinition Language="ChineseChina">
+                    <Resources>
+                        <Resource Path="Fonts\white\FontDataCH.xml" SwappedPath="Fonts\white\FontDataSwappedCH.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+
+                <LanguageDefinition Language="Japanese">
+                    <Resources>
+                        <Resource Path="Fonts\white\FontDataJP.xml" SwappedPath="Fonts\white\FontDataSwappedJP.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+            </LanguageSpecificDefinitions>
+        </Font>
+        <Font>
+            <Id>
+                <TypeId>FontDefinition</TypeId>
+                <SubtypeId>InfoMessageBoxCaption</SubtypeId>
+            </Id>
+            <Resources>
+                <Resource Path="Fonts\white\FontDataPA.xml" SwappedPath="Fonts\white_shadow\FontDataSwappedPA.xml"/>
+            </Resources>
+            <LanguageSpecificDefinitions>
+                <LanguageDefinition Language="ChineseChina">
+                    <Resources>
+                        <Resource Path="Fonts\white\FontDataCH.xml" SwappedPath="Fonts\white\FontDataSwappedCH.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+
+                <LanguageDefinition Language="Japanese">
+                    <Resources>
+                        <Resource Path="Fonts\white\FontDataJP.xml" SwappedPath="Fonts\white\FontDataSwappedJP.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+            </LanguageSpecificDefinitions>
+        </Font>
+        <Font>
+            <Id>
+                <TypeId>FontDefinition</TypeId>
+                <SubtypeId>InfoMessageBoxText</SubtypeId>
+            </Id>
+            <ColorMask>
+                <X>220</X>
+                <Y>244</Y>
+                <Z>252</Z>
+            </ColorMask>
+            <Resources>
+                <Resource Path="Fonts\white\FontDataPA.xml" SwappedPath="Fonts\white\FontDataSwappedPA.xml"/>
+            </Resources>
+            <LanguageSpecificDefinitions>
+                <LanguageDefinition Language="ChineseChina">
+                    <Resources>
+                        <Resource Path="Fonts\white\FontDataCH.xml" SwappedPath="Fonts\white\FontDataSwappedCH.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+
+                <LanguageDefinition Language="Japanese">
+                    <Resources>
+                        <Resource Path="Fonts\white\FontDataJP.xml" SwappedPath="Fonts\white\FontDataSwappedJP.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+            </LanguageSpecificDefinitions>
+        </Font>
+        <Font>
+            <Id>
+                <TypeId>FontDefinition</TypeId>
+                <SubtypeId>ScreenCaption</SubtypeId>
+            </Id>
+            <Resources>
+                <Resource Path="Fonts\white\FontDataPA.xml" SwappedPath="Fonts\white\FontDataSwappedPA.xml"/>
+            </Resources>
+            <LanguageSpecificDefinitions>
+                <LanguageDefinition Language="ChineseChina">
+                    <Resources>
+                        <Resource Path="Fonts\white\FontDataCH.xml" SwappedPath="Fonts\white\FontDataSwappedCH.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+
+                <LanguageDefinition Language="Japanese">
+                    <Resources>
+                        <Resource Path="Fonts\white\FontDataJP.xml" SwappedPath="Fonts\white\FontDataSwappedJP.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+            </LanguageSpecificDefinitions>
+        </Font>
+        <Font>
+            <Id>
+                <TypeId>FontDefinition</TypeId>
+                <SubtypeId>GameCredits</SubtypeId>
+            </Id>
+            <ColorMask>
+                <X>220</X>
+                <Y>244</Y>
+                <Z>252</Z>
+            </ColorMask>
+            <Resources>
+                <Resource Path="Fonts\white\FontDataPA.xml" SwappedPath="Fonts\white\FontDataSwappedPA.xml"/>
+            </Resources>
+            <LanguageSpecificDefinitions>
+                <LanguageDefinition Language="ChineseChina">
+                    <Resources>
+                        <Resource Path="Fonts\white\FontDataCH.xml" SwappedPath="Fonts\white\FontDataSwappedCH.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+
+                <LanguageDefinition Language="Japanese">
+                    <Resources>
+                        <Resource Path="Fonts\white\FontDataJP.xml" SwappedPath="Fonts\white\FontDataSwappedJP.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+            </LanguageSpecificDefinitions>
+        </Font>
+        <Font>
+            <Id>
+                <TypeId>FontDefinition</TypeId>
+                <SubtypeId>LoadingScreen</SubtypeId>
+            </Id>
+            <ColorMask>
+                <X>220</X>
+                <Y>244</Y>
+                <Z>252</Z>
+            </ColorMask>
+            <Resources>
+                <Resource Path="Fonts\white_shadow\FontDataPA.xml" SwappedPath="Fonts\white_shadow\FontDataSwappedPA.xml"/>
+            </Resources>
+            <LanguageSpecificDefinitions>
+                <LanguageDefinition Language="ChineseChina">
+                    <Resources>
+                        <Resource Path="Fonts\white_shadow\FontDataCH.xml" SwappedPath="Fonts\white_shadow\FontDataSwappedCH.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+
+                <LanguageDefinition Language="Japanese">
+                    <Resources>
+                        <Resource Path="Fonts\white_shadow\FontDataJP.xml" SwappedPath="Fonts\white_shadow\FontDataSwappedJP.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+            </LanguageSpecificDefinitions>
+        </Font>
+        <Font>
+            <Id>
+                <TypeId>FontDefinition</TypeId>
+                <SubtypeId>BuildInfo</SubtypeId>
+            </Id>
+            <ColorMask>
+                <X>220</X>
+                <Y>244</Y>
+                <Z>252</Z>
+            </ColorMask>
+            <Resources>
+                <Resource Path="Fonts\white\FontDataPA.xml" SwappedPath="Fonts\white\FontDataSwappedPA.xml"/>
+            </Resources>
+            <LanguageSpecificDefinitions>
+                <LanguageDefinition Language="ChineseChina">
+                    <Resources>
+                        <Resource Path="Fonts\white\FontDataCH.xml" SwappedPath="Fonts\white\FontDataSwappedCH.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+
+                <LanguageDefinition Language="Japanese">
+                    <Resources>
+                        <Resource Path="Fonts\white\FontDataJP.xml" SwappedPath="Fonts\white\FontDataSwappedJP.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+            </LanguageSpecificDefinitions>
+        </Font>
+        <Font>
+            <Id>
+                <TypeId>FontDefinition</TypeId>
+                <SubtypeId>BuildInfoHighlight</SubtypeId>
+            </Id>
+            <ColorMask>
+                <X>227</X>
+                <Y>65</Y>
+                <Z>65</Z>
+            </ColorMask>
+            <Resources>
+                <Resource Path="Fonts\white\FontDataPA.xml" SwappedPath="Fonts\white\FontDataSwappedPA.xml"/>
+            </Resources>
+            <LanguageSpecificDefinitions>
+                <LanguageDefinition Language="ChineseChina">
+                    <Resources>
+                        <Resource Path="Fonts\white\FontDataCH.xml" SwappedPath="Fonts\white\FontDataSwappedCH.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+
+                <LanguageDefinition Language="Japanese">
+                    <Resources>
+                        <Resource Path="Fonts\white\FontDataJP.xml" SwappedPath="Fonts\white\FontDataSwappedJP.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+            </LanguageSpecificDefinitions>
+        </Font>
+        <Font>
+            <Id>
+                <TypeId>FontDefinition</TypeId>
+                <SubtypeId>Monospace</SubtypeId>
+            </Id>
+            <Resources>
+                <Resource Path="Fonts\monospace\FontDataPA.xml" SwappedPath="Fonts\monospace\FontDataSwappedPA.xml"/>
+            </Resources>
+            <LanguageSpecificDefinitions>
+                <LanguageDefinition Language="ChineseChina">
+                    <Resources>
+                        <Resource Path="Fonts\white\FontDataCH.xml" SwappedPath="Fonts\white\FontDataSwappedCH.xml"/>
+                    </Resources>
+                </LanguageDefinition>
+            </LanguageSpecificDefinitions>
+            <Default>false</Default>
+        </Font>
+    </Fonts>
+</Definitions>
