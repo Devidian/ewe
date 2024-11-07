@@ -16,7 +16,7 @@ import { cwd } from "node:process";
 import { convertXML } from "simple-xml-to-json";
 import * as xl from "excel4node";
 
-const rootPath = "ewe-minerals-core/";
+const rootPath = "minerals-core/";
 const templateVoxelMaterialsPath = "templates/VoxelMaterials_template.sbc";
 
 const extractiveNames = [
@@ -165,14 +165,14 @@ function createCompositesRadioActiveFiles() {
 }
 
 function voxelFixPath() {
-  const textures = readdirSync("ewe-minerals-core/Textures/Voxels", {
+  const textures = readdirSync("minerals-core/Textures/Voxels", {
     recursive: true,
     encoding: "utf8",
     withFileTypes: true,
   }).filter((entry) => entry.isFile());
 
   const voxelMaterialDefinitions = readdirSync(
-    "ewe-minerals-core/Data/VoxelMaterials",
+    "minerals-core/Data/VoxelMaterials",
     {
       recursive: true,
       encoding: "utf8",
@@ -211,7 +211,7 @@ function voxelFixPath() {
   }
 }
 
-function findBlueprintClassEntryDupes(dir = "ewe-core-minerals/Data") {
+function findBlueprintClassEntryDupes(dir = "core-minerals/Data") {
   const files = readdirSync(dir, {
     recursive: true,
     encoding: "utf8",
@@ -338,8 +338,8 @@ function sbcToJSON(dir = "ewe-legacy/Data/CubeBlocks") {
 function findEWEBlocks() {
   const vanillaBlocks = sbcToJSON(`./vanilla/Data/CubeBlocks`);
   const eweBlocks = sbcToJSON(`./ewe-legacy/Data/CubeBlocks`);
-  const componentsBlocks = sbcToJSON(`./ewe-components/Data/CubeBlocks`);
-  const enhancedBlocks = sbcToJSON(`./ewe-enhanced/Data/CubeBlocks`);
+  const componentsBlocks = sbcToJSON(`./components/Data/CubeBlocks`);
+  const enhancedBlocks = sbcToJSON(`./enhanced/Data/CubeBlocks`);
 
   console.log(`Found ${vanillaBlocks.length} vanilla blocks`);
   console.log(`Found ${eweBlocks.length} ewe blocks`);
@@ -375,8 +375,8 @@ function findEWEBlocks() {
     vanillaBlockIdSet.has(id)
   );
 
-  console.log(`Found ${eweOnlyBlockIds.length} ewe-added blocks`);
-  console.log(`Found ${eweChangedBlockIds.length} ewe-changed blocks`);
+  console.log(`Found ${eweOnlyBlockIds.length} added blocks`);
+  console.log(`Found ${eweChangedBlockIds.length} changed blocks`);
 
   writeFileSync(
     `eweBlocks.local.json`,
@@ -488,10 +488,10 @@ function findUnusedFiles() {
     eweEnhancedFiles,
   ] = [
     "ewe-legacy",
-    "ewe-components",
-    "ewe-core-minerals",
-    "ewe-core-components",
-    "ewe-enhanced",
+    "components",
+    "core-minerals",
+    "core-components",
+    "enhanced",
   ].map((path) =>
     readdirSync(resolve(cwd(), path), {
       recursive: true,
@@ -564,11 +564,11 @@ function loadAllModFiles() {
     enhancedFiles,
     vanillaFiles,
   ] = [
-    "ewe-core-minerals",
-    "ewe-core-components",
-    "ewe-components",
-    "ewe-planets",
-    "ewe-enhanced",
+    "core-minerals",
+    "core-components",
+    "components",
+    "planets",
+    "enhanced",
     "vanilla",
   ].map((dir) =>
     readdirSync(dir, {
@@ -579,11 +579,11 @@ function loadAllModFiles() {
   );
 
   return {
-    "ewe-core-minerals": coreMineralsFiles,
-    "ewe-core-components": coreComponentsFiles,
-    "ewe-components": componentsFiles,
-    "ewe-planets": planetsFiles,
-    "ewe-enhanced": enhancedFiles,
+    "core-minerals": coreMineralsFiles,
+    "core-components": coreComponentsFiles,
+    "components": componentsFiles,
+    "planets": planetsFiles,
+    "enhanced": enhancedFiles,
     vanilla: vanillaFiles,
   };
 }
@@ -789,14 +789,14 @@ function scanOres() {
 // createCompositesFiles();
 // createCompositesRadioActiveFiles();
 // voxelFixPath();
-// findBlueprintClassEntryDupes("ewe-core-components/Data");
+// findBlueprintClassEntryDupes("core-components/Data");
 
 // reading all files will fix BOM issues
-// sbcToJSON(`./ewe-core-minerals/Data`);
-// sbcToJSON(`./ewe-core-components/Data`);
-// sbcToJSON(`./ewe-planets/Data`);
-// sbcToJSON(`./ewe-components/Data`);
-// sbcToJSON(`./ewe-enhanced/Data`);
+// sbcToJSON(`./core-minerals/Data`);
+// sbcToJSON(`./core-components/Data`);
+// sbcToJSON(`./planets/Data`);
+// sbcToJSON(`./components/Data`);
+// sbcToJSON(`./enhanced/Data`);
 // sbcToJSON(`./ewe-legacy/Data`);
 
 // findEWEBlocks();
