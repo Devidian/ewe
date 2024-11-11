@@ -170,6 +170,7 @@
       <Result Amount="1" TypeId="Component" SubtypeId="Trinium" />
     </Blueprint>
 
+    <!-- FIXME invisible in gui -->
     <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>

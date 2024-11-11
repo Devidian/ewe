@@ -87,7 +87,7 @@
             </Id>
             <DisplayName>Nuetron Activation</DisplayName>
             <Icon>Textures\GUI\Icons\buttons\component.dds</Icon>
-            <HighlightIcon>Textures\GUI\Icons\buttons\component_highlight.dds</HighlightIcon>
+            <HighlightIcon>Textures\GUI\Icons\buttons\component.dds</HighlightIcon>
             <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
         </Class>
         <!-- Mass Nuetron Activation -->
@@ -98,7 +98,7 @@
             </Id>
             <DisplayName>Mass Nuetron Activation</DisplayName>
             <Icon>Textures\GUI\Icons\buttons\component.dds</Icon>
-            <HighlightIcon>Textures\GUI\Icons\buttons\component_highlight.dds</HighlightIcon>
+            <HighlightIcon>Textures\GUI\Icons\buttons\component.dds</HighlightIcon>
             <InputConstraintIcon>Textures\GUI\Icons\filter_ingot.dds</InputConstraintIcon>
         </Class>
         <!-- Construction Components Mass Production -->
