@@ -18,7 +18,7 @@
         <Entry Class="BasicElectroncis" BlueprintSubtypeId="Bulb" />
         <Entry Class="BasicElectroncis" BlueprintSubtypeId="Sensor" />
         <Entry Class="BasicElectroncis" BlueprintSubtypeId="HeatSink" />
-        <Entry Class="BasicElectroncis" BlueprintSubtypeId="RadioCommunication" />
+        <Entry Class="BasicElectroncis" BlueprintSubtypeId="RadioCommunicationComponent" />
         <Entry Class="BasicElectroncis" BlueprintSubtypeId="SolarCell" />
         <Entry Class="BasicElectroncis" BlueprintSubtypeId="Processor" />
         <Entry Class="BasicElectroncis" BlueprintSubtypeId="PCB" />
@@ -26,6 +26,6 @@
         <Entry Class="BasicElectroncis" BlueprintSubtypeId="DataCable" />
         <Entry Class="BasicElectroncis" BlueprintSubtypeId="FiberOpticWire" />
         <Entry Class="BasicElectroncis" BlueprintSubtypeId="Switch" />
-        <Entry Class="BasicElectroncis" BlueprintSubtypeId="Computer" />
+        <Entry Class="BasicElectroncis" BlueprintSubtypeId="ComputerComponent" />
     </BlueprintClassEntries>
 </Definitions>
