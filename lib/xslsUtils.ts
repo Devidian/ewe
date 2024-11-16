@@ -1,13 +1,12 @@
 // Methods to generate xlsx worksheets from sbc files
 import * as xl from "excel4node";
-import { Logger } from "./utils";
 import { Dirent } from "node:fs";
 import { readFileConvertToJSON } from "./sbcUtils";
-import { stringify } from "node:querystring";
+import { Logger } from "./utils";
 
 const logger = new Logger("xslxUtils");
 
-function addOreToIngotWorksheet(wb: xl.Workbook, files: Dirent[]) {
+function addOreToIngotWorksheet(wb: xl.Workbook, files: [Dirent, any][]) {
   // Add a worksheet with ore-to-ingot blueprints
   const ws = wb.addWorksheet(`oreToIngot`);
   ws.row(1).freeze();
@@ -33,14 +32,9 @@ function addOreToIngotWorksheet(wb: xl.Workbook, files: Dirent[]) {
     .style({ font: { bold: true } });
   let currentRow = 2;
   const componentColumnMap = new Map<string, number>();
-  for (const fileEnt of files.filter((ent) => ent.name.endsWith(".sbc"))) {
-    const data = readFileConvertToJSON(fileEnt);
-    if (!data.Definitions) {
-      logger.warn(`problem with ${fileEnt.name}`, data);
-      continue;
-    }
-    if (!Object.keys(data.Definitions).includes("Blueprints")) continue;
-
+  for (const [fileEnt, data] of files.filter(
+    (ent) => ent[0].name.endsWith(".sbc") && ent[1]?.Definitions?.Blueprints
+  )) {
     const srcObject = data.Definitions.Blueprints.Blueprint;
 
     const blueprints = Array.isArray(srcObject)
@@ -98,7 +92,7 @@ function addOreToIngotWorksheet(wb: xl.Workbook, files: Dirent[]) {
   }
 }
 
-function addComponentWorksheet(wb: xl.Workbook, files: Dirent[]) {
+function addComponentWorksheet(wb: xl.Workbook, files: [Dirent, any][]) {
   // Add a worksheet with component blueprints
   const ws = wb.addWorksheet(`component-blueprints`);
   ws.row(2).freeze();
@@ -124,14 +118,9 @@ function addComponentWorksheet(wb: xl.Workbook, files: Dirent[]) {
     .style({ font: { bold: true } });
   let currentRow = 2;
   const componentColumnMap = new Map<string, number>();
-  for (const fileEnt of files.filter((ent) => ent.name.endsWith(".sbc"))) {
-    const data = readFileConvertToJSON(fileEnt);
-    if (!data.Definitions) {
-      logger.warn(`problem with ${fileEnt.name}`, data);
-      continue;
-    }
-    if (!Object.keys(data.Definitions).includes("Blueprints")) continue;
-
+  for (const [fileEnt, data] of files.filter(
+    (ent) => ent[0].name.endsWith(".sbc") && ent[1]?.Definitions?.Blueprints
+  )) {
     const srcObject = data.Definitions.Blueprints.Blueprint;
 
     const blueprints = Array.isArray(srcObject)
@@ -190,7 +179,7 @@ function addComponentWorksheet(wb: xl.Workbook, files: Dirent[]) {
   }
 }
 
-function addBlockWorksheet(wb: xl.Workbook, files: Dirent[]) {
+function addBlockWorksheet(wb: xl.Workbook, files: [Dirent, any][]) {
   // Add a worksheet with all blocks (and their components)
   const ws = wb.addWorksheet(`block-definitions`);
   ws.row(1).freeze();
@@ -200,14 +189,9 @@ function addBlockWorksheet(wb: xl.Workbook, files: Dirent[]) {
   let currentRow = 1;
   const componentColumnMap = new Map<string, number>();
 
-  for (const fileEnt of files.filter((ent) => ent.name.endsWith(".sbc"))) {
-    const data = readFileConvertToJSON(fileEnt);
-    if (!data.Definitions) {
-      logger.warn(`problem with ${fileEnt.name}`, data);
-      continue;
-    }
-    if (!Object.keys(data.Definitions).includes("CubeBlocks")) continue;
-
+  for (const [fileEnt, data] of files.filter(
+    (ent) => ent[0].name.endsWith(".sbc") && ent[1]?.Definitions?.CubeBlocks
+  )) {
     const blockList = data.Definitions?.CubeBlocks?.Definition ?? [];
     if (blockList.length < 1) continue;
     ws.cell(++currentRow, 1)
@@ -241,11 +225,36 @@ function addBlockWorksheet(wb: xl.Workbook, files: Dirent[]) {
   }
 }
 
-function addMaterialWorksheet(wb: xl.Workbook, files: Dirent[]) {
+function addMaterialWorksheet(wb: xl.Workbook, files: [Dirent, any][]) {
   // Add a worksheet with all materials
   const ws = wb.addWorksheet(`material-definitions`);
+  // define styles
+  const styleError = wb.createStyle({
+    fill: {
+      bgColor: "#FFCCCC",
+      fgColor: "#FFCCCC",
+      type: "pattern",
+      patternType: "solid",
+    },
+  });
+  const styleWarn = wb.createStyle({
+    fill: {
+      bgColor: "#FFFFCC",
+      fgColor: "#FFFFCC",
+      type: "pattern",
+      patternType: "solid",
+    },
+  });
+  const styleOkey = wb.createStyle({
+    fill: {
+      bgColor: "#CCFFCC",
+      fgColor: "#CCFFCC",
+      type: "pattern",
+      patternType: "solid",
+    },
+  });
   ws.row(1).freeze();
-  ws.column(1).setWidth(53).freeze();
+  ws.column(1).setWidth(26).freeze();
 
   ws.cell(1, 1)
     .string(`SubtypeId`)
@@ -269,16 +278,135 @@ function addMaterialWorksheet(wb: xl.Workbook, files: Dirent[]) {
     .string(`SpawnsFromMeteorites`)
     .style({ font: { bold: true } });
   let currentRow = 1;
-  const componentColumnMap = new Map<string, number>();
+  const orePlanetMap = new Map<string, Set<string>>();
 
-  for (const fileEnt of files.filter((ent) => ent.name.endsWith(".sbc"))) {
-    const data = readFileConvertToJSON(fileEnt);
-    if (!data.Definitions) {
-      logger.warn(`problem with ${fileEnt.name}`, data);
-      continue;
+  // scan planet definitions
+  for (const [fileEnt, data] of files.filter(
+    ([f, d]) =>
+      f.name.endsWith(".sbc") &&
+      (d.Definitions.PlanetGeneratorDefinitions ||
+        (d?.Definitions?.Definition &&
+          d.Definitions.Definition["@_xsi:type"] ===
+            "PlanetGeneratorDefinition") ||
+        (Array.isArray(d.Definitions.Definition) &&
+          d.Definitions.Definition.some(
+            (d: any) => d["@_xsi:type"] === "PlanetGeneratorDefinition"
+          )))
+  )) {
+    const rootNode =
+      data.Definitions.Definition ??
+      data.Definitions.PlanetGeneratorDefinitions?.PlanetGeneratorDefinition;
+    const dataList = Array.isArray(rootNode) ? rootNode : [rootNode];
+    // logger.log(fileEnt.name, dataList);
+    for (const planet of dataList) {
+      // logger.verbose(planet);
+      //  Materials used in ores
+      const ores = [
+        ...new Set(planet.OreMappings.Ore.map((ore: any) => ore["@_Type"])),
+      ];
+      //  Materials used in CustomMaterialTable
+      const customMaterialTable = [
+        ...new Set(
+          (planet.CustomMaterialTable
+            ? planet.CustomMaterialTable.Material
+            : []
+          ).flatMap((v: any) => [
+            v["@_Material"],
+            ...(Array.isArray(v.Layers?.Layer)
+              ? v.Layers.Layer.map((l: any) => l["@_Material"])
+              : [v.Layers?.Layer?.["@_Material"]]),
+          ])
+        ),
+      ];
+      // Materials used in DefaultSubSurfaceMaterial
+      const defaultSubSurfaceMaterial = [
+        ...new Set(
+          Array.isArray(planet.DefaultSubSurfaceMaterial)
+            ? planet.DefaultSubSurfaceMaterial
+            : planet.DefaultSubSurfaceMaterial
+            ? [planet.DefaultSubSurfaceMaterial]
+            : []
+        ),
+      ].map((v: any) => v["@_Material"]);
+      // Materials used in DefaultSurfaceMaterial
+      const defaultSurfaceMaterial = [
+        ...new Set(
+          Array.isArray(planet.DefaultSurfaceMaterial)
+            ? planet.DefaultSurfaceMaterial
+            : planet.DefaultSurfaceMaterial
+            ? [planet.DefaultSurfaceMaterial]
+            : []
+        ),
+      ].map((v: any) => v["@_Material"]);
+      // Materials used in EnvironmentItems
+      const environmentItems = [
+        ...new Set(
+          Array.isArray(planet.EnvironmentItems.Item)
+            ? planet.EnvironmentItems.Item
+            : planet.EnvironmentItems.Item
+            ? [planet.EnvironmentItems.Item]
+            : []
+        ),
+      ].flatMap((v: any) =>
+        Array.isArray(v.Materials)
+          ? v.Materials.map((v: any) => v.Material)
+          : v.Materials.Material
+      );
+      // Materials used in ComplexMaterials
+      const complexMaterials = [
+        ...new Set(
+          (Array.isArray(planet.ComplexMaterials?.MaterialGroup)
+            ? planet.ComplexMaterials.MaterialGroup
+            : planet.ComplexMaterials?.MaterialGroup
+            ? [planet.ComplexMaterials.MaterialGroup]
+            : []
+          )
+            .flatMap((v: any) => v.Rule ?? v)
+            .flatMap((v: any) => v.Layers?.Layer ?? v.Layers ?? v)
+            .map((v: any) => v["@_Material"])
+        ),
+      ];
+      const allUsedMaterials = [
+        ...new Set([
+          ...ores,
+          ...customMaterialTable,
+          ...defaultSubSurfaceMaterial,
+          ...defaultSurfaceMaterial,
+          ...environmentItems,
+          ...complexMaterials,
+        ]),
+      ].filter((v) => v);
+
+      orePlanetMap.set(planet.Id.SubtypeId, new Set(allUsedMaterials));
+
+      // console.log({
+      // ores,
+      // customMaterialTable,
+      // complexMaterials,
+      // environmentItems,
+      // defaultSurfaceMaterial,
+      // defaultSubSurfaceMaterial,
+      // name: planet.Id.SubtypeId,
+      // allUsedMaterials,
+      // });
     }
-    if (!Object.keys(data.Definitions).includes("VoxelMaterials")) continue;
+  }
+  const lastColumnAlpha = xl.getExcelAlpha(orePlanetMap.size + 7);
 
+  // create planet headers
+  for (const [planet, ores, column] of [...orePlanetMap.entries()].map(
+    (v, i) => [...v, i + 8] as [string, Set<string>, number]
+  )) {
+    // logger.log(`line 1 column ${column}: ${planet}`);
+    ws.cell(1, column)
+      .string(planet)
+      .style({ font: { bold: true } });
+  }
+
+  // scan VoxelMaterials
+  for (const [fileEnt, data] of files.filter(
+    (ent) => ent[0].name.endsWith(".sbc") && ent[1]?.Definitions?.VoxelMaterials
+  )) {
     const definitionList =
       data.Definitions?.VoxelMaterials?.VoxelMaterial ?? [];
     if (definitionList.length < 1) continue;
@@ -294,19 +422,48 @@ function addMaterialWorksheet(wb: xl.Workbook, files: Dirent[]) {
       ws.cell(row, 5).string(`${definition.IsRare}`);
       ws.cell(row, 6).string(`${definition.SpawnsInAsteroids}`);
       ws.cell(row, 7).string(`${definition.SpawnsFromMeteorites}`);
+
+      for (const [planet, ores, column] of [...orePlanetMap.entries()].map(
+        (v, i) => [...v, i + 8] as [string, Set<string>, number]
+      )) {
+        const isUsed = ores.has(definition.Id.SubtypeId);
+        const style = isUsed ? styleOkey : styleError;
+        ws.cell(row, column)
+          .string(isUsed ? "true" : "false")
+          .style(style);
+      }
+      ws.addConditionalFormattingRule(`$A$${row}:$${lastColumnAlpha}$${row}`, {
+        type: "expression",
+        priority: 2,
+        formula: `=NOT(OR($H$${row}:$${lastColumnAlpha}$${row}="true"))`,
+        style: styleError,
+      });
     }
   }
+
+  ws.addConditionalFormattingRule(`$A:$A`, {
+    type: "expression",
+    priority: 1,
+    formula: `=NOT(ISERROR(SEARCH("bare", $A1)))`,
+    style: styleWarn,
+  });
 }
 
-function add____Worksheet(wb: xl.Workbook, files: Dirent[]) {}
+function add____Worksheet(wb: xl.Workbook, files: [Dirent, any][]) {}
 
 export function generateXSLX(files: Dirent[]) {
   const wb = new xl.Workbook();
 
-  addOreToIngotWorksheet(wb, files);
-  addComponentWorksheet(wb, files);
-  addBlockWorksheet(wb, files);
-  addMaterialWorksheet(wb, files);
+  const sbcFiles = files.filter((ent) => ent.name.endsWith(".sbc"));
+  const sbcConverted: [Dirent, any][] = files.map((ent) => [
+    ent,
+    readFileConvertToJSON(ent),
+  ]);
+
+  addOreToIngotWorksheet(wb, sbcConverted);
+  addComponentWorksheet(wb, sbcConverted);
+  addBlockWorksheet(wb, sbcConverted);
+  addMaterialWorksheet(wb, sbcConverted);
   // add____Worksheet(wb, files);
 
   return wb.writeToBuffer();
