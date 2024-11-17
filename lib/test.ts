@@ -12,10 +12,24 @@ import { generateXSLX } from "./xslsUtils";
 const logger = new Logger("test");
 
 export function test() {
+  const files = [
+    "./core-minerals",
+    "./core-components",
+    "./components",
+    "./planets",
+    "./enhanced",
+  ].flatMap((dir) => generateModFileList(dir));
+
+  generateXSLX(files.filter((ent) => ent.name.endsWith(".sbc"))).then((buf) =>
+    writeFileSync("mod-data.local.xlsx", buf)
+  );
+}
+
+function testGenerateVanillaExcel() {
   const files = generateModFileList("./se-vanilla");
 
   generateXSLX(files.filter((ent) => ent.name.endsWith(".sbc"))).then((buf) =>
-    writeFileSync("test.local.xlsx", buf)
+    writeFileSync("vanilla-data.local.xlsx", buf)
   );
 }
 

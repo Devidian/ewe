@@ -6,30 +6,38 @@ import { Logger } from "./utils";
 
 const logger = new Logger("xslxUtils");
 
-function addOreToIngotWorksheet(wb: xl.Workbook, files: [Dirent, any][]) {
+function addOreToIngotWorksheet(
+  wb: xl.Workbook,
+  files: [Dirent, any][],
+  opt = { showFileNames: true }
+) {
   // Add a worksheet with ore-to-ingot blueprints
   const ws = wb.addWorksheet(`oreToIngot`);
-  ws.row(1).freeze();
-  ws.column(1).setWidth(20).freeze();
+  ws.row(2).freeze();
+  ws.column(1).setWidth(33).freeze();
   ws.column(2).hide();
   ws.column(3).hide();
-  ws.cell(1, 1)
+  ws.cell(2, 1)
     .string(`Id`)
     .style({ font: { bold: true } });
-  ws.cell(1, 2)
+  ws.cell(2, 2)
     .string(`DisplayName`)
     .style({ font: { bold: true } });
-  ws.cell(1, 3)
+  ws.cell(2, 3)
     .string(`Icon`)
     .style({ font: { bold: true } });
-  ws.cell(1, 4)
-    .string(`BaseProductionTimeInSeconds`)
+  ws.cell(2, 4)
+    .string(`Time`)
     .style({
       font: { bold: true },
     });
-  ws.cell(1, 5)
+  (ws.cell(2, 4) as any).comment(`BaseProductionTimeInSeconds`);
+  ws.cell(2, 5)
     .string(`Amount`)
     .style({ font: { bold: true } });
+  ws.cell(1, 5)
+    .string(`Type:`)
+    .style({ font: { bold: true }, alignment: { horizontal: "right" } });
   let currentRow = 2;
   const componentColumnMap = new Map<string, number>();
   for (const [fileEnt, data] of files.filter(
@@ -43,13 +51,16 @@ function addOreToIngotWorksheet(wb: xl.Workbook, files: [Dirent, any][]) {
       ? [srcObject]
       : Object.values(srcObject);
 
-    const oreToIngotBlueprints = blueprints.filter((v: any) => {
-      return v.Id.SubtypeId.includes("OreToIngot");
-    });
+    const oreToIngotBlueprints = blueprints
+      .filter((v: any) => {
+        return v.Id.SubtypeId.includes("OreToIngot");
+      })
+      .sort((a: any, b: any) => a.Id.SubtypeId.localeCompare(b.Id.SubtypeId));
     if (oreToIngotBlueprints.length < 1) continue;
-    ws.cell(++currentRow, 1)
-      .string(fileEnt.name)
-      .style({ font: { bold: true } });
+    if (opt.showFileNames)
+      ws.cell(++currentRow, 1)
+        .string(fileEnt.name)
+        .style({ font: { bold: true } });
     for (const blueprint of oreToIngotBlueprints) {
       const row = ++currentRow;
       ws.cell(row, 1).string(`${blueprint.Id.SubtypeId}`);
@@ -90,59 +101,72 @@ function addOreToIngotWorksheet(wb: xl.Workbook, files: [Dirent, any][]) {
       }
     }
   }
+
+  if (!opt.showFileNames) ws.row(2).filter({ firstRow: 1, firstColumn: 1 });
 }
 
-function addComponentWorksheet(wb: xl.Workbook, files: [Dirent, any][]) {
+function addComponentWorksheet(
+  wb: xl.Workbook,
+  files: [Dirent, any][],
+  opt = { showFileNames: true }
+) {
   // Add a worksheet with component blueprints
   const ws = wb.addWorksheet(`component-blueprints`);
   ws.row(2).freeze();
   ws.column(1).setWidth(20).freeze();
   ws.column(2).hide();
   ws.column(3).hide();
-  ws.cell(1, 1)
+  ws.cell(2, 1)
     .string(`Id`)
     .style({ font: { bold: true } });
-  ws.cell(1, 2)
+  ws.cell(2, 2)
     .string(`DisplayName`)
     .style({ font: { bold: true } });
-  ws.cell(1, 3)
+  ws.cell(2, 3)
     .string(`Icon`)
     .style({ font: { bold: true } });
-  ws.cell(1, 4)
-    .string(`BaseProductionTimeInSeconds`)
+  ws.cell(2, 4)
+    .string(`Time`)
     .style({
       font: { bold: true },
     });
-  ws.cell(1, 5)
+  (ws.cell(2, 4) as any).comment(`BaseProductionTimeInSeconds`);
+  ws.cell(2, 5)
     .string(`Amount`)
     .style({ font: { bold: true } });
+  ws.cell(1, 5)
+    .string(`Type:`)
+    .style({ font: { bold: true }, alignment: { horizontal: "right" } });
   let currentRow = 2;
   const componentColumnMap = new Map<string, number>();
   for (const [fileEnt, data] of files.filter(
     (ent) => ent[0].name.endsWith(".sbc") && ent[1]?.Definitions?.Blueprints
   )) {
-    const srcObject = data.Definitions.Blueprints.Blueprint;
-
-    const blueprints = Array.isArray(srcObject)
-      ? srcObject
-      : srcObject.Id
-      ? [srcObject]
-      : Object.values(srcObject);
+    const rootNode = data.Definitions.Blueprints.Blueprint;
+    const blueprints = Array.isArray(rootNode)
+      ? rootNode
+      : rootNode.Id
+      ? [rootNode]
+      : Object.values(rootNode);
 
     const componentBlueprints = blueprints.filter((v: any) => {
-      return v.Result && v?.Result["@_TypeId"] === "Component";
+      const a = v.Result && v?.Result["@_TypeId"] === "Component";
+      const b = v.Results && v.Results.Item["@_TypeId"] === "Component";
+      return a || b;
     });
     if (componentBlueprints.length < 1) continue;
-    ws.cell(++currentRow, 1)
-      .string(fileEnt.name)
-      .style({ font: { bold: true } });
+    if (opt.showFileNames)
+      ws.cell(++currentRow, 1)
+        .string(fileEnt.name)
+        .style({ font: { bold: true } });
     for (const blueprint of componentBlueprints) {
       const row = ++currentRow;
+      const resultItem = blueprint.Result ?? blueprint.Results.Item;
       ws.cell(row, 1).string(`${blueprint.Id.SubtypeId}`);
       ws.cell(row, 2).string(`${blueprint.DisplayName}`);
       ws.cell(row, 3).string(`${blueprint.Icon}`);
       ws.cell(row, 4).number(parseFloat(blueprint.BaseProductionTimeInSeconds));
-      ws.cell(row, 5).number(parseFloat(blueprint.Result["@_Amount"]));
+      ws.cell(row, 5).number(parseFloat(resultItem["@_Amount"]));
       const comp: Record<string, number> = {};
       // blueprints with only one component only have an object not a list
       const inputList = Array.isArray(blueprint.Prerequisites.Item)
@@ -177,9 +201,15 @@ function addComponentWorksheet(wb: xl.Workbook, files: [Dirent, any][]) {
       }
     }
   }
+
+  if (!opt.showFileNames) ws.row(2).filter({ firstRow: 3, firstColumn: 1 });
 }
 
-function addBlockWorksheet(wb: xl.Workbook, files: [Dirent, any][]) {
+function addBlockWorksheet(
+  wb: xl.Workbook,
+  files: [Dirent, any][],
+  opt = { showFileNames: true }
+) {
   // Add a worksheet with all blocks (and their components)
   const ws = wb.addWorksheet(`block-definitions`);
   ws.row(1).freeze();
@@ -192,12 +222,15 @@ function addBlockWorksheet(wb: xl.Workbook, files: [Dirent, any][]) {
   for (const [fileEnt, data] of files.filter(
     (ent) => ent[0].name.endsWith(".sbc") && ent[1]?.Definitions?.CubeBlocks
   )) {
-    const blockList = data.Definitions?.CubeBlocks?.Definition ?? [];
-    if (blockList.length < 1) continue;
-    ws.cell(++currentRow, 1)
-      .string(fileEnt.name)
-      .style({ font: { bold: true } });
-    for (const block of blockList) {
+    const rootNode = data.Definitions?.CubeBlocks?.Definition ?? [];
+    const dataList = Array.isArray(rootNode) ? rootNode : [rootNode];
+
+    if (dataList.length < 1) continue;
+    if (opt.showFileNames)
+      ws.cell(++currentRow, 1)
+        .string(fileEnt.name)
+        .style({ font: { bold: true } });
+    for (const block of dataList) {
       const row = ++currentRow;
       ws.cell(row, 1).string(`${block.Id.TypeId}/${block.Id.SubtypeId}`);
       ws.cell(row, 2).string(`${block.DisplayName}`);
@@ -223,9 +256,15 @@ function addBlockWorksheet(wb: xl.Workbook, files: [Dirent, any][]) {
       }
     }
   }
+
+  if (!opt.showFileNames) ws.row(1).filter({ firstRow: 1, firstColumn: 1 });
 }
 
-function addMaterialWorksheet(wb: xl.Workbook, files: [Dirent, any][]) {
+function addMaterialWorksheet(
+  wb: xl.Workbook,
+  files: [Dirent, any][],
+  opt = { showFileNames: true }
+) {
   // Add a worksheet with all materials
   const ws = wb.addWorksheet(`material-definitions`);
   // define styles
@@ -407,35 +446,37 @@ function addMaterialWorksheet(wb: xl.Workbook, files: [Dirent, any][]) {
   for (const [fileEnt, data] of files.filter(
     (ent) => ent[0].name.endsWith(".sbc") && ent[1]?.Definitions?.VoxelMaterials
   )) {
-    const definitionList =
-      data.Definitions?.VoxelMaterials?.VoxelMaterial ?? [];
-    if (definitionList.length < 1) continue;
-    ws.cell(++currentRow, 1)
-      .string(fileEnt.name)
-      .style({ font: { bold: true } });
-    for (const definition of definitionList) {
+    const rootNode = data.Definitions?.VoxelMaterials?.VoxelMaterial ?? [];
+    const dataList = Array.isArray(rootNode) ? rootNode : [rootNode];
+
+    if (dataList.length < 1) continue;
+    if (opt.showFileNames)
+      ws.cell(++currentRow, 1)
+        .string(fileEnt.name)
+        .style({ font: { bold: true } });
+    for (const definition of dataList) {
       const row = ++currentRow;
       ws.cell(row, 1).string(`${definition.Id.SubtypeId}`);
       ws.cell(row, 2).string(`${definition.MinedOre}`);
-      ws.cell(row, 3).string(`${definition.MinedOreRatio}`);
-      ws.cell(row, 4).string(`${definition.CanBeHarvested}`);
-      ws.cell(row, 5).string(`${definition.IsRare}`);
-      ws.cell(row, 6).string(`${definition.SpawnsInAsteroids}`);
-      ws.cell(row, 7).string(`${definition.SpawnsFromMeteorites}`);
+      ws.cell(row, 3).number(parseFloat(definition.MinedOreRatio));
+      ws.cell(row, 4).bool(definition.CanBeHarvested);
+      ws.cell(row, 5).bool(definition.IsRare);
+      if (definition.SpawnsInAsteroids !== undefined)
+        ws.cell(row, 6).bool(definition.SpawnsInAsteroids);
+      if (definition.SpawnsFromMeteorites !== undefined)
+        ws.cell(row, 7).bool(definition.SpawnsFromMeteorites);
 
       for (const [planet, ores, column] of [...orePlanetMap.entries()].map(
         (v, i) => [...v, i + 8] as [string, Set<string>, number]
       )) {
         const isUsed = ores.has(definition.Id.SubtypeId);
         const style = isUsed ? styleOkey : styleError;
-        ws.cell(row, column)
-          .string(isUsed ? "true" : "false")
-          .style(style);
+        ws.cell(row, column).bool(isUsed).style(style);
       }
       ws.addConditionalFormattingRule(`$A$${row}:$${lastColumnAlpha}$${row}`, {
         type: "expression",
         priority: 2,
-        formula: `=NOT(OR($H$${row}:$${lastColumnAlpha}$${row}="true"))`,
+        formula: `=NOT(OR($H$${row}:$${lastColumnAlpha}$${row}=TRUE))`,
         style: styleError,
       });
     }
@@ -447,23 +488,29 @@ function addMaterialWorksheet(wb: xl.Workbook, files: [Dirent, any][]) {
     formula: `=NOT(ISERROR(SEARCH("bare", $A1)))`,
     style: styleWarn,
   });
+
+  if (!opt.showFileNames) ws.row(1).filter({ firstRow: 1, firstColumn: 1 });
 }
 
-function add____Worksheet(wb: xl.Workbook, files: [Dirent, any][]) {}
+function add____Worksheet(
+  wb: xl.Workbook,
+  files: [Dirent, any][],
+  opt = { showFileNames: true }
+) {}
 
-export function generateXSLX(files: Dirent[]) {
+export function generateXSLX(files: Dirent[], opt = { showFileNames: true }) {
   const wb = new xl.Workbook();
 
   const sbcFiles = files.filter((ent) => ent.name.endsWith(".sbc"));
-  const sbcConverted: [Dirent, any][] = files.map((ent) => [
+  const sbcConverted: [Dirent, any][] = sbcFiles.map((ent) => [
     ent,
     readFileConvertToJSON(ent),
   ]);
 
-  addOreToIngotWorksheet(wb, sbcConverted);
-  addComponentWorksheet(wb, sbcConverted);
-  addBlockWorksheet(wb, sbcConverted);
-  addMaterialWorksheet(wb, sbcConverted);
+  addOreToIngotWorksheet(wb, sbcConverted, opt);
+  addComponentWorksheet(wb, sbcConverted, opt);
+  addBlockWorksheet(wb, sbcConverted, opt);
+  addMaterialWorksheet(wb, sbcConverted, opt);
   // add____Worksheet(wb, files);
 
   return wb.writeToBuffer();

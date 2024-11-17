@@ -16,14 +16,38 @@ if (!command) {
   exit(1);
 }
 
+function buildExcelForVanilla() {
+  const files = generateModFileList("./se-vanilla");
+
+  generateXSLX(files.filter((ent) => ent.name.endsWith(".sbc"))).then((buf) =>
+    writeFileSync("resources/vanilla.data.xlsx", buf)
+  );
+}
+
+function buildExcelForMod() {
+  const files = [
+    "./core-minerals",
+    "./core-components",
+    "./components",
+    "./planets",
+    "./enhanced",
+  ].flatMap((dir) => generateModFileList(dir));
+
+  generateXSLX(
+    files.filter((ent) => ent.name.endsWith(".sbc")),
+    {
+      showFileNames: false,
+    }
+  ).then((buf) => writeFileSync("resources/mod-data.xlsx", buf));
+}
+
 const commandHandler = {
   test: test,
-  xlvanilla: () => {
-    const files = generateModFileList("./se-vanilla");
-
-    generateXSLX(files.filter((ent) => ent.name.endsWith(".sbc"))).then((buf) =>
-      writeFileSync("resources/vanilla.data.xlsx", buf)
-    );
+  xlvanilla: buildExcelForVanilla,
+  xlmod: buildExcelForMod,
+  xlall: () => {
+    buildExcelForVanilla();
+    buildExcelForMod();
   },
 }[command];
 
