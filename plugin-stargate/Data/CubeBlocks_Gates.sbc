@@ -9,12 +9,12 @@
         <SubtypeId>Stargate M</SubtypeId>
       </Id>
       <DisplayName>Stargate Base</DisplayName>
-      <Icon>Textures\gui\Stargate M.dds</Icon>
+      <Icon>..\754173702\Textures\gui\Stargate M.dds</Icon>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="3" z="2" />
       <ModelOffset x="0" y="0" z="0" />
-      <Model>Models\Blocks\Phoenix_Stargate_Base.mwm</Model>
+      <Model>..\754173702\Models\Blocks\Phoenix_Stargate_Base.mwm</Model>
       <Components>
         <Component Subtype="SteelPlate" Count="100" />
         <Component Subtype="Naquadah" Count="100" />
@@ -35,9 +35,9 @@
         <MountPoint Side="Front" StartX="0" StartY="0" EndX="3" EndY="1" />
       </MountPoints>
       <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Blocks\Phoenix_Stargate_Base_Constr1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="Models\Blocks\Phoenix_Stargate_Base_Constr2.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Blocks\Phoenix_Stargate_Base_Constr3.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="..\754173702\Models\Blocks\Phoenix_Stargate_Base_Constr1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="..\754173702\Models\Blocks\Phoenix_Stargate_Base_Constr2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="..\754173702\Models\Blocks\Phoenix_Stargate_Base_Constr3.mwm" />
       </BuildProgressModels>
       <BlockPairName>Stargate Base</BlockPairName>
       <EdgeType>Light</EdgeType>
@@ -65,12 +65,12 @@
         <SubtypeId>Stargate O</SubtypeId>
       </Id>
       <DisplayName>Stargate</DisplayName>
-      <Icon>Textures\gui\Stargate O.dds</Icon>
+      <Icon>..\754173702\Textures\gui\Stargate O.dds</Icon>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="2" z="1" />
       <ModelOffset x="0" y="0" z="0" />
-      <Model>Models\Blocks\Phoenix_Stargate_M.mwm</Model>
+      <Model>..\754173702\Models\Blocks\Phoenix_Stargate_M.mwm</Model>
       <Components>
         <Component Subtype="InteriorPlate" Count="12" />
         <Component Subtype="Naquadah" Count="100" />
@@ -89,9 +89,9 @@
         <MountPoint Side="Top" StartX="2.10" StartY="0.44" EndX="2.68" EndY="0.56" />
       </MountPoints>
       <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Blocks\Phoenix_Stargate_M_Constr1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="Models\Blocks\Phoenix_Stargate_M_Constr2.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Blocks\Phoenix_Stargate_M_Constr3.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="..\754173702\Models\Blocks\Phoenix_Stargate_M_Constr1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="..\754173702\Models\Blocks\Phoenix_Stargate_M_Constr2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="..\754173702\Models\Blocks\Phoenix_Stargate_M_Constr3.mwm" />
       </BuildProgressModels>
       <BlockPairName>Stargate O</BlockPairName>
       <EdgeType>Light</EdgeType>
@@ -129,13 +129,13 @@
         <SubtypeId>Stargate A</SubtypeId>
       </Id>
       <DisplayName>Atlantis Gate</DisplayName>
-      <Icon>Textures\gui\Stargate A.dds</Icon>
+      <Icon>..\754173702\Textures\gui\Stargate A.dds</Icon>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <GuiVisible>false</GuiVisible>
       <Size x="3" y="2" z="1" />
       <ModelOffset x="0" y="0" z="0" />
-      <Model>Models\Blocks\Phoenix_Stargate_A.mwm</Model>
+      <Model>..\754173702\Models\Blocks\Phoenix_Stargate_A.mwm</Model>
       <Components>
         <Component Subtype="InteriorPlate" Count="12" />
         <Component Subtype="Naquadah" Count="100" />
@@ -154,9 +154,9 @@
         <MountPoint Side="Top" StartX="2.10" StartY="0.44" EndX="2.68" EndY="0.56" />
       </MountPoints>
       <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Blocks\Phoenix_Stargate_A_Constr1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="Models\Blocks\Phoenix_Stargate_A_Constr2.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Blocks\Phoenix_Stargate_A_Constr3.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="..\754173702\Models\Blocks\Phoenix_Stargate_A_Constr1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="..\754173702\Models\Blocks\Phoenix_Stargate_A_Constr2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="..\754173702\Models\Blocks\Phoenix_Stargate_A_Constr3.mwm" />
       </BuildProgressModels>
       <BlockPairName>Stargate A</BlockPairName>
       <EdgeType>Light</EdgeType>
@@ -184,13 +184,13 @@
         <SubtypeId>Stargate U</SubtypeId>
       </Id>
       <DisplayName>Universe Gate</DisplayName>
-      <Icon>Textures\gui\Stargate U.dds</Icon>
+      <Icon>..\754173702\Textures\gui\Stargate U.dds</Icon>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <GuiVisible>false</GuiVisible>
       <Size x="3" y="2" z="1" />
       <ModelOffset x="0" y="0" z="0" />
-      <Model>Models\Blocks\Phoenix_Stargate_U.mwm</Model>
+      <Model>..\754173702\Models\Blocks\Phoenix_Stargate_U.mwm</Model>
       <Components>
         <Component Subtype="InteriorPlate" Count="12" />
         <Component Subtype="Naquadah" Count="100" />
@@ -209,7 +209,7 @@
         <MountPoint Side="Top" StartX="2.10" StartY="0.44" EndX="2.68" EndY="0.56" />
       </MountPoints>
       <BuildProgressModels>
-        <Model BuildPercentUpperBound="1.00" File="Models\Blocks\Phoenix_Stargate_U_Constr1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="..\754173702\Models\Blocks\Phoenix_Stargate_U_Constr1.mwm" />
       </BuildProgressModels>
       <BlockPairName>Stargate U</BlockPairName>
       <EdgeType>Light</EdgeType>
@@ -237,12 +237,12 @@
         <SubtypeId>Supergate</SubtypeId>
       </Id>
       <DisplayName>Supergate</DisplayName>
-      <Icon>Textures\gui\Supergate.dds</Icon>
+      <Icon>..\754173702\Textures\gui\Supergate.dds</Icon>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="160" y="160" z="2" />
       <ModelOffset x="0" y="0" z="0" />
-      <Model>Models\Blocks\Supergate.mwm</Model>
+      <Model>..\754173702\Models\Blocks\Supergate.mwm</Model>
       <Components>
         <Component Subtype="SteelPlate" Count="1200" />
         <Component Subtype="Naquadah" Count="9001" />
@@ -286,12 +286,12 @@
         <SubtypeId>Stargate O Small</SubtypeId>
       </Id>
       <DisplayName>Stargate</DisplayName>
-      <Icon>Textures\gui\Stargate O.dds</Icon>
+      <Icon>..\754173702\Textures\gui\Stargate O.dds</Icon>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="15" y="13" z="1" />
       <ModelOffset x="0" y="-0.75" z="0" />
-      <Model>Models\Blocks\Phoenix_Stargate_M.mwm</Model>
+      <Model>..\754173702\Models\Blocks\Phoenix_Stargate_M.mwm</Model>
       <Components>
         <Component Subtype="InteriorPlate" Count="12" />
         <Component Subtype="Naquadah" Count="100" />
@@ -303,9 +303,9 @@
       </Components>
       <CriticalComponent Subtype="PowerCell" Index="0" />
       <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Blocks\Phoenix_Stargate_M_Constr1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="Models\Blocks\Phoenix_Stargate_M_Constr2.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Blocks\Phoenix_Stargate_M_Constr3.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="..\754173702\Models\Blocks\Phoenix_Stargate_M_Constr1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="..\754173702\Models\Blocks\Phoenix_Stargate_M_Constr2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="..\754173702\Models\Blocks\Phoenix_Stargate_M_Constr3.mwm" />
       </BuildProgressModels>
       <BlockPairName>Stargate O</BlockPairName>
       <EdgeType>Light</EdgeType>
@@ -387,13 +387,13 @@
         <SubtypeId>Stargate A Small</SubtypeId>
       </Id>
       <DisplayName>Atlantis Gate</DisplayName>
-      <Icon>Textures\gui\Stargate A.dds</Icon>
+      <Icon>..\754173702\Textures\gui\Stargate A.dds</Icon>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <GuiVisible>false</GuiVisible>
       <Size x="15" y="13" z="1" />
       <ModelOffset x="0" y="-0.75" z="0" />
-      <Model>Models\Blocks\Phoenix_Stargate_A.mwm</Model>
+      <Model>..\754173702\Models\Blocks\Phoenix_Stargate_A.mwm</Model>
       <Components>
         <Component Subtype="InteriorPlate" Count="12" />
         <Component Subtype="Naquadah" Count="100" />
@@ -405,9 +405,9 @@
       </Components>
       <CriticalComponent Subtype="PowerCell" Index="0" />
       <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Blocks\Phoenix_Stargate_A_Constr1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="Models\Blocks\Phoenix_Stargate_A_Constr2.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Blocks\Phoenix_Stargate_A_Constr3.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="..\754173702\Models\Blocks\Phoenix_Stargate_A_Constr1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="..\754173702\Models\Blocks\Phoenix_Stargate_A_Constr2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="..\754173702\Models\Blocks\Phoenix_Stargate_A_Constr3.mwm" />
       </BuildProgressModels>
       <BlockPairName>Stargate A</BlockPairName>
       <EdgeType>Light</EdgeType>
@@ -479,13 +479,13 @@
         <SubtypeId>Stargate U Small</SubtypeId>
       </Id>
       <DisplayName>Universe Gate</DisplayName>
-      <Icon>Textures\gui\Stargate U.dds</Icon>
+      <Icon>..\754173702\Textures\gui\Stargate U.dds</Icon>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <GuiVisible>false</GuiVisible>
       <Size x="15" y="13" z="1" />
       <ModelOffset x="0" y="-0.75" z="0" />
-      <Model>Models\Blocks\Phoenix_Stargate_U.mwm</Model>
+      <Model>..\754173702\Models\Blocks\Phoenix_Stargate_U.mwm</Model>
       <Components>
         <Component Subtype="InteriorPlate" Count="12" />
         <Component Subtype="Naquadah" Count="100" />
@@ -497,7 +497,7 @@
       </Components>
       <CriticalComponent Subtype="PowerCell" Index="0" />
       <BuildProgressModels>
-        <Model BuildPercentUpperBound="1.00" File="Models\Blocks\Phoenix_Stargate_U_Constr1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="..\754173702\Models\Blocks\Phoenix_Stargate_U_Constr1.mwm" />
       </BuildProgressModels>
       <BlockPairName>Stargate U</BlockPairName>
       <EdgeType>Light</EdgeType>
@@ -573,12 +573,12 @@
         <SubtypeId>Phoenix_Stargate_DHD_SG1</SubtypeId>
       </Id>
       <DisplayName>Milky Way DHD</DisplayName>
-      <Icon>Textures\gui\DHD.dds</Icon>
+      <Icon>..\754173702\Textures\gui\DHD.dds</Icon>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="1" />
       <ModelOffset x="0" y="0" z="0" />
-      <Model>Models\Blocks\Phoenix_Stargate_DHD_SG1.mwm</Model>
+      <Model>..\754173702\Models\Blocks\Phoenix_Stargate_DHD_SG1.mwm</Model>
       <Components>
         <Component Subtype="SteelPlate" Count="30" />
         <Component Subtype="Naquadah" Count="25" />
@@ -594,7 +594,7 @@
         <MountPoint Side="Bottom" StartX="0.2" StartY="0.2" EndX="0.8" EndY="0.8" Default="true" />
       </MountPoints>
       <BuildProgressModels>
-        <Model BuildPercentUpperBound="1.00" File="Models\Blocks\Phoenix_Stargate_DHD_SG1_Constr1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="..\754173702\Models\Blocks\Phoenix_Stargate_DHD_SG1_Constr1.mwm" />
       </BuildProgressModels>
       <BlockPairName>Phoenix_Stargate_DHD_SG1</BlockPairName>
       <EdgeType>Light</EdgeType>
@@ -602,7 +602,7 @@
       <ResourceSinkGroup>Utility</ResourceSinkGroup>
       <ButtonCount>1</ButtonCount>
       <ButtonSymbols>
-        <string>Textures\GUI\Icons\buttons\OneButton.dds</string>
+        <string>..\754173702\Textures\GUI\Icons\buttons\OneButton.dds</string>
       </ButtonSymbols>
       <UnassignedButtonColor>
         <X>0.34</X>
@@ -648,13 +648,13 @@
         <SubtypeId>Phoenix_Stargate_DHD_SGA</SubtypeId>
       </Id>
       <DisplayName>Pegasus DHD</DisplayName>
-      <Icon>Textures\gui\DHD_SGA.dds</Icon>
+      <Icon>..\754173702\Textures\gui\DHD_SGA.dds</Icon>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <GuiVisible>false</GuiVisible>
       <Size x="1" y="1" z="1" />
       <ModelOffset x="0" y="0" z="0" />
-      <Model>Models\Blocks\Phoenix_Stargate_DHD_SGA.mwm</Model>
+      <Model>..\754173702\Models\Blocks\Phoenix_Stargate_DHD_SGA.mwm</Model>
       <Components>
         <Component Subtype="SteelPlate" Count="30" />
         <Component Subtype="Naquadah" Count="25" />
@@ -670,7 +670,7 @@
         <MountPoint Side="Bottom" StartX="0.2" StartY="0.2" EndX="0.8" EndY="0.8" Default="true" />
       </MountPoints>
       <BuildProgressModels>
-        <Model BuildPercentUpperBound="1.00" File="Models\Blocks\Phoenix_Stargate_DHD_SGA_Constr1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="..\754173702\Models\Blocks\Phoenix_Stargate_DHD_SGA_Constr1.mwm" />
       </BuildProgressModels>
       <BlockPairName>Phoenix_Stargate_DHD_SGA</BlockPairName>
       <EdgeType>Light</EdgeType>
@@ -678,7 +678,7 @@
       <ResourceSinkGroup>Utility</ResourceSinkGroup>
       <ButtonCount>0</ButtonCount>
       <ButtonSymbols>
-        <string>Textures\GUI\Icons\buttons\OneButton.dds</string>
+        <string>..\754173702\Textures\GUI\Icons\buttons\OneButton.dds</string>
       </ButtonSymbols>
       <UnassignedButtonColor>
         <X>0.34</X>
@@ -706,13 +706,13 @@
         <SubtypeId>Phoenix_Stargate_DHD_SGU_Computer</SubtypeId>
       </Id>
       <DisplayName>Destiny DHD</DisplayName>
-      <Icon>Textures\gui\DHD Universe.dds</Icon>
+      <Icon>..\754173702\Textures\gui\DHD Universe.dds</Icon>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <GuiVisible>false</GuiVisible>
       <Size x="1" y="1" z="1" />
       <ModelOffset x="0" y="0" z="0" />
-      <Model>Models\Blocks\Phoenix_Stargate_DHD_SGU_Computer.mwm</Model>
+      <Model>..\754173702\Models\Blocks\Phoenix_Stargate_DHD_SGU_Computer.mwm</Model>
       <Components>
         <Component Subtype="SteelPlate" Count="25" />
         <Component Subtype="Naquadah" Count="25" />
@@ -725,8 +725,8 @@
       </Components>
       <CriticalComponent Subtype="PowerCell" Index="0" />
       <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.50" File="Models\Blocks\Phoenix_Stargate_DHD_SGU_Computer_Constr1.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Blocks\Phoenix_Stargate_DHD_SGU_Computer_Constr2.mwm" />
+        <Model BuildPercentUpperBound="0.50" File="..\754173702\Models\Blocks\Phoenix_Stargate_DHD_SGU_Computer_Constr1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="..\754173702\Models\Blocks\Phoenix_Stargate_DHD_SGU_Computer_Constr2.mwm" />
       </BuildProgressModels>
       <MountPoints>
         <MountPoint Side="Back" StartX="0.20" StartY="0.00" EndX="0.80" EndY="0.20" />
@@ -738,7 +738,7 @@
       <ResourceSinkGroup>Utility</ResourceSinkGroup>
       <ButtonCount>1</ButtonCount>
       <ButtonSymbols>
-        <string>Textures\GUI\Icons\buttons\OneButton.dds</string>
+        <string>..\754173702\Textures\GUI\Icons\buttons\OneButton.dds</string>
       </ButtonSymbols>
       <UnassignedButtonColor>
         <X>0.34</X>
@@ -769,13 +769,13 @@
         <SubtypeId>Phoenix_Stargate_DHD_SG1_Computer</SubtypeId>
       </Id>
       <DisplayName>SGC DHD Computer</DisplayName>
-      <Icon>Textures\gui\DHD Computer.dds</Icon>
+      <Icon>..\754173702\Textures\gui\DHD Computer.dds</Icon>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <GuiVisible>false</GuiVisible>
       <Size x="1" y="1" z="1" />
       <ModelOffset x="0" y="0" z="0" />
-      <Model>Models\Blocks\Phoenix_Stargate_DHD_SG1_Computer.mwm</Model>
+      <Model>..\754173702\Models\Blocks\Phoenix_Stargate_DHD_SG1_Computer.mwm</Model>
       <Components>
         <Component Subtype="SteelPlate" Count="40" />
         <Component Subtype="InteriorPlate" Count="8" />
@@ -791,9 +791,9 @@
         <MountPoint Side="Back" StartX="0.15" StartY="0" EndX="0.85" EndY="0.4" />
       </MountPoints>
       <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Blocks\Phoenix_Stargate_DHD_SG1_Computer_Constr1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="Models\Blocks\Phoenix_Stargate_DHD_SG1_Computer_Constr2.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Blocks\Phoenix_Stargate_DHD_SG1_Computer_Constr3.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="..\754173702\Models\Blocks\Phoenix_Stargate_DHD_SG1_Computer_Constr1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="..\754173702\Models\Blocks\Phoenix_Stargate_DHD_SG1_Computer_Constr2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="..\754173702\Models\Blocks\Phoenix_Stargate_DHD_SG1_Computer_Constr3.mwm" />
       </BuildProgressModels>
       <BlockPairName>Phoenix_Stargate_DHD_SG1_Computer</BlockPairName>
       <EdgeType>Light</EdgeType>
@@ -801,7 +801,7 @@
       <ResourceSinkGroup>Utility</ResourceSinkGroup>
       <ButtonCount>2</ButtonCount>
       <ButtonSymbols>
-        <string>Textures\GUI\Icons\buttons\OneButton.dds</string>
+        <string>..\754173702\Textures\GUI\Icons\buttons\OneButton.dds</string>
       </ButtonSymbols>
       <UnassignedButtonColor>
         <X>0.34</X>
@@ -829,13 +829,13 @@
         <SubtypeId>Phoenix_Stargate_DHD_SGA_Computer</SubtypeId>
       </Id>
       <DisplayName>Atlantis DHD Computer</DisplayName>
-      <Icon>Textures\gui\DHD Atlantis.dds</Icon>
+      <Icon>..\754173702\Textures\gui\DHD Atlantis.dds</Icon>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <GuiVisible>false</GuiVisible>
       <Size x="1" y="1" z="1" />
       <ModelOffset x="0" y="0" z="0" />
-      <Model>Models\Blocks\Phoenix_Stargate_DHD_SGA_Computer.mwm</Model>
+      <Model>..\754173702\Models\Blocks\Phoenix_Stargate_DHD_SGA_Computer.mwm</Model>
       <Components>
         <Component Subtype="SteelPlate" Count="30" />
         <Component Subtype="InteriorPlate" Count="12" />
@@ -850,7 +850,7 @@
         <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
       </MountPoints>
       <BuildProgressModels>
-        <Model BuildPercentUpperBound="1.00" File="Models\Blocks\Phoenix_Stargate_DHD_SGA_Computer_Constr1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="..\754173702\Models\Blocks\Phoenix_Stargate_DHD_SGA_Computer_Constr1.mwm" />
       </BuildProgressModels>
       <BlockPairName>Phoenix_Stargate_DHD_SGA_Computer</BlockPairName>
       <EdgeType>Light</EdgeType>
@@ -858,7 +858,7 @@
       <BuildTimeSeconds>45</BuildTimeSeconds>
       <ButtonCount>3</ButtonCount>
       <ButtonSymbols>
-        <string>Textures\GUI\Icons\buttons\OneButton.dds</string>
+        <string>..\754173702\Textures\GUI\Icons\buttons\OneButton.dds</string>
       </ButtonSymbols>
       <UnassignedButtonColor>
         <X>0.34</X>
@@ -888,13 +888,13 @@
         <SubtypeId>Phoenix_Stargate_DHD_SGU_Computer_Small</SubtypeId>
       </Id>
       <DisplayName>Destiny DHD</DisplayName>
-      <Icon>Textures\gui\DHD Universe.dds</Icon>
+      <Icon>..\754173702\Textures\gui\DHD Universe.dds</Icon>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <GuiVisible>false</GuiVisible>
       <Size x="4" y="3" z="2" />
       <ModelOffset x="0" y="0.5" z="-0.75" />
-      <Model>Models\Blocks\Phoenix_Stargate_DHD_SGU_Computer.mwm</Model>
+      <Model>..\754173702\Models\Blocks\Phoenix_Stargate_DHD_SGU_Computer.mwm</Model>
       <Components>
         <Component Subtype="SteelPlate" Count="25" />
         <Component Subtype="Naquadah" Count="25" />
@@ -907,8 +907,8 @@
       </Components>
       <CriticalComponent Subtype="PowerCell" Index="0" />
       <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.50" File="Models\Blocks\Phoenix_Stargate_DHD_SGU_Computer_Constr1.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Blocks\Phoenix_Stargate_DHD_SGU_Computer_Constr2.mwm" />
+        <Model BuildPercentUpperBound="0.50" File="..\754173702\Models\Blocks\Phoenix_Stargate_DHD_SGU_Computer_Constr1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="..\754173702\Models\Blocks\Phoenix_Stargate_DHD_SGU_Computer_Constr2.mwm" />
       </BuildProgressModels>
       <MountPoints>
         <MountPoint Side="Back" StartX="0.50" StartY="0.00" EndX="3.50" EndY="1.00" />
@@ -920,7 +920,7 @@
       <ResourceSinkGroup>Utility</ResourceSinkGroup>
       <ButtonCount>1</ButtonCount>
       <ButtonSymbols>
-        <string>Textures\GUI\Icons\buttons\OneButton.dds</string>
+        <string>..\754173702\Textures\GUI\Icons\buttons\OneButton.dds</string>
       </ButtonSymbols>
       <UnassignedButtonColor>
         <X>0.34</X>
@@ -951,12 +951,12 @@
         <SubtypeId>Phoenix_Stargate_DHD_SG1_Small</SubtypeId>
       </Id>
       <DisplayName>Milky Way DHD</DisplayName>
-      <Icon>Textures\gui\DHD.dds</Icon>
+      <Icon>..\754173702\Textures\gui\DHD.dds</Icon>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="4" y="3" z="3" />
       <ModelOffset x="0" y="0.5" z="-0.07" />
-      <Model>Models\Blocks\Phoenix_Stargate_DHD_SG1.mwm</Model>
+      <Model>..\754173702\Models\Blocks\Phoenix_Stargate_DHD_SG1.mwm</Model>
       <Components>
         <Component Subtype="SteelPlate" Count="30" />
         <Component Subtype="Naquadah" Count="25" />
@@ -972,7 +972,7 @@
         <MountPoint Side="Bottom" StartX="1" StartY="0.6" EndX="3" EndY="1.95" Default="true" />
       </MountPoints>
       <BuildProgressModels>
-        <Model BuildPercentUpperBound="1.00" File="Models\Blocks\Phoenix_Stargate_DHD_SG1_Constr1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="..\754173702\Models\Blocks\Phoenix_Stargate_DHD_SG1_Constr1.mwm" />
       </BuildProgressModels>
       <BlockPairName>Phoenix_Stargate_DHD_SG1</BlockPairName>
       <EdgeType>Light</EdgeType>
@@ -980,7 +980,7 @@
       <ResourceSinkGroup>Utility</ResourceSinkGroup>
       <ButtonCount>1</ButtonCount>
       <ButtonSymbols>
-        <string>Textures\GUI\Icons\buttons\OneButton.dds</string>
+        <string>..\754173702\Textures\GUI\Icons\buttons\OneButton.dds</string>
       </ButtonSymbols>
       <UnassignedButtonColor>
         <X>0.34</X>
@@ -1030,13 +1030,13 @@
         <SubtypeId>Phoenix_Stargate_DHD_SGA_Small</SubtypeId>
       </Id>
       <DisplayName>Pegasus DHD</DisplayName>
-      <Icon>Textures\gui\DHD_SGA.dds</Icon>
+      <Icon>..\754173702\Textures\gui\DHD_SGA.dds</Icon>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <GuiVisible>false</GuiVisible>
       <Size x="4" y="3" z="3" />
       <ModelOffset x="0" y="0.5" z="-0.07" />
-      <Model>Models\Blocks\Phoenix_Stargate_DHD_SGA.mwm</Model>
+      <Model>..\754173702\Models\Blocks\Phoenix_Stargate_DHD_SGA.mwm</Model>
       <Components>
         <Component Subtype="SteelPlate" Count="30" />
         <Component Subtype="Naquadah" Count="25" />
@@ -1052,7 +1052,7 @@
         <MountPoint Side="Bottom" StartX="1" StartY="0.6" EndX="3" EndY="1.95" Default="true" />
       </MountPoints>
       <BuildProgressModels>
-        <Model BuildPercentUpperBound="1.00" File="Models\Blocks\Phoenix_Stargate_DHD_SGA_Constr1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="..\754173702\Models\Blocks\Phoenix_Stargate_DHD_SGA_Constr1.mwm" />
       </BuildProgressModels>
       <BlockPairName>Phoenix_Stargate_DHD_SGA</BlockPairName>
       <EdgeType>Light</EdgeType>
@@ -1060,7 +1060,7 @@
       <ResourceSinkGroup>Utility</ResourceSinkGroup>
       <ButtonCount>1</ButtonCount>
       <ButtonSymbols>
-        <string>Textures\GUI\Icons\buttons\OneButton.dds</string>
+        <string>..\754173702\Textures\GUI\Icons\buttons\OneButton.dds</string>
       </ButtonSymbols>
       <UnassignedButtonColor>
         <X>0.34</X>
@@ -1088,13 +1088,13 @@
         <SubtypeId>Phoenix_Stargate_DHD_SG1_Computer_Small</SubtypeId>
       </Id>
       <DisplayName>SGC DHD Computer</DisplayName>
-      <Icon>Textures\gui\DHD Computer.dds</Icon>
+      <Icon>..\754173702\Textures\gui\DHD Computer.dds</Icon>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <GuiVisible>false</GuiVisible>
       <Size x="2" y="1" z="1" />
       <ModelOffset x="0" y="0" z="0" />
-      <Model>Models\Blocks\Phoenix_Stargate_DHD_SG1_Computer_Small.mwm</Model>
+      <Model>..\754173702\Models\Blocks\Phoenix_Stargate_DHD_SG1_Computer_Small.mwm</Model>
       <Components>
         <Component Subtype="SteelPlate" Count="4" />
         <Component Subtype="InteriorPlate" Count="2" />
@@ -1113,9 +1113,9 @@
         <MountPoint Side="Bottom" StartX="0" StartY="0.9" EndX="2" EndY="1" />
       </MountPoints>
       <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Blocks\Phoenix_Stargate_DHD_SG1_Computer_Small_Constr1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="Models\Blocks\Phoenix_Stargate_DHD_SG1_Computer_Small_Constr2.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Blocks\Phoenix_Stargate_DHD_SG1_Computer_Small_Constr3.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="..\754173702\Models\Blocks\Phoenix_Stargate_DHD_SG1_Computer_Small_Constr1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="..\754173702\Models\Blocks\Phoenix_Stargate_DHD_SG1_Computer_Small_Constr2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="..\754173702\Models\Blocks\Phoenix_Stargate_DHD_SG1_Computer_Small_Constr3.mwm" />
       </BuildProgressModels>
       <BlockPairName>Phoenix_Stargate_DHD_SG1_Computer</BlockPairName>
       <EdgeType>Light</EdgeType>
@@ -1123,7 +1123,7 @@
       <ResourceSinkGroup>Utility</ResourceSinkGroup>
       <ButtonCount>0</ButtonCount>
       <ButtonSymbols>
-        <string>Textures\GUI\Icons\buttons\OneButton.dds</string>
+        <string>..\754173702\Textures\GUI\Icons\buttons\OneButton.dds</string>
       </ButtonSymbols>
       <UnassignedButtonColor>
         <X>0.34</X>
@@ -1151,13 +1151,13 @@
         <SubtypeId>Phoenix_Stargate_DHD_SGA_Computer_Small</SubtypeId>
       </Id>
       <DisplayName>Atlantis DHD Computer</DisplayName>
-      <Icon>Textures\gui\DHD Atlantis.dds</Icon>
+      <Icon>..\754173702\Textures\gui\DHD Atlantis.dds</Icon>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <GuiVisible>false</GuiVisible>
       <Size x="4" y="2" z="3" />
       <ModelOffset x="0" y="0.75" z="0" />
-      <Model>Models\Blocks\Phoenix_Stargate_DHD_SGA_Computer.mwm</Model>
+      <Model>..\754173702\Models\Blocks\Phoenix_Stargate_DHD_SGA_Computer.mwm</Model>
       <Components>
         <Component Subtype="SteelPlate" Count="30" />
         <Component Subtype="InteriorPlate" Count="12" />
@@ -1172,7 +1172,7 @@
         <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
       </MountPoints>
       <BuildProgressModels>
-        <Model BuildPercentUpperBound="1.00" File="Models\Blocks\Phoenix_Stargate_DHD_SGA_Computer_Constr1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="..\754173702\Models\Blocks\Phoenix_Stargate_DHD_SGA_Computer_Constr1.mwm" />
       </BuildProgressModels>
       <BlockPairName>Phoenix_Stargate_DHD_SGA_Computer</BlockPairName>
       <EdgeType>Light</EdgeType>
@@ -1180,7 +1180,7 @@
       <BuildTimeSeconds>45</BuildTimeSeconds>
       <ButtonCount>3</ButtonCount>
       <ButtonSymbols>
-        <string>Textures\GUI\Icons\buttons\OneButton.dds</string>
+        <string>..\754173702\Textures\GUI\Icons\buttons\OneButton.dds</string>
       </ButtonSymbols>
       <UnassignedButtonColor>
         <X>0.34</X>
@@ -1208,13 +1208,13 @@
         <SubtypeId>Phoenix_Stargate_DHD_SGA_Console_Small</SubtypeId>
       </Id>
       <DisplayName>Puddle Jumper DHD</DisplayName>
-      <Icon>Textures\gui\DHD Atlantis SG.dds</Icon>
+      <Icon>..\754173702\Textures\gui\DHD Atlantis SG.dds</Icon>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <GuiVisible>false</GuiVisible>
       <Size x="2" y="3" z="3" />
       <ModelOffset x="0" y="0" z="0" />
-      <Model>Models\Blocks\AtlantisDHD_SG.mwm</Model>
+      <Model>..\754173702\Models\Blocks\AtlantisDHD_SG.mwm</Model>
       <Components>
         <Component Subtype="SteelPlate" Count="30" />
         <Component Subtype="InteriorPlate" Count="12" />
@@ -1232,7 +1232,7 @@
         <MountPoint Side="Bottom" StartX="0.2" StartY="1.2" EndX="1.8" EndY="3"/>
       </MountPoints>
       <BuildProgressModels>
-        <Model BuildPercentUpperBound="1.00" File="Models\Blocks\AtlantisDHD_SG_BS1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="..\754173702\Models\Blocks\AtlantisDHD_SG_BS1.mwm" />
       </BuildProgressModels>
       <BlockPairName>Phoenix_Stargate_DHD_SGA_Console</BlockPairName>
       <EdgeType>Light</EdgeType>
@@ -1240,7 +1240,7 @@
       <BuildTimeSeconds>45</BuildTimeSeconds>
       <ButtonCount>0</ButtonCount>
       <ButtonSymbols>
-        <string>Textures\GUI\Icons\buttons\OneButton.dds</string>
+        <string>..\754173702\Textures\GUI\Icons\buttons\OneButton.dds</string>
       </ButtonSymbols>
       <UnassignedButtonColor>
         <X>0.34</X>

@@ -9,7 +9,7 @@
         <SubtypeId>Bsc_Naquadah_OreToIngot</SubtypeId>
       </Id>
       <DisplayName>Refined Naquadah</DisplayName>
-      <Icon>Textures\gui\naquadah_ingot.dds</Icon>
+      <Icon>..\754173702\Textures\gui\naquadah_ingot.dds</Icon>
       <Prerequisites>
         <Item Amount="500" TypeId="Ore" SubtypeId="Naquadah" />
       </Prerequisites>
@@ -23,7 +23,7 @@
         <SubtypeId>Adv_Naquadah_OreToIngot</SubtypeId>
       </Id>
       <DisplayName>Refined Naquadah</DisplayName>
-      <Icon>Textures\gui\naquadah_ingot.dds</Icon>
+      <Icon>..\754173702\Textures\gui\naquadah_ingot.dds</Icon>
       <Prerequisites>
         <Item Amount="5000" TypeId="Ore" SubtypeId="Naquadah" />
       </Prerequisites>
@@ -37,7 +37,7 @@
         <SubtypeId>Eli_Naquadah_OreToIngot</SubtypeId>
       </Id>
       <DisplayName>Refined Naquadah</DisplayName>
-      <Icon>Textures\gui\naquadah_ingot.dds</Icon>
+      <Icon>..\754173702\Textures\gui\naquadah_ingot.dds</Icon>
       <Prerequisites>
         <Item Amount="50000" TypeId="Ore" SubtypeId="Naquadah" />
       </Prerequisites>
@@ -53,7 +53,7 @@
         <SubtypeId>Bsc_Trinium_OreToIngot</SubtypeId>
       </Id>
       <DisplayName>Refined Trinium</DisplayName>
-      <Icon>Textures\gui\trinium_ingot.dds</Icon>
+      <Icon>..\754173702\Textures\gui\trinium_ingot.dds</Icon>
       <Prerequisites>
         <Item Amount="250" TypeId="Ore" SubtypeId="Trinium" />
       </Prerequisites>
@@ -67,7 +67,7 @@
         <SubtypeId>Adv_Trinium_OreToIngot</SubtypeId>
       </Id>
       <DisplayName>Refined Trinium</DisplayName>
-      <Icon>Textures\gui\trinium_ingot.dds</Icon>
+      <Icon>..\754173702\Textures\gui\trinium_ingot.dds</Icon>
       <Prerequisites>
         <Item Amount="2500" TypeId="Ore" SubtypeId="Trinium" />
       </Prerequisites>
@@ -81,7 +81,7 @@
         <SubtypeId>Eli_Trinium_OreToIngot</SubtypeId>
       </Id>
       <DisplayName>Refined Trinium</DisplayName>
-      <Icon>Textures\gui\trinium_ingot.dds</Icon>
+      <Icon>..\754173702\Textures\gui\trinium_ingot.dds</Icon>
       <Prerequisites>
         <Item Amount="25000" TypeId="Ore" SubtypeId="Trinium" />
       </Prerequisites>
@@ -97,7 +97,7 @@
         <SubtypeId>Bsc_Neutronium_OreToIngot</SubtypeId>
       </Id>
       <DisplayName>Refined Neutronium</DisplayName>
-      <Icon>Textures\gui\neutronium_ingot.dds</Icon>
+      <Icon>..\754173702\Textures\gui\neutronium_ingot.dds</Icon>
       <Prerequisites>
         <Item Amount="400" TypeId="Ore" SubtypeId="Neutronium" />
       </Prerequisites>
@@ -111,7 +111,7 @@
         <SubtypeId>Adv_Neutronium_OreToIngot</SubtypeId>
       </Id>
       <DisplayName>Refined Neutronium</DisplayName>
-      <Icon>Textures\gui\neutronium_ingot.dds</Icon>
+      <Icon>..\754173702\Textures\gui\neutronium_ingot.dds</Icon>
       <Prerequisites>
         <Item Amount="4000" TypeId="Ore" SubtypeId="Neutronium" />
       </Prerequisites>
@@ -125,7 +125,7 @@
         <SubtypeId>Eli_Neutronium_OreToIngot</SubtypeId>
       </Id>
       <DisplayName>Refined Neutronium</DisplayName>
-      <Icon>Textures\gui\neutronium_ingot.dds</Icon>
+      <Icon>..\754173702\Textures\gui\neutronium_ingot.dds</Icon>
       <Prerequisites>
         <Item Amount="40000" TypeId="Ore" SubtypeId="Neutronium" />
       </Prerequisites>
@@ -141,7 +141,7 @@
         <SubtypeId>NaquadahX10</SubtypeId>
       </Id>
       <DisplayName>Naquadah Component</DisplayName>
-      <Icon>Textures\gui\naquadah_component.dds</Icon>
+      <Icon>..\754173702\Textures\gui\naquadah_component.dds</Icon>
       <Prerequisites>
         <Item Amount="25" TypeId="Ingot" SubtypeId="Naquadah" />
       </Prerequisites>
@@ -159,7 +159,7 @@
         <SubtypeId>Trinium</SubtypeId>
       </Id>
       <DisplayName>Trinium Plate</DisplayName>
-      <Icon>Textures\gui\trinium_component.dds</Icon>
+      <Icon>..\754173702\Textures\gui\trinium_component.dds</Icon>
       <BaseProductionTimeInSeconds>18</BaseProductionTimeInSeconds>
       <Prerequisites>
         <Item Amount="0.25" TypeId="Ingot" SubtypeId="Naquadah" />
@@ -170,14 +170,13 @@
       <Result Amount="1" TypeId="Component" SubtypeId="Trinium" />
     </Blueprint>
 
-    <!-- FIXME invisible in gui -->
     <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>Neutronium</SubtypeId>
       </Id>
       <DisplayName>Neutronium Crate</DisplayName>
-      <Icon>Textures\gui\neutronium_component.dds</Icon>
+      <Icon>..\754173702\Textures\gui\neutronium_component.dds</Icon>
       <BaseProductionTimeInSeconds>16</BaseProductionTimeInSeconds>
       <Prerequisites>
         <Item Amount="0.5" TypeId="Ingot" SubtypeId="Carbon" />
@@ -195,7 +194,7 @@
         <SubtypeId>Drone</SubtypeId>
       </Id>
       <DisplayName>Drone Weapon (no function)</DisplayName>
-      <Icon>Textures\gui\Drone.dds</Icon>
+      <Icon>..\754173702\Textures\gui\Drone.dds</Icon>
       <BaseProductionTimeInSeconds>7</BaseProductionTimeInSeconds>
       <Prerequisites>
         <Item Amount="2" TypeId="Ingot" SubtypeId="Neutronium" />
@@ -212,7 +211,7 @@
         <SubtypeId>Zat</SubtypeId>
       </Id>
       <DisplayName>Zat'nik'tel</DisplayName>
-      <Icon>Textures\gui\Zat.dds</Icon>
+      <Icon>..\754173702\Textures\gui\Zat.dds</Icon>
       <Prerequisites>
         <Item Amount="10" TypeId="Ingot" SubtypeId="Iron" />
         <Item Amount="10" TypeId="Ingot" SubtypeId="Naquadah" />
@@ -229,7 +228,7 @@
         <SubtypeId>Staff</SubtypeId>
       </Id>
       <DisplayName>Jaffa Staff Weapon</DisplayName>
-      <Icon>Textures\gui\Staff.dds</Icon>
+      <Icon>..\754173702\Textures\gui\Staff.dds</Icon>
       <Prerequisites>
         <Item Amount="20" TypeId="Ingot" SubtypeId="Iron" />
         <Item Amount="12" TypeId="Ingot" SubtypeId="Naquadah" />
@@ -246,7 +245,7 @@
         <SubtypeId>Liquid Naquadah</SubtypeId>
       </Id>
       <DisplayName>Liquid Naquadah</DisplayName>
-      <Icon>Textures\gui\Liquid Naquadah.dds</Icon>
+      <Icon>..\754173702\Textures\gui\Liquid Naquadah.dds</Icon>
       <Prerequisites>
         <Item Amount="10" TypeId="Ingot" SubtypeId="Iron" />
         <Item Amount="18" TypeId="Ingot" SubtypeId="Naquadah" />
@@ -263,7 +262,7 @@
         <SubtypeId>P90</SubtypeId>
       </Id>
       <DisplayName>Stargate P90</DisplayName>
-      <Icon>Textures\gui\P90.dds</Icon>
+      <Icon>..\754173702\Textures\gui\P90.dds</Icon>
       <Prerequisites>
         <Item Amount="20" TypeId="Ingot" SubtypeId="Nickel" />
         <Item Amount="30" TypeId="Ingot" SubtypeId="Iron" />
@@ -279,7 +278,7 @@
         <SubtypeId>ZPM</SubtypeId>
       </Id>
       <DisplayName>Zero point module</DisplayName>
-      <Icon>Textures\gui\ZPMComponent.dds</Icon>
+      <Icon>..\754173702\Textures\gui\ZPMComponent.dds</Icon>
       <Prerequisites>
         <Item Amount="1" TypeId="Component" SubtypeId="ZPM" />
       </Prerequisites>

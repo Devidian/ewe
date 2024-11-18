@@ -7,12 +7,12 @@
         <SubtypeId>Naquadah Production Facility</SubtypeId>
       </Id>
       <DisplayName>Naquadah Production Facility</DisplayName>
-      <Icon>Textures\gui\Naquadah Production Facility.dds</Icon>
+      <Icon>..\754173702\Textures\gui\Naquadah Production Facility.dds</Icon>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="2" y="2" z="2" />
       <ModelOffset x="0" y="0" z="0" />
-      <Model>Models\Blocks\NaquadahProductionFacility.mwm</Model>
+      <Model>..\754173702\Models\Blocks\NaquadahProductionFacility.mwm</Model>
       <Components>
         <Component Subtype="SteelPlate" Count="150" />
         <Component Subtype="SmallTube" Count="20" />
@@ -34,9 +34,9 @@
         <MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="1" />
       </MountPoints>
       <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Blocks\NaquadahProductionFacility_BS1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="Models\Blocks\NaquadahProductionFacility_BS2.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Blocks\NaquadahProductionFacility_BS3.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="..\754173702\Models\Blocks\NaquadahProductionFacility_BS1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="..\754173702\Models\Blocks\NaquadahProductionFacility_BS2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="..\754173702\Models\Blocks\NaquadahProductionFacility_BS3.mwm" />
       </BuildProgressModels>
       <BlockPairName>Naquadah Production Facility</BlockPairName>
       <EdgeType>Light</EdgeType>

@@ -4,6 +4,7 @@
 
 - refactor: removed Ore BlueprintClasses
 - refactor: renamed classes for use with new ewe-split-mod
+- fix: prefixed all asset links with `..\754173702\` to use original assets
 
 ## [0.2.0]
 
