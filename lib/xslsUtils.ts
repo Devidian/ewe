@@ -14,9 +14,11 @@ function addOreToIngotWorksheet(
   // Add a worksheet with ore-to-ingot blueprints
   const ws = wb.addWorksheet(`oreToIngot`);
   ws.row(2).freeze();
-  ws.column(1).setWidth(33).freeze();
+  ws.column(1).setWidth(33);
   ws.column(2).hide();
   ws.column(3).hide();
+  ws.column(4).setWidth(6.5);
+  ws.column(5).setWidth(9.5).freeze();
   ws.cell(2, 1)
     .string(`Id`)
     .style({ font: { bold: true } });
@@ -40,27 +42,32 @@ function addOreToIngotWorksheet(
     .style({ font: { bold: true }, alignment: { horizontal: "right" } });
   let currentRow = 2;
   const componentColumnMap = new Map<string, number>();
-  for (const [fileEnt, data] of files.filter(
-    (ent) => ent[0].name.endsWith(".sbc") && ent[1]?.Definitions?.Blueprints
-  )) {
-    const srcObject = data.Definitions.Blueprints.Blueprint;
 
-    const blueprints = Array.isArray(srcObject)
-      ? srcObject
-      : srcObject.Id
-      ? [srcObject]
-      : Object.values(srcObject);
+  // filter & map: only files with Blueprints
+  const relevantFilesAndDataNodes = files
+    .filter(
+      (ent) => ent[0].name.endsWith(".sbc") && ent[1]?.Definitions?.Blueprints
+    )
+    .map(([fileEnt, data]): [Dirent, any[]] => {
+      const rootNode = data.Definitions.Blueprints.Blueprint;
+      const rootNodeArray = Array.isArray(rootNode)
+        ? rootNode
+        : rootNode.Id
+        ? [rootNode]
+        : Object.values(rootNode);
+      const rootNodeArrayFiltered = rootNodeArray
+        .filter((v: any) => {
+          return v.Id.SubtypeId.includes("OreToIngot");
+        })
+        .sort((a: any, b: any) => a.Id.SubtypeId.localeCompare(b.Id.SubtypeId));
+      return [fileEnt, rootNodeArrayFiltered];
+    })
+    .filter(([a, b]) => b.length > 0);
 
-    const oreToIngotBlueprints = blueprints
-      .filter((v: any) => {
-        return v.Id.SubtypeId.includes("OreToIngot");
-      })
-      .sort((a: any, b: any) => a.Id.SubtypeId.localeCompare(b.Id.SubtypeId));
-    if (oreToIngotBlueprints.length < 1) continue;
-    if (opt.showFileNames)
-      ws.cell(++currentRow, 1)
-        .string(fileEnt.name)
-        .style({ font: { bold: true } });
+  // we sadly can not reuse the method from componets as we use switched in/outputs
+  function writeRows(oreToIngotBlueprints: any[]) {
+    // if we want to sort names on x axis we need to collect all data first
+    const dataMatrix: [number, string, number][] = [];
     for (const blueprint of oreToIngotBlueprints) {
       const row = ++currentRow;
       ws.cell(row, 1).string(`${blueprint.Id.SubtypeId}`);
@@ -68,7 +75,7 @@ function addOreToIngotWorksheet(
       ws.cell(row, 3).string(`${blueprint.Icon}`);
       ws.cell(row, 4).number(parseFloat(blueprint.BaseProductionTimeInSeconds));
       const comp: Record<string, number> = {};
-      //   blocks with only one component only have an object not a list
+      // blueprints with only one component only have an object not a list
       const inputList = Array.isArray(blueprint.Prerequisites.Item)
         ? blueprint.Prerequisites.Item
         : [blueprint.Prerequisites.Item];
@@ -83,26 +90,53 @@ function addOreToIngotWorksheet(
         outputList = [blueprint.Result];
       }
       ws.cell(row, 5).number(parseFloat(inputList[0]["@_Amount"]));
-      //   sometimes components have multiple indices
+      // sometimes components have multiple indices
       for (const item of outputList) {
         const itemIndex = `${item["@_TypeId"]}/${item["@_SubtypeId"]}`;
         if (comp[itemIndex]) comp[itemIndex] += parseFloat(item["@_Amount"]);
         else comp[itemIndex] = parseFloat(item["@_Amount"]);
       }
+
       for (const [component, count] of Object.entries(comp)) {
-        if (!componentColumnMap.has(component)) {
-          const [type, subtype] = component.split("/");
-          ws.cell(1, 6 + componentColumnMap.size).string(type);
-          ws.cell(2, 6 + componentColumnMap.size).string(subtype);
-          componentColumnMap.set(component, 6 + componentColumnMap.size);
-        }
-        const column = componentColumnMap.get(component)!;
-        ws.cell(row, column).number(count);
+        dataMatrix.push([row, component, count]);
       }
+    }
+    // now we know all data, we can create a set of all components and sort it
+    const uniqueComponents = [
+      ...new Set(dataMatrix.map(([, component]) => component)),
+    ].sort();
+    // then create header
+    for (const component of uniqueComponents) {
+      if (!componentColumnMap.has(component)) {
+        const [type, subtype] = component.split("/");
+        ws.cell(1, 6 + componentColumnMap.size).string(type);
+        ws.cell(2, 6 + componentColumnMap.size).string(subtype);
+        componentColumnMap.set(component, 6 + componentColumnMap.size);
+      }
+    }
+    // ... and fill columns with data
+    for (const [row, component, count] of dataMatrix) {
+      const column = componentColumnMap.get(component)!;
+      ws.cell(row, column).number(count);
     }
   }
 
-  if (!opt.showFileNames) ws.row(2).filter({ firstRow: 1, firstColumn: 1 });
+  if (opt.showFileNames)
+    for (const [fileEnt, oreToIngotBlueprints] of relevantFilesAndDataNodes) {
+      ws.cell(++currentRow, 1)
+        .string(fileEnt.name)
+        .style({ font: { bold: true } });
+      writeRows(oreToIngotBlueprints);
+    }
+  else {
+    // if we dont add filenames as seperators we can flatmap all blueprints together and presort them
+    const allComponentBlueprints = relevantFilesAndDataNodes
+      .flatMap(([, componentBlueprints]) => componentBlueprints)
+      .sort((a, b) => a.Id.SubtypeId.localeCompare(b.Id.SubtypeId));
+
+    writeRows(allComponentBlueprints);
+    ws.row(2).filter({ firstRow: 3, firstColumn: 1 });
+  }
 }
 
 function addComponentWorksheet(
@@ -113,9 +147,11 @@ function addComponentWorksheet(
   // Add a worksheet with component blueprints
   const ws = wb.addWorksheet(`component-blueprints`);
   ws.row(2).freeze();
-  ws.column(1).setWidth(20).freeze();
+  ws.column(1).setWidth(20);
   ws.column(2).hide();
   ws.column(3).hide();
+  ws.column(4).setWidth(6.5);
+  ws.column(5).setWidth(9.5).freeze();
   ws.cell(2, 1)
     .string(`Id`)
     .style({ font: { bold: true } });
@@ -139,26 +175,31 @@ function addComponentWorksheet(
     .style({ font: { bold: true }, alignment: { horizontal: "right" } });
   let currentRow = 2;
   const componentColumnMap = new Map<string, number>();
-  for (const [fileEnt, data] of files.filter(
-    (ent) => ent[0].name.endsWith(".sbc") && ent[1]?.Definitions?.Blueprints
-  )) {
-    const rootNode = data.Definitions.Blueprints.Blueprint;
-    const blueprints = Array.isArray(rootNode)
-      ? rootNode
-      : rootNode.Id
-      ? [rootNode]
-      : Object.values(rootNode);
 
-    const componentBlueprints = blueprints.filter((v: any) => {
-      const a = v.Result && v?.Result["@_TypeId"] === "Component";
-      const b = v.Results && v.Results.Item["@_TypeId"] === "Component";
-      return a || b;
-    });
-    if (componentBlueprints.length < 1) continue;
-    if (opt.showFileNames)
-      ws.cell(++currentRow, 1)
-        .string(fileEnt.name)
-        .style({ font: { bold: true } });
+  // filter & map: only files with Blueprints
+  const relevantFilesAndDataNodes = files
+    .filter(
+      (ent) => ent[0].name.endsWith(".sbc") && ent[1]?.Definitions?.Blueprints
+    )
+    .map(([fileEnt, data]): [Dirent, any[]] => {
+      const rootNode = data.Definitions.Blueprints.Blueprint;
+      const rootNodeArray = Array.isArray(rootNode)
+        ? rootNode
+        : rootNode.Id
+        ? [rootNode]
+        : Object.values(rootNode);
+      const rootNodeArrayFiltered = rootNodeArray.filter((v: any) => {
+        const a = v.Result && v?.Result["@_TypeId"] === "Component";
+        const b = v.Results && v.Results.Item["@_TypeId"] === "Component";
+        return a || b;
+      });
+      return [fileEnt, rootNodeArrayFiltered];
+    })
+    .filter(([a, b]) => b.length > 0);
+
+  function writeRows(componentBlueprints: any[]) {
+    // if we want to sort names on x axis we need to collect all data first
+    const dataMatrix: [number, string, number][] = [];
     for (const blueprint of componentBlueprints) {
       const row = ++currentRow;
       const resultItem = blueprint.Result ?? blueprint.Results.Item;
@@ -183,26 +224,51 @@ function addComponentWorksheet(
         outputList = [blueprint.Result];
       }
       // sometimes components have multiple indices
-      for (const component of inputList) {
-        const itemIndex = `${component["@_TypeId"]}/${component["@_SubtypeId"]}`;
-        if (comp[itemIndex])
-          comp[itemIndex] += parseFloat(component["@_Amount"]);
-        else comp[itemIndex] = parseFloat(component["@_Amount"]);
+      for (const item of inputList) {
+        const itemIndex = `${item["@_TypeId"]}/${item["@_SubtypeId"]}`;
+        if (comp[itemIndex]) comp[itemIndex] += parseFloat(item["@_Amount"]);
+        else comp[itemIndex] = parseFloat(item["@_Amount"]);
       }
       for (const [component, count] of Object.entries(comp)) {
-        if (!componentColumnMap.has(component)) {
-          const [type, subtype] = component.split("/");
-          ws.cell(1, 6 + componentColumnMap.size).string(type);
-          ws.cell(2, 6 + componentColumnMap.size).string(subtype);
-          componentColumnMap.set(component, 6 + componentColumnMap.size);
-        }
-        const column = componentColumnMap.get(component)!;
-        ws.cell(row, column).number(count);
+        dataMatrix.push([row, component, count]);
       }
+    }
+    // now we know all data, we can create a set of all components and sort it
+    const uniqueComponents = [
+      ...new Set(dataMatrix.map(([, component]) => component)),
+    ].sort();
+    // then create header
+    for (const component of uniqueComponents) {
+      if (!componentColumnMap.has(component)) {
+        const [type, subtype] = component.split("/");
+        ws.cell(1, 6 + componentColumnMap.size).string(type);
+        ws.cell(2, 6 + componentColumnMap.size).string(subtype);
+        componentColumnMap.set(component, 6 + componentColumnMap.size);
+      }
+    }
+    // ... and fill columns with data
+    for (const [row, component, count] of dataMatrix) {
+      const column = componentColumnMap.get(component)!;
+      ws.cell(row, column).number(count);
     }
   }
 
-  if (!opt.showFileNames) ws.row(2).filter({ firstRow: 3, firstColumn: 1 });
+  if (opt.showFileNames)
+    for (const [fileEnt, componentBlueprints] of relevantFilesAndDataNodes) {
+      ws.cell(++currentRow, 1)
+        .string(fileEnt.name)
+        .style({ font: { bold: true } });
+      writeRows(componentBlueprints);
+    }
+  else {
+    // if we dont add filenames as seperators we can flatmap all blueprints together and presort them
+    const allComponentBlueprints = relevantFilesAndDataNodes
+      .flatMap(([, componentBlueprints]) => componentBlueprints)
+      .sort((a, b) => a.Id.SubtypeId.localeCompare(b.Id.SubtypeId));
+
+    writeRows(allComponentBlueprints);
+    ws.row(2).filter({ firstRow: 3, firstColumn: 1 });
+  }
 }
 
 function addBlockWorksheet(
