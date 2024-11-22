@@ -2,3 +2,13 @@
 /*local*
 /templates
 /node_modules
+
+# ignore node stuff for beta-split
+./yarn
+/lib
+*.ts
+*.lock
+*.sh
+*.json
+*.yml
+/se-vanilla
