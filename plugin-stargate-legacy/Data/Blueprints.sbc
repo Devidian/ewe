@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Blueprints>
     <!-- Naquadah -->
     <Blueprint>
@@ -149,11 +148,8 @@
       <BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
     </Blueprint>
 
-    <!-- info -->
-    <!-- Earth stargate iris was made of an alloy trinium+titanium -->
-    <!-- Prometheus and Daedalus were made with an alloy trinium+naquadah -->
-    <!-- Asgard ships used that alloy with an addition of carbon -->
-    <Blueprint>
+    <!-- TODO:
+      <Blueprint>
       <Id>
         <TypeId>BlueprintDefinition</TypeId>
         <SubtypeId>Trinium</SubtypeId>
@@ -162,10 +158,9 @@
       <Icon>..\754173702\Textures\gui\trinium_component.dds</Icon>
       <BaseProductionTimeInSeconds>18</BaseProductionTimeInSeconds>
       <Prerequisites>
-        <Item Amount="0.25" TypeId="Ingot" SubtypeId="Naquadah" />
-        <Item Amount="0.5" TypeId="Ingot" SubtypeId="Carbon" />
-        <Item Amount="1.5" TypeId="Ingot" SubtypeId="Titanium" />
-        <Item Amount="4.0" TypeId="Ingot" SubtypeId="Trinium" />
+        <Item Amount="2.5" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="2.5" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="2.5" TypeId="Ingot" SubtypeId="Trinium" />
       </Prerequisites>
       <Result Amount="1" TypeId="Component" SubtypeId="Trinium" />
     </Blueprint>
@@ -179,14 +174,13 @@
       <Icon>..\754173702\Textures\gui\neutronium_component.dds</Icon>
       <BaseProductionTimeInSeconds>16</BaseProductionTimeInSeconds>
       <Prerequisites>
-        <Item Amount="0.5" TypeId="Ingot" SubtypeId="Carbon" />
-        <Item Amount="1" TypeId="Ingot" SubtypeId="Titanium" />
-        <Item Amount="2" TypeId="Ingot" SubtypeId="Naquadah" />
-        <Item Amount="3" TypeId="Ingot" SubtypeId="Neutronium" />
+        <Item Amount="2.5" TypeId="Ingot" SubtypeId="Silicon" />
+        <Item Amount="2.5" TypeId="Ingot" SubtypeId="Platinum" />
+        <Item Amount="2.5" TypeId="Ingot" SubtypeId="Naquadah" />
+        <Item Amount="2.5" TypeId="Ingot" SubtypeId="Neutronium" />
       </Prerequisites>
       <Result Amount="1" TypeId="Component" SubtypeId="Neutronium" />
     </Blueprint>
-    <!-- TODO:
 
     <Blueprint>
       <Id>

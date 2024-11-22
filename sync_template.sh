@@ -19,3 +19,6 @@ rsync -ac ./enhanced/ "$DESTINATION_ROOT/ewe-enhanced/" --delete
 
 mkdir -p "$DESTINATION_ROOT/ewe-plugin-stargate"
 rsync -ac ./plugin-stargate/ "$DESTINATION_ROOT/ewe-plugin-stargate/" --delete
+
+mkdir -p "$DESTINATION_ROOT/ewe-plugin-stargate-legacy"
+rsync -ac ./plugin-stargate-legacy/ "$DESTINATION_ROOT/ewe-plugin-stargate-legacy/" --delete

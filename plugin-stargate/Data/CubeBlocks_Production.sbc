@@ -7,24 +7,46 @@
         <SubtypeId>Naquadah Production Facility</SubtypeId>
       </Id>
       <DisplayName>Naquadah Production Facility</DisplayName>
-      <Icon>..\754173702\Textures\gui\Naquadah Production Facility.dds</Icon>
+      <Icon>..\2362164390\Textures\gui\Naquadah Production Facility.dds</Icon>
       <CubeSize>Large</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="2" y="2" z="2" />
       <ModelOffset x="0" y="0" z="0" />
-      <Model>..\754173702\Models\Blocks\NaquadahProductionFacility.mwm</Model>
+      <Model>..\2362164390\Models\Blocks\NaquadahProductionFacility.mwm</Model>
       <Components>
-        <Component Subtype="SteelPlate" Count="150" />
-        <Component Subtype="SmallTube" Count="20" />
-        <Component Subtype="Construction" Count="35" />
-        <Component Subtype="MetalGrid" Count="8" />
-        <Component Subtype="LargeTube" Count="12" />
-        <Component Subtype="Display" Count="2" />
-        <Component Subtype="Motor" Count="25" />
-        <Component Subtype="Computer" Count="16" />
-        <Component Subtype="SteelPlate" Count="25" />
+        <!-- protection -->
+        <Component Subtype="TitaniumPlate" Count="200" />
+        <Component Subtype="BrazingRod" Count="25" />
+        <Component Subtype="Construction" Count="200" />
+        <!-- electric -->
+        <Component Subtype="QuantumProcessor" Count="1" />
+        <Component Subtype="Display" Count="4" />
+        <Component Subtype="PCB" Count="20" />
+        <Component Subtype="InsulatedCopperWire" Count="50" />
+        <!-- mechanic -->
+        <Component Subtype="Motor" Count="5" />
+        <Component Subtype="Belt" Count="30" />
+        <Component Subtype="MechanicalCable" Count="15" />
+        <Component Subtype="SteelGear" Count="30" />
+        <Component Subtype="SteelPulley" Count="30" />
+        <!-- construction base -->
+        <Component Subtype="MetalGrid" Count="15" />
+        <Component Subtype="Construction" Count="250" />
+        <Component Subtype="AluminumRod" Count="150" />
+        <Component Subtype="AluminumPlate" Count="50" />
+        <!-- original mod values -->
+        <!-- <Component Subtype="SteelPlate" Count="150" /> -->
+        <!-- <Component Subtype="SmallTube" Count="20" /> -->
+        <!-- <Component Subtype="Construction" Count="35" /> -->
+        <!-- <Component Subtype="MetalGrid" Count="8" /> -->
+        <!-- <Component Subtype="LargeTube" Count="12" /> -->
+        <!-- <Component Subtype="Display" Count="2" /> -->
+        <!-- <Component Subtype="Motor" Count="25" /> -->
+        <!-- <Component Subtype="Computer" Count="16" /> -->
+        <!-- <Component Subtype="SteelPlate" Count="25" /> -->
       </Components>
-      <CriticalComponent Subtype="Computer" Index="0" />
+      <CriticalComponent Subtype="QuantumProcessor" Index="0" />
+      <!-- <CriticalComponent Subtype="Computer" Index="0" /> -->
       <MountPoints>
         <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="2" EndY="2" Default="true" />
         <MountPoint Side="Top" StartX="0" StartY="1" EndX="1" EndY="2" />
@@ -34,9 +56,9 @@
         <MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="1" />
       </MountPoints>
       <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="..\754173702\Models\Blocks\NaquadahProductionFacility_BS1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="..\754173702\Models\Blocks\NaquadahProductionFacility_BS2.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="..\754173702\Models\Blocks\NaquadahProductionFacility_BS3.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="..\2362164390\Models\Blocks\NaquadahProductionFacility_BS1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="..\2362164390\Models\Blocks\NaquadahProductionFacility_BS2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="..\2362164390\Models\Blocks\NaquadahProductionFacility_BS3.mwm" />
       </BuildProgressModels>
       <BlockPairName>Naquadah Production Facility</BlockPairName>
       <EdgeType>Light</EdgeType>

@@ -6,21 +6,17 @@
     <Entry Class="Construction" BlueprintSubtypeId="Trinium" />
     <Entry Class="Construction" BlueprintSubtypeId="Neutronium" />
 
-    <Entry Class="AdvMassProdAmmo" BlueprintSubtypeId="Liquid Naquadah" />
+    <Entry Class="BasicRefining" BlueprintSubtypeId="NaquadahOreToIngot" />
+    <Entry Class="BasicRefining" BlueprintSubtypeId="TriniumOreToIngot" />
+    <Entry Class="BasicRefining" BlueprintSubtypeId="NeutroniumOreToIngot" />
 
-    <Entry Class="BscMassProdElect" BlueprintSubtypeId="Drone" />
+    <Entry Class="AdvancedRefining" BlueprintSubtypeId="NaquadahOreToIngot" />
+    <Entry Class="AdvancedRefining" BlueprintSubtypeId="TriniumOreToIngot" />
+    <Entry Class="AdvancedRefining" BlueprintSubtypeId="NeutroniumOreToIngot" />
 
-    <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Naquadah_OreToIngot" />
-    <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Trinium_OreToIngot" />
-    <Entry Class="BasicRefining" BlueprintSubtypeId="Bsc_Neutronium_OreToIngot" />
-
-    <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Naquadah_OreToIngot" />
-    <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Trinium_OreToIngot" />
-    <Entry Class="AdvancedRefining" BlueprintSubtypeId="Adv_Neutronium_OreToIngot" />
-    
-    <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Trinium_OreToIngot" />
-    <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Naquadah_OreToIngot" />
-    <Entry Class="EliteRefining" BlueprintSubtypeId="Eli_Neutronium_OreToIngot" />
+    <Entry Class="EliteRefining" BlueprintSubtypeId="NaquadahOreToIngot" />
+    <Entry Class="EliteRefining" BlueprintSubtypeId="TriniumOreToIngot" />
+    <Entry Class="EliteRefining" BlueprintSubtypeId="NeutroniumOreToIngot" />
     
   </BlueprintClassEntries>
 </Definitions>
